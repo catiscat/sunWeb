@@ -10,7 +10,7 @@
   //2 选择数据库
   mysql_select_db("studySql");
   //3 设置操作编码,这个可以保证我们的php程序是按照utf-8码操作的。  
-  mysql_query("set names utf8");
+  //mysql_query("set names utf8");
   //4 发送sql指令
   
   $sql="select * from user1";
@@ -32,7 +32,7 @@
   
   //关闭数据库连接，释放资源
   mysql_free_result($res);
-  //mysql_close($conn)可以没有，但是建议有。
+  //mysql_close($conn)可以没有（因为即使没有，系统也会自动关闭），但是建议有。
   mysql_close($conn);
   
 ?>
