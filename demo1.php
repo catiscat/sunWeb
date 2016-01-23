@@ -9,7 +9,8 @@
   
   //2 选择数据库
   mysql_select_db("studySql");
-  //3 设置操作编码
+  //3 设置操作编码,这个可以保证我们的php程序是按照utf-8码操作的。  
+  mysql_query("set names utf8");
   //4 发送sql指令
   
   $sql="select * from user1";
