@@ -31,9 +31,9 @@
   }
   
   //关闭数据库连接，释放资源
-  mysql_free_result($res);
+ // mysql_free_result($res);
   //mysql_close($conn)可以没有（因为即使没有，系统也会自动关闭），但是建议有。
   //mysql_close($conn);写在while函数前边也是可以的。因为mysql执行完指令后，包含的那些资源都存在内存里了，跟连接就没有太大关系了。但如果把mysql_free_result($res)写在while函数前就不行，因为这个函数把内存给释放了。
- mysql_close($conn);
+ //mysql_close($conn);
   
 ?>
