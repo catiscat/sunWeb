@@ -1,6 +1,6 @@
 <?php 
 
-  $conn=mysql_connect('127.0.0.1','cat','c@t*9q');
+  $conn=mysql_connect('127.7.76.2','cat','c@t*9q');
   if(!$conn){
     die('出错了'.mysql_error());    
   }
