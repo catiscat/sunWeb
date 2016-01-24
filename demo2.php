@@ -7,11 +7,11 @@
   
   mysql_select_db('studySql',$conn) or die(mysql_error());
   
-  mysql_query('set names utf8');
+  mysql_query("set names utf8");
   
   $sql="insert into user1(name,password,email,age) values('小明',md5(123),'xiaoming@gmail.com',16)";
   
-  $sql="delete from user1 where id=5";
+  //$sql="delete from user1 where id=5";
   //如果是dml操作，则返回布尔值，布尔值最后不需要释放资源，否则会报错。
   $res=mysql_query($sql,$conn);
   
