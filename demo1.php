@@ -22,10 +22,9 @@
  //5 接受返回的结果，并处理。
  //mysql_fecth_row 会一次取出$res结果集的下一行数据，并依次赋值给$row（是一个数组）;
  
- echo 'hello0';
- 
+
   while($row=mysql_fetch_row($res)){
-   echo 'hellowhile';
+
   //第一种取法
   //  echo "</br> $row[0]--$row[1]--$row[2]";
   //第二种取法
@@ -35,9 +34,6 @@
     echo "<br/>";
   }
   
-  echo 'hello1';
-  mysql_error();
-  echo 'hello2';
   //关闭数据库连接，释放资源
  mysql_free_result($res);
   //mysql_close($conn)可以没有（因为即使没有，系统也会自动关闭），但是建议有。

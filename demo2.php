@@ -11,11 +11,12 @@
   
   $sql="insert into user1(name,password,email,age) values('小明',md5(123),'xiaoming@gmail.com',16)";
   
+  $sql="delete from user1 where id=5";
   //如果是dml操作，则返回布尔值，布尔值最后不需要释放资源，否则会报错。
   $res=mysql_query($sql,$conn);
   
   if(!$res){
-    echo "操作失败".mysql_error();
+    die("操作失败".mysql_error());
   }
   
   if(mysql_affected_rows($conn)>0){
@@ -25,4 +26,7 @@
   }
   
   mysql_close($conn);
+
+
+insert into user1(name,password,email,age) values('小花',md5(123),'xiaohua@gmail.com',15);
 ?>
