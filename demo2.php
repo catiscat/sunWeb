@@ -11,7 +11,9 @@
   
  // $sql="insert into user1(name,password,email,age) values('小明',md5(123),'xiaoming@gmail.com',16)";
   
-  $sql="delete from user1 where id=6";
+ // $sql="delete from user1 where id=6";
+ 
+  $sql="update user1 set age=61 where id=7";
   //如果是dml操作，则返回布尔值，布尔值最后不需要释放资源，否则会报错。
   $res=mysql_query($sql,$conn);
   
