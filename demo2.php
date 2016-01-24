@@ -28,5 +28,4 @@
   mysql_close($conn);
 
 
-insert into user1(name,password,email,age) values('小花',md5(123),'xiaohua@gmail.com',15);
 ?>
