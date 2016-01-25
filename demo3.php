@@ -2,7 +2,7 @@
 
   function show_tab_info($table_name){
   
-    $conn=mysql_conn("127.7.76.2","cat","c@t*9q");
+    $conn=mysql_connect("127.7.76.2","cat","c@t*9q");
     if(!$conn){
       die(mysql_error());
     }
