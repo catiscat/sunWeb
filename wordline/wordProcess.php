@@ -19,9 +19,9 @@
   $res=$sqlTool->excute_dql($sql);
   if($row=mysql_fetch_assoc($res)){
     echo $en_word."对应的中文意思是".$row['chword'];  
-
+    echo "<br/><a href='mainView.php'>返回继续查询</a>";
   }else{
-    echo "c查询没有这个词条";
+    echo "查询没有这个词条";
     echo "<br/><a href='mainView.php'>返回重新查询</a>";
   }
   
