@@ -6,7 +6,7 @@
     private $password="c@t*9q";
     private $db="studySql";
     
-    function SqlTool(){
+    public function sqlTool(){
       $this->conn=mysql_connect($this->host,$this->$user,this->$password);
       if(!$this->conn){
         die("连接数据库失败".mysql_error());
@@ -15,7 +15,7 @@
       mysql_query("set names utf8");
     }
     
-    function excute_dql($sql){
+    public function excute_dql($sql){
       
     }
     
