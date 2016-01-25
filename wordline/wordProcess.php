@@ -1,6 +1,6 @@
 <?php 
 
-  require_once 'SqlTool.class.php'
+  require_once 'SqlTool.class.php';
   //接受英文单词
   if(isset($_POST['enword'])){
     $en_word=$_POST['enword'];
