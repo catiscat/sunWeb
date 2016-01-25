@@ -16,7 +16,7 @@
   //设计表
   //查询
   $sqlTool=new SqlTool();
-  $res=$sqlTool->execute_dql($sql);
+  $res=$sqlTool->excute_dql($sql);
   if($row=mysql_fetch_assoc($res)){
     echo $en_word."对应的中文意思是".$row['chword'];  
 
