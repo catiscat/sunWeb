@@ -6,7 +6,7 @@
     private $password="c@t*9q";
     private $db="studySql";
     
-    function sqlTool(){
+    function SqlTool(){
       $this->conn=mysql_connect($this->host,$this->$user,this->$password);
       if(!$this->conn){
         die("连接数据库失败".mysql_error());
