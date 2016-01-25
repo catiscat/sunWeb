@@ -7,11 +7,11 @@
     private $db="studySql";
     
     public function sqlTool(){
-      $this->conn=mysql_connect($this->host,$this->$user,this->$password);
+      $this->conn=mysql_connect($this->host,$this->user,$this->password);
       if(!$this->conn){
         die("连接数据库失败".mysql_error());
       }
-      mysql_select_db($db,$this->conn);
+      mysql_select_db($this->db,$this->conn);
       mysql_query("set names utf8");
     }
     
