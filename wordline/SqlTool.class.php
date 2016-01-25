@@ -7,7 +7,7 @@
     private $db="studySql";
     
     function sqlTool(){
-      $this->conn=mysql_connect($host,$user,$password);
+      $this->conn=mysql_connect($this->host,$this->$user,this->$password);
       if(!$this->conn){
         die("连接数据库失败".mysql_error());
       }
