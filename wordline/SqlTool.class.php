@@ -16,7 +16,8 @@
     }
     
     public function excute_dql($sql){
-      
+      $res=mysql_query($sql,$this->conn) or die(mysql_error());
+      return $res;
     }
     
     //完成update delete insert 操作

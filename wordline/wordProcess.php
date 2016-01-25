@@ -12,7 +12,7 @@
   
   //看看数据库中有没有这条记录, 加上 limit 0,1 效率会更高，指的是找到一个就返回。下面的不再去执行。
   //原则：用什么查什么
-  $sql="select chword from words where enword='."$en_word".' limit 0,1";
+  $sql="select chword from words where enword="'.$en_word.'" limit 0,1";
   //设计表
   //查询
   $sqlTool=new SqlTool();
