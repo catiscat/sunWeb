@@ -12,8 +12,29 @@
     $sql="select * from $table_name";
     $res=mysql_query($sql,$conn);
     
-    $field_info=mysql_field_row($res);
-    var_dump($field_info);
+    $rows=mysql_affected_rows($conn);
+    $colums=mysql_num_fields($res);
+    echo "$rows=$colums";
+    
+    echo "<table border=1><tr>";
+    for($i=0;$i<$colums;$i++){
+      $field_name=mysql_field_name($res,$i);
+      echo "<th>$field_name</th>";
+    }
+    echo "</tr>";
+    
+    while($row=mysql_fetch_row($res)){
+      echo "<tr>";
+      for($i=0;$i<$colums;$i++){
+        echo "<td>$row[$i]</td>";
+      }
+    }
+    
+    echo "</table>";
+    while($field_info=mysql_fetch_field($res)){
+      echo "<br/>".$field_info->name;
+    }
+  //  var_dump($field_info);
     
   }
   
