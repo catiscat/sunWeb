@@ -23,7 +23,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active,.duckIcon) {
+li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
@@ -57,6 +57,6 @@ li a:visited{
     background-color:lightblue;
 }
 .duckIcon{
-    width:15px;
-    height:15px;
+    width:18px;
+    height:18px;
 }
