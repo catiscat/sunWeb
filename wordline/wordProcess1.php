@@ -34,9 +34,19 @@
       echo "查询没有这个词条";
       echo "<br/><a href='mainView1.php'>返回重新查询</a>";
     }	
+    mysql_free_result($res);
+  }else if($type='search2'){
+  
+      if(isset($_POST['chword'])){
+        $ch_word=$_POST['chword'];
+        echo $ch_word;
+      }else{
+        echo "输入为空";
+        echo "<a href='mainView1.php'>返回重新查询</a>";
+      }
   }
 
 
   
-  mysql_free_result($res);
+  
 ?>
