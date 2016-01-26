@@ -27,6 +27,9 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
+li a:visited{
+    background-color: #4CAF50;
+}
 .active {
     background-color: #4CAF50;
 }
