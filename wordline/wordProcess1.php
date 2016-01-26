@@ -28,10 +28,12 @@
     $sqlTool=new SqlTool();
     $res=$sqlTool->excute_dql($sql);
     if($row=mysql_fetch_assoc($res)){
-      echo $en_word."对应的中文意思是".$row['chword'];  
+      echo $en_word."***中文是***".$row['chword'];  
+      echo "<hr>";
       echo "<br/><a href='mainView1.php'>返回继续查询</a>";
     }else{
-      echo "查询没有这个词条";
+      echo "没有这个词条";
+      echo "<hr>";
       echo "<br/><a href='mainView1.php'>返回重新查询</a>";
     }	
     mysql_free_result($res);
@@ -57,14 +59,14 @@
     if(mysql_num_rows($res)>0){  
      
       while($row=mysql_fetch_assoc($res)){ 
-        echo "<br/>".$ch_word."对应的英文意思是".$row['enword'];
+        echo "<br/>".$ch_word."***英文是***".$row['enword'];
         echo "<hr>";
         echo "<a href='mainView1.php'>返回继续查询</a>";
       }
           
     }else{
     
-      echo "查询没有这个词条";
+      echo "没有这个词条";
       echo "<hr>";
       echo "<br/><a href='mainView1.php'>返回重新查询</a>";
     }	
