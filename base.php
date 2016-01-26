@@ -23,7 +23,9 @@
 
 
 	</div>
-	<a href='index.php'><img src='images/goTop.ico' /></a>
+	<div>
+		<a href='index.php'><img class='goTop' src='images/goTop.ico' /></a>
+	</div>
        <footer>
             
               <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
