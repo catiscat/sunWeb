@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="images/duckdog.ico" />
-    <link rel="stylesheet" href="styles/index.css" type="text/css"  />
+    <link rel="shortcut icon" href="images/duckdog.ico" >
+    <link rel="stylesheet" href="styles/index.css" type="text/css"  >
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <title>DuckBlog</title>
   </head>
   <body>
