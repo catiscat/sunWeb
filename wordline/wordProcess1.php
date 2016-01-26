@@ -49,15 +49,20 @@
     //原则：用什么查什么
     $sql="select enword from words where chword like '%".$ch_word."%' ";
     
-    echo $sql;
+    //echo $sql;
     //设计表
     //查询
     $sqlTool=new SqlTool();
     $res=$sqlTool->excute_dql($sql);
-    if($row=mysql_fetch_assoc($res)){
-      echo $en_word."对应的中文意思是".$row['chword'];  
-      echo "<br/><a href='mainView1.php'>返回继续查询</a>";
+    if(mysql_num_rows($res)>0){  
+     
+      while($row=mysql_fetch_assoc($res)){ 
+        echo "<br/>".$ch_word."对应的英文意思是".$row['enword'];
+        echo "<a href='mainView1.php'>返回继续查询</a>";
+      }
+          
     }else{
+    
       echo "查询没有这个词条";
       echo "<br/><a href='mainView1.php'>返回重新查询</a>";
     }	
