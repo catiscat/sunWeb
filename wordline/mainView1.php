@@ -12,7 +12,7 @@
   </form>
     <hr>
 	  <h1>查询中文</h1>
-  <form action='wordProcess.php' method="post" >
+  <form action='wordProcess1.php' method="post" >
     请输入中文：<input type='text' name='chword' />
     <input type="hidden" value="search2" name="type" />
     <inout type="submit" value="查询"/>
