@@ -4,7 +4,7 @@
     private $host="127.7.76.2";
     private $user="cat";
     private $password="c@t*9q";
-    private $db="studySql";
+    private $db="worddb";
     
     function sqlTool(){
       $this->conn=mysql_connect($host,$user,$password);

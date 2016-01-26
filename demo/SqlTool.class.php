@@ -4,7 +4,7 @@
     private $host="127.7.76.2";
     private $user="cat";
     private $password="c@t*9q";
-    private $db="studySql";
+    private $db="worddb";
     
     function sqlTool(){
       $this->conn=mysql_connect($host,$user,$password);
@@ -20,8 +20,8 @@
     }
     
     //完成update delete insert 操作
-    function excute_dml($sql){
-      $res=mysql_query($sql,$this->conn);
+    public function excute_dml($sql){
+      $res=mysql_query($sql,$this->conn) or die(mysql_error());
       if(!$res){
         return 0; //操作不成功
       }else{
