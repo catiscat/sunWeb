@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="images/duckdog.ico">
+    <link rel="shortcut icon" href="images/duckdog.ico" />
     <link rel="stylesheet" href="styles/index.css" type="text/css"  />
     <title>DuckBlog</title>
   </head>
