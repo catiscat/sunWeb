@@ -21,8 +21,14 @@
 
 
 	</div>
-    <footer class="footer1">
-        <a href="www.dogduck.lol">Made By Duck</a>
-    </footer>
+	
+       <footer>
+
+            <div>
+              <i>DogDuck.lol</i> &copy; 2016 - <?php echo date('Y'); ?>
+               <p>转载请注明出处</p>
+            </div>
+
+        </footer>
   </body>
 </html>
