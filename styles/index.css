@@ -23,7 +23,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover:not(.active,.duckIcon) {
     background-color: #4CAF50;
 }
 

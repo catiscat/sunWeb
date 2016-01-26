@@ -11,7 +11,8 @@
 	<nav>
 		<ul>
 		<?php
-		  echo "<li><a class='active' href='index.php'><img class='duckIcon' src='images/duck.ico'/>Home</a></li>";
+		  echo "<img class='duckIcon' src='images/duck.ico'/>";
+		  echo "<li><a class='active' href='index.php'>Home</a></li>";
 		  echo "<li><a href='blog.php'>Blog</a></li>";
 		  echo "<li><a href='contact.php'>Contact</a></li>";
 		  echo "<li><a href='about.php'>About</a></li>";
