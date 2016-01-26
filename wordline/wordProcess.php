@@ -2,6 +2,9 @@
 
   require_once 'SqlTool.class.php';
   header("Content-type:text/html;charset=utf-8");
+
+
+
   //接受英文单词
   if(isset($_POST['enword'])){
     $en_word=$_POST['enword'];
