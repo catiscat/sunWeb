@@ -39,7 +39,7 @@
   
       if(isset($_POST['chword'])){
         $ch_word=$_POST['chword'];
-        echo $ch_word; 
+       // echo $ch_word; 
       }else{
         echo "输入为空";
         echo "<a href='mainView1.php'>返回重新查询</a>";
@@ -58,12 +58,14 @@
      
       while($row=mysql_fetch_assoc($res)){ 
         echo "<br/>".$ch_word."对应的英文意思是".$row['enword'];
+        echo "<hr>";
         echo "<a href='mainView1.php'>返回继续查询</a>";
       }
           
     }else{
     
       echo "查询没有这个词条";
+      echo "<hr>";
       echo "<br/><a href='mainView1.php'>返回重新查询</a>";
     }	
     mysql_free_result($res);
