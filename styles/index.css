@@ -37,3 +37,8 @@ li a:hover:not(.active) {
 	background-color:lightblue;
 	height:1500px;
 }
+
+.footer1{
+   margin-bottom:30px;
+   background-color:orange; 
+}
