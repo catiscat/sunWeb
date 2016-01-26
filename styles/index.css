@@ -38,4 +38,7 @@ li a:hover:not(.active) {
 	height:1500px;
 }
 
-
+footer{
+   text-align:center;
+   background-color:lightblue;
+}
