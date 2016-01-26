@@ -28,7 +28,7 @@
     $sqlTool=new SqlTool();
     $res=$sqlTool->excute_dql($sql);
     if($row=mysql_fetch_assoc($res)){
-      echo $en_word."***中文是***".$row['chword'];  
+      echo $en_word."---中文是---".$row['chword'];  
       echo "<hr>";
       echo "<br/><a href='mainView1.php'>返回继续查询</a>";
     }else{
@@ -59,7 +59,7 @@
     if(mysql_num_rows($res)>0){  
      
       while($row=mysql_fetch_assoc($res)){ 
-        echo "<br/>".$ch_word."***英文是***".$row['enword'];
+        echo "<br/>".$ch_word."---英文是---".$row['enword'];
         echo "<hr>";
         echo "<a href='mainView1.php'>返回继续查询</a>";
       }
