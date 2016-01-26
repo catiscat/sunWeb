@@ -23,12 +23,11 @@
 
 
 	</div>
-
+	<a href='index.php'><img src='images/goTop.ico' /></a>
        <footer>
             
               <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
-               <p>转载请注明出处</p>
-            
+               <p>转载请注明出处</p>            
         </footer>
   </body>
 </html>

@@ -27,10 +27,11 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
-li a:visited{
+.active {
     background-color: #4CAF50;
 }
-.active {
+
+li a:visited{
     background-color: #4CAF50;
 }
 
