@@ -39,6 +39,6 @@ li a:hover:not(.active) {
 }
 
 .footer1{
-   margin-bottom:30px;
+   height:30px;
    background-color:orange; 
 }
