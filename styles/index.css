@@ -63,8 +63,8 @@ li a:visited{
 
 .div1{
 	width:900px;
-	height:1600px;
-	background-color:black;
-	float:center;
+	height:1800px;
+	background-color:white;
+	margin:0,100px,0,100px;
 	
 }
