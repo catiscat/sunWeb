@@ -87,3 +87,20 @@ li a:visited{
     background-color:white;
     float:right;
 }
+
+.div4{
+    width:280px;
+    height:360px;
+    background-color:white;
+}
+
+.div5{
+    width:280px;
+    height:720px;
+    background-color:yellow;    
+}
+.div5{
+    width:280px;
+    height:720px;
+    background-color:red;    
+}
