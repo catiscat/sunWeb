@@ -62,9 +62,9 @@ li a:visited{
 }
 
 .div1{
-	width:900px;
-	height:1800px;
-	background-color:white;
-	margin:100px,100px,100px,100px;
+    margin:0 auto;
+    width:1000px;
+    height:1800px;
+    border:lightblue solid 2px;
 	
 }
