@@ -69,6 +69,22 @@ li a:visited{
     width:1000px;
     height:1800px;
     border:lightblue solid 2px;
+    background-color:white;	
+}
+
+.div2{
+    margin:0 auto;
+    width:700px;
+    height:1800px;
+    border:lightblue double 5px;
     background-color:white;
-	
+}
+
+.div3{
+    margin:0 auto;
+    width:290px;
+    height:1800px;
+    border:lightblue double 5px;
+    background-color:white;
+    float:right;
 }

@@ -21,7 +21,12 @@
 	</nav>
 	<div class="div0">
     <div class="div1">
-    
+      <div class="div2">
+        
+      </div>
+      <div class="div3">
+      
+      </div>
     </div>
 
 
