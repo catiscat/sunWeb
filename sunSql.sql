@@ -7,3 +7,9 @@ create table blog(
 	content nvarchar,
 	comments navarchar,
 )
+
+--设计数据库
+--blog
+--user(id,comment,)
+
+
