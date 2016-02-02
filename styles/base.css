@@ -27,15 +27,15 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #cc66ff;
+    background-color:#4CAF50;
 }
 
 .active {
-    background-color:#cc66ff;
+    background-color:#4CAF50;
 }
 
 li a:visited{
-    background-color: #cc66ff;
+    background-color:#4CAF50;
 }
 
 .div0{
@@ -84,25 +84,25 @@ li a:visited{
     width:280px;
     height:1800px;
     border:black double 5px;
-    background-color:#4CAF50;
+    background-color:#ffcc66;
     float:right;
 }
 
 .div4{
     width:270px;
     border:black double 5px;
-    background-color:#4CAF50;
+    background-color:#ffcc66;
 }
 
 .div5{
     width:270px;
     border:black double 5px;
-    background-color:#4CAF50;    
+    background-color:#ffcc66;    
 }
 .div6{
     width:270px;
     border:black double 5px;
-    background-color:#4CAF50;    
+    background-color:#ffcc66;    
 }
 .bigduck{
 	width:70px;
