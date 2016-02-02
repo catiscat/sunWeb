@@ -26,7 +26,7 @@
       </div>
       <div class="div3">
         <div class="div4">
-     		<img class="bigduck" src="images/bigDuck.ico" />
+     		<img class="bigduck" src="images/bigDuck.ico" /><br>
 			<a href="">Duck的站点</a><br>
 			<a href="#">Duck的邮箱</a><br>
 			<a href="#github">Duck的收藏</a><br>
