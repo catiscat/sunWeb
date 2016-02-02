@@ -10,12 +10,12 @@
   <body>
 	<nav>
 		<ul>
-		<?php
-		  echo "<li><a class='active' href='index.php'>Home</a></li>";
-		  echo "<li><a href='blog.php'>Blog</a></li>";
-		  echo "<li><a href='contact.php'>Contact</a></li>";
-		  echo "<li><a href='about.php'>About</a></li>";
-		  ?>
+		
+		  <li><a class='active' href='index.php'>Home</a></li>
+		  <li><a href='blog.php'>Blog</a></li>
+		  <li><a href='contact.php'>Contact</a></li>
+		  <li><a href='about.php'>About</a></li>
+		  
 		</ul>
 	</nav>
 	<div class="div0">
