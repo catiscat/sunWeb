@@ -20,7 +20,7 @@ li {
 
 li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,10 +59,7 @@ li a:visited{
 .goTopDiv{
     background-color:#4CAF50;
 }
-.duckIcon{
-    width:16px;
-    height:16px;
-}
+
 
 .div1{
     margin:0 auto;
@@ -90,18 +87,18 @@ li a:visited{
 
 .div4{
     width:270px;
-    border:black double 5px;
+    border:black 3px;
     background-color:#4CAF50;
 }
 
 .div5{
     width:270px;
-    border:black double 5px;
+    border:black 3px;
     background-color:#4CAF50;    
 }
 .div6{
     width:270px;
-    border:black double 5px;
+    border:black 3px;
     background-color:#4CAF50;    
 }
 .bigduck{
