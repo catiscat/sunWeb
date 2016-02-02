@@ -26,9 +26,9 @@
       <div class="div3">
         <div class="div4">
      		<img class="bigduck" src="images/bigDuck.png" /><br>
-			<a href=""><h5>Duck的站点</h5></a>
+			<a href="index.php"><h5>Duck的站点</h5></a>
 			<a href="#"><h5>Duck的邮箱</h5></a>
-			<a href="#github"><h5>Duck的收藏</h5></a><hr>
+			<a href="#github"><h5>Duck的收藏</h5></a>
 			<h3>订阅DuckBlog</h3>
 			<a href="#feed"><img class="feed" src="images/feed.ico" /></a>
         </div><hr>
