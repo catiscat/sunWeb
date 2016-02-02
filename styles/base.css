@@ -1,6 +1,6 @@
 body {
     margin:0;
-    background:#cc99ff;
+    background:#003366;
 }
 
 ul {
@@ -8,7 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#cc99ff;
+    background-color:#003366;
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,15 +27,15 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #4CAF50;
+    background-color: #cc66ff;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color:#cc66ff;
 }
 
 li a:visited{
-    background-color: #4CAF50;
+    background-color: #cc66ff;
 }
 
 .div0{
@@ -84,7 +84,7 @@ li a:visited{
     width:280px;
     height:1800px;
     border:lightblue double 5px;
-    background-color:white;
+    background-color:#4CAF50;
     float:right;
 }
 
@@ -101,7 +101,7 @@ li a:visited{
 }
 .div6{
     width:270px;
-    
+    border:lightblue double 5px;
     background-color:#4CAF50;    
 }
 .bigduck{
