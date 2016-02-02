@@ -40,7 +40,7 @@ li a:visited{
 
 .div0{
 
-	margin-top:30px;
+	margin-top:40px;
 	background-color:lightblue;
 	height:1800px;
 }
@@ -89,18 +89,27 @@ li a:visited{
 }
 
 .div4{
-    width:280px;
-    height:360px;
-    background-color:white;
+    width:270px;
+    border:lightblue double 5px;
+    background-color:#4CAF50;
 }
 
 .div5{
-    width:280px;
-    height:720px;
-    background-color:white;    
+    width:270px;
+    border:lightblue double 5px;
+    background-color:#4CAF50;    
 }
 .div6{
-    width:280px;
-    height:720px;
-    background-color:white;    
+    width:270px;
+    border:lightblue double 5px;
+    background-color:#4CAF50;    
+}
+.bigduck{
+	width:40px;
+	height:40px;
+}
+
+.feed{
+    width:50px;
+    height:50px;
 }
