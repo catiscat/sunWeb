@@ -28,17 +28,17 @@
      		<img class="bigduck" src="images/bigDuck.png" /><br>
 			<a href=""><h5>Duck的站点</h5></a>
 			<a href="#"><h5>Duck的邮箱</h5></a>
-			<a href="#github"><h5>Duck的收藏</h5></a>
+			<a href="#github"><h5>Duck的收藏</h5></a><hr>
 			<h3>订阅DuckBlog</h3>
 			<a href="#feed"><img class="feed" src="images/feed.ico" /></a>
-        </div>
+        </div><hr>
         <div class="div5">
 			<h3>推荐帖子</h3>
         
-        </div>
+        </div><hr>
         <div class="div6">
         	<h3>分类标签</h3>
-        </div>
+        </div><hr>
       </div>
     </div>
 
