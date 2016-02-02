@@ -26,10 +26,10 @@
       </div>
       <div class="div3">
         <div class="div4">
-     		<img class="bigduck" src="images/bigDuck.ico" /><br>
-			<a href="">Duck的站点</a><br>
-			<a href="#">Duck的邮箱</a><br>
-			<a href="#github">Duck的收藏</a><br>
+     		<img class="bigduck" src="images/bigDuck.ico" /><br><br>
+			<a href=""><h4>Duck的站点</h4></a><br>
+			<a href="#"><h4>Duck的邮箱></h4></a><br>
+			<a href="#github"><h4>Duck的收藏</h4></a><br>
 			<h3>订阅DuckBlog</h3>
 			<a href="#feed"><img class="feed" src="images/feed.ico" /></a>
         </div>

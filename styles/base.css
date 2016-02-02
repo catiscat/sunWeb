@@ -1,6 +1,6 @@
 body {
     margin:0;
-    background:orange;
+    background:#993366;
 }
 
 ul {
@@ -8,7 +8,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:orange;
+    background-color:#993366;
     position: fixed;
     top: 0;
     width: 100%;
@@ -84,25 +84,25 @@ li a:visited{
     width:280px;
     height:1800px;
     border:black double 5px;
-    background-color:#ffcc66;
+    background-color:#4CAF50;
     float:right;
 }
 
 .div4{
     width:270px;
     border:black double 5px;
-    background-color:#ffcc66;
+    background-color:#4CAF50;
 }
 
 .div5{
     width:270px;
     border:black double 5px;
-    background-color:#ffcc66;    
+    background-color:#4CAF50;    
 }
 .div6{
     width:270px;
     border:black double 5px;
-    background-color:#ffcc66;    
+    background-color:#4CAF50;    
 }
 .bigduck{
 	width:70px;
