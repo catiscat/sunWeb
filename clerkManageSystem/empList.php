@@ -63,7 +63,7 @@
         */
         for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];
-            echo "<tr><td>{$row['id']}</td><td>{$row['name']}</td><td>{$row['grade']}</td><td>{$row['email']}</td><td><a onclick='return confirmDel({$row['id']})' href='empProcess.php?flag=del&id={$row['id']}'>删除用户</td><td><a href='updateEmpUI.php?id={$row['id']}'>修改用户</td></tr>";
+            echo "<tr><td>{$row['id']}</td><td>{$row['name']}</td><td>{$row['grade']}</td><td>{$row['email']}</td><td>{$row['salary']}</td><td><a onclick='return confirmDel({$row['id']})' href='empProcess.php?flag=del&id={$row['id']}'>删除用户</td><td><a href='updateEmpUI.php?id={$row['id']}'>修改用户</td></tr>";
         }
         
         
