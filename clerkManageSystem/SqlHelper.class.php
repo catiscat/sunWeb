@@ -110,7 +110,7 @@
         public function execute_dql($sql){
             
             $res=mysql_query($sql,$this->conn) or die(mysql_error());
-            $return $res;
+            return $res;
         }
         
         
