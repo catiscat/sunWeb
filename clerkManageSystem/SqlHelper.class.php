@@ -5,7 +5,7 @@
         
         public $conn;
         public $dbname="test";
-        public $username="fish";
+        public $username="cat";
         public $password="c@t*9q";
         public $host="127.7.76.2";
         
