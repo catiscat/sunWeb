@@ -117,7 +117,7 @@
         //执行dml语句
         public function execute_dml($sql){
         
-           $b=mysql_squery($sql,$this->conn) or die(mysql_error());
+           $b=mysql_query($sql,$this->conn) or die(mysql_error());
            if(!$b){
             return 0;
            }else{
