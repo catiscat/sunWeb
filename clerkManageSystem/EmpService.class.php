@@ -73,8 +73,8 @@
 	    function getRollPage($rollPage){
 	        //创建一个sqlHelper对象实例
 	        $sqlHelper=new SqlHelper();
-	       // $sql1="select * from emp limit".($rollPage->pageNow-1)*$rollPage->pageSize.",".$rollPage->pageSize;
-	        $sql1="select * from emp";
+	        $sql1="select * from emp limit".($rollPage->pageNow-1)*($rollPage->pageSize).",".$rollPage->pageSize;
+	        //$sql1="select * from emp";
 	        $sql2="select count(id) from emp";
 	        $sqlHelper->execute_dql_roll($sql1,$sql2,$rollPage);
 	        
