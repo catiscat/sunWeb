@@ -62,13 +62,13 @@
             $navigate="";
 	        if($rollPage->pageNow>1){
 	            $prePage=$rollPage->pageNow-1;
-	            $navigate="<a href='empList.php?pageNow=$prePage'>上一页</a>$nbsp";
+	            $navigate="<a href='empList.php?pageNow=$prePage'>上一页</a>&nbsp";
 	        }
 	
 	        if($rollPage->pageNow<$rollPage->pageCount){
 	            $nextPage=$rollPage->pageNow+1;
 	            //$navigate. 是将字符串拼接起来
-	            $navigate.="<a href='{$rollPage->gotoUrl}?pageNow=$nextPage'>下一页</a>$nbsp";
+	            $navigate.="<a href='{$rollPage->gotoUrl}?pageNow=$nextPage'>下一页</a>&nbsp";
 	        }
 	        
 	        	//可以使用for打印超链接	

@@ -48,11 +48,11 @@
 	    
 	    
 	    //调用getPageCount方法，获取一共有多少页
-	    $pageCount=$empService->getPageCount($pageSize);        
+	    $pageCount=$empService->getPageCount($rollPage->pageSize);        
 
 
         //调用getEmpListByPage方法，获取应当显示的雇员信息列表
-        $res2=$empService->getEmpListByPage($pageNow,$pageSize);
+        $res2=$empService->getEmpListByPage($rollPage->pageNow,$rollPage->pageSize);
         echo "<table border='1px' width='700px' bordercolor='green' cellspacing='0px'>";
         echo "<tr><th>id</th><th>name</th><th>grade</th><th>email</th><th>salary</th><th>删除用户</th><th>修改用户</th></tr>";
         //这里我们需要循环地显示用户的信息
