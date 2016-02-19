@@ -57,7 +57,7 @@
 	    //一个函数可以获取应当显示的雇员信息
 	    function getEmpListByPage($pageNow,$pageSize){
 	        
-	        $sql="select * from emp limit ".($pageNow-1)*$pageSize.",$pageSize";
+	        $sql="select * from emp limit ".($pageNow-1)*$pageSize.",".$pageSize;
 	        $sqlHelper=new SqlHelper();
 	        $res=$sqlHelper->execute_dql2($sql);
 	        
