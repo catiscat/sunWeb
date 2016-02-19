@@ -18,11 +18,11 @@
 		    echo "你希望删除的用户id=$id";
 		    if($empService->delEmpById($id)==1){
 		        //成功
-		        header("Location:ok.php");
+		        header("Location:error.php");
 		        exit();
 		    }else{
 		        //失败
-		        header("Location:error.php");
+		        header("Location:ok.php");
 		        exit();
 		    }
 		}else if($flag=="addemp"){
