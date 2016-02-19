@@ -30,7 +30,7 @@
             }
             //这里就可以马上把结果集 $res 关闭
             mysql_free_result($res);
-            $return $arr;
+            return $arr;
         }
         
         //考虑分页情况的查询，这是一个比较通用的并体现OOP（面向对象）的思想。
