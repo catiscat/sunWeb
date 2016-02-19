@@ -19,7 +19,7 @@ create table admin(
 	id int primary key,
 	name varchar(32) not null, 
 	password varchar(128) not null
-)
+);
 
 --雇员表 emp
 create table emp(
@@ -29,7 +29,7 @@ create table emp(
 	email varchar(64) not null,
 	salary float
 
-)
+);
 
 insert into emp(name,grade,email,salary) values ("shunping",1,'shunping@sohu.com',200);
 insert into emp(name,grade,email,salary) values ("shunping",1,'shunping@sohu.com',200);

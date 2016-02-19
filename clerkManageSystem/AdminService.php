@@ -22,7 +22,7 @@
         mysql_free_results($res);
         //关闭连接
         $sqlHelper->close_connect();
-        return "";
+
      }
     
     }
