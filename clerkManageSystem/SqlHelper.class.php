@@ -7,7 +7,7 @@
         public $dbname="test2";
         public $username="fish";
         public $password="c@t*9q";
-        public $host="127.0.0.1";
+        public $host="127.7.76.2";
         
         public function __construct(){
         
