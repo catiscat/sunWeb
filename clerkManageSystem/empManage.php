@@ -5,8 +5,7 @@
     </head>
     
     <?php 
-        require_once "login.php";
-        echo "欢迎".$_GET['name']."登陆成功";
+        echo "欢迎您登陆";
         echo "<br/><a href='login.php'>返回重新登陆</a>";
     ?>
     <body>
