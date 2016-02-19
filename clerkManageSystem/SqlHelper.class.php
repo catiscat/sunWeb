@@ -82,12 +82,15 @@
 	        if($rollPage->pageNow>10){
 	            $navigate.= "&nbsp;&nbsp;<a href='{$rollPage->gotoUrl}?pageNow=".($start-1)."'>&nbsp;&nbsp;<< &nbsp;&nbsp;</a>";
 	        }
+	        
 	        //定$start 1 --->10 floor(($pageNow-1)/10) 11->20
+	        /*
 	        for($start<($index+10);$start++){
 	            $navigate.= "<a href='{$rollPage->gotoUrl}?pageNow=$start'>[$start]</a>";
 
 	        }
-	
+	        */
+	        
 	        //整体每10页翻动
 	        $navigate.="&nbsp;&nbsp;<a href='{$rollPage->gotoUrl}?pageNow=$start'>&nbsp;&nbsp;>>&nbsp;&nbsp;</a>";
 	
