@@ -84,7 +84,7 @@
 	        }
 	        //定$start 1 --->10 floor(($pageNow-1)/10) 11->20
 	        for($start<($index+10);$start++){
-	            $navigate.= "<a href='{$rollPage->gotoUrl}?pageNow=".$start."'>[$start]</a>";
+	            $navigate.= "<a href='{$rollPage->gotoUrl}?pageNow=$start'>[$start]</a>";
 
 	        }
 	
