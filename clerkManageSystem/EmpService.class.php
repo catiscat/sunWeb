@@ -80,7 +80,7 @@
 
         //根据输入id删除某个用户
         function delEmpById($id){
-            $sql="delete from emp where id=$d";
+            $sql="delete from emp where id=$id";
             //创建SqlHelper对象实例
             $sqlHelper=new SqlHelper();
             
