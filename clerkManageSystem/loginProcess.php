@@ -1,7 +1,7 @@
 
 <?php 
 
-    require_once 'AdminService.class.php';
+    require_once 'AdminService.php';
     //接受用户数据
     // 1 id
     $id=$_POST["id"];
