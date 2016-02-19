@@ -11,7 +11,7 @@
         }
         
         
-        -->
+        //-->
         </script>
     </head>
     
@@ -22,7 +22,7 @@
 
 	//创建了一个EmpService的对象实例
 	$empService=new EmpService();
-
+    
 	
 	
 	//创建一个RollPage对象实例
