@@ -4,7 +4,7 @@
     class SqlHelper{
         
         public $conn;
-        public $dbname="empmanage";
+        public $dbname="test2";
         public $username="fish";
         public $password="c@t*9q";
         public $host="127.0.0.1";
