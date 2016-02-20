@@ -65,7 +65,7 @@
                       $row=$res2[$i];
                       echo "<table width='600px'>";
                       echo "<tr><td><h3><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h3></td></tr>";
-                      echo "<tr><td>{$row['post_date']}</td><td align='left'>标签：{$row['post_type']}</td></tr>";
+                      echo "<tr><td>{$row['post_date']}</td><td style='text-align:left'>标签：{$row['post_type']}</td></tr>";
                   }
                   echo "</table>";
 
