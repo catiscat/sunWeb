@@ -19,6 +19,7 @@
 	<div class="div0">
     <div class="div1">
       <div class="div2">
+        <div class='contentDiv'>
         <?php 
 
             //该页面要显示指定博文的详细信息
@@ -37,6 +38,7 @@
             日期：<?php echo $arr[0]['post_date'] ?><br><br><br>
             <?php echo $arr[0]['post_content'] ?>
       </div>
+        </div>
       <div class="div3">
         <div class="div4">
      		<img class="bigduck" src="images/bigDuck.png" /><br>

@@ -77,6 +77,13 @@ li a:visited{
     background-color:#ffcc66;
 }
 
+.contentDiv{
+    float:center;
+    width:650px;
+    height:1800px;
+    background-color:#ffcc66;
+
+}
 .div3{
     width:280px;
     height:1800px;

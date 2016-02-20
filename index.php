@@ -19,6 +19,7 @@
 	<div class="div0">
     <div class="div1">
       <div class="div2">
+        <div class='contentDiv'>
           <?php 
 
 	          require_once "./adminBlogSystem/PostService.class.php";
@@ -78,6 +79,7 @@
 	              <input type="submit" value="GO" />
 	          </form>
       </div>
+        </div>
       <div class="div3">
         <div class="div4">
      		<img class="bigduck" src="images/bigDuck.png" /><br>
