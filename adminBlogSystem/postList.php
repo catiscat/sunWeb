@@ -55,12 +55,7 @@
         $res2=$postService->getPostListByPage($rollPage->pageNow,$rollPage->pageSize);
         echo "<table border='1px' width='700px' bordercolor='green' cellspacing='0px'>";
         echo "<tr><th>id</th><th>post_author</th><th>post_date</th><th>post_summary</th><th>post_title</th><th>post_type</th><th>删除博文</th><th>修改博文</th><th>阅读博文</th></tr>";
-        //这里我们需要循环地显示用户的信息
-        //这里我们需要通过数组取 
-       /* while($row=mysql_fetch_assoc($res)){
-            echo "<tr><td>{$row['id']}</td><td>{$row['name']}</td><td>{$row['grade']}</td><td>{$row['email']}</td><td><a href='#'>删除用户</td><td><a href='#'>修改用户</td></tr>";
-        }
-        */
+
         for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];
             echo "<tr><td>{$row['id']}</td><td>{$row['post_author']}</td><td>{$row['post_date']}</td><td>{$row['post_summary']}</td><td>{$row['post_title']}</td><td>{$row['post_type']}</td><td><a onclick='return confirmDel({$row['id']})' href='postProcess.php?flag=del&id={$row['id']}'>删除博文</td><td><a href='updatePostUI.php?id={$row['id']}'>修改博文</td><td><a href='readPost.php?id={$row['id']}'>阅读博文</td></tr>";

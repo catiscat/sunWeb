@@ -48,7 +48,7 @@ insert into admin values (100,"admin",md5("admin"));
 
 批量增加的sql语句为：insert tableName(name,password) select name,password from tablename
 insert emp(name,grade,email,salary) select name,grade,email,salary from emp;
-
+insert posts() select()
 
 
 
