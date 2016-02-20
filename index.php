@@ -70,14 +70,16 @@
 
 
             
-                  //显示上一页和下一页
-                  echo $rollPage->navigate;
+                  //显示上一页和下一页  功能有误？？？？？？？？？？？？？？？？？？？？？？？
+                 // echo $rollPage->navigate;
 
 	          ?>
+		<!--//跳转功能有误？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？
 	          <form action="./readPost.php">
 	              跳转到:<input type="text" name="pageNow" />
 	              <input type="submit" value="GO" />
-	          </form>
+	          </form> 
+		-->
       </div>
         </div>
       <div class="div3">
