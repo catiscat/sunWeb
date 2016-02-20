@@ -27,15 +27,16 @@
             require_once './adminBlogSystem/PostService.class.php';
             
             $id=$_GET['id'];
-            echo "你正在阅读id=".$id."的博文";
             
             //查询数据库，调用sqlHelper  
             $postService=new PostService();
             $arr=$postService->getPostById($id);
         ?>
             
-            <h3><?php echo $arr[0]['post_title'] ?></h3><br/>
-            <h4><?php echo $arr[0]['post_author'] ?></h4>
+            <h2><?php echo $arr[0]['post_title'] ?></h2><br>
+            <hr>
+            作者：<?php echo $arr[0]['post_author'] ?><br>
+            日期：<?php echo $arr[0]['post_date'] ?><br>
             <pre><?php echo $arr[0]['post_content'] ?></pre>
       </div>
       <div class="div3">
