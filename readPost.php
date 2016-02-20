@@ -33,9 +33,9 @@
             $arr=$postService->getPostById($id);
         ?>
             
-            <h2><?php echo $arr[0]['post_title'] ?></h2><br>
+            <h2><?php echo $arr[0]['post_title'] ?></h2>
             <hr>
-            作者：<?php echo $arr[0]['post_author'] ?><br>
+            作者：<?php echo $arr[0]['post_author'] ?><br><br>
             日期：<?php echo $arr[0]['post_date'] ?><br><br><br>
             <?php echo $arr[0]['post_content'] ?>
       </div>
