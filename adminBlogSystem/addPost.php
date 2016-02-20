@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <script type="text/javascript">
-            function showTime(){               
+            window.onload=function showTime(){               
                 document.getElementByName("post_date").value = new Date().toLocaleString();
             }
         </script>
@@ -15,7 +15,7 @@
             <tr><td>post_date</td><td><input type="text" name="post_date" value='0' onclick="showTime()" /></td></tr>
 	        <tr><td>post_title</td><td><input type="text" name="post_title" /></td></tr> 
             <tr><td>post_type</td><td><input type="text" name="post_type" /></td></tr> 
-            <tr><td>post_content</td><td><textarea rows="300" cols="150" type="text" name="post_content" ></textarea></td></tr>
+            <tr><td>post_content</td><td><textarea rows="200" cols="100" type="text" name="post_content" ></textarea></td></tr>
 
 
             <input type="hidden" name="flag" value="addpost" />
