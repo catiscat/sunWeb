@@ -59,16 +59,17 @@
 
                   //调用getPostListByPage方法，获取应当显示的博文信息列表
                   $res2=$postService->getPostListByPage($rollPage->pageNow,$rollPage->pageSize);
-                  echo "<table border='1px' width='700px' bordercolor='green' cellspacing='0px'>";
-                  echo "<tr><th>id</th><th>post_author</th><th>post_date</th><th>post_summary</th><th>post_title</th><th>post_type</th><th>阅读博文</th></tr>";
 
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];
-                      echo "<tr><td>{$row['id']}</td><td>{$row['post_author']}</td><td>{$row['post_date']}</td><td>{$row['post_summary']}</td><td>{$row['post_title']}</td><td>{$row['post_type']}</td><td><a href='readPost.php?id={$row['id']}'>阅读博文</td></tr>";
+                      echo "<table width='280px'>";
+                      echo "<tr><td><h4><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h4></td></tr>";
+                      echo "<tr><td>{$row['post_date']}</td><td>标签：{$row['post_type']}</td></tr>";
                   }
                   
                   
-                  echo "<h1>博文信息列表</h1>";
+                  echo "<h1>博文列表</h1>";
+                  echo "<hr>";  	
                   echo "</table>";
 
 
