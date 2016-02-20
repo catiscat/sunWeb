@@ -12,7 +12,6 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    margin:0 auto;
 }
 
 li {
@@ -28,15 +27,15 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color:#4CAF50;
+    background-color:#ccccb3;
 }
 
 .active {
-    background-color:#4CAF50;
+    background-color:#ccccb3;
 }
 
 li a:visited{
-    background-color:#4CAF50;
+    background-color:#ccccb3;
 }
 
 .div0{
