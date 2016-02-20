@@ -64,7 +64,7 @@
 
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];
-                      echo "<tr><td>{$row['id']}</td><td>{$row['post_author']}</td><td>{$row['post_date']}</td><td>{$row['post_summary']}</td><td>{$row['post_title']}</td><td>{$row['post_type']}</td><td><a href='./readPost.php?id={$row['id']}'>阅读博文</td></tr>";
+                      echo "<tr><td>{$row['id']}</td><td>{$row['post_author']}</td><td>{$row['post_date']}</td><td>{$row['post_summary']}</td><td>{$row['post_title']}</td><td>{$row['post_type']}</td><td><a href='readPost.php?id={$row['id']}'>阅读博文</td></tr>";
                   }
                   
                   
