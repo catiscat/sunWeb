@@ -13,7 +13,7 @@
         $name=$adminService->checkAdmin($id,$password);
         if($name!=""){
             //合法
-            header("Location:postManage.php?name=$name");
+            header("Location:postManage.php");
             exit();
         }else{
             //不合法
