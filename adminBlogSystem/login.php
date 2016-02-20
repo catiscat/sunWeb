@@ -3,10 +3,10 @@
 		<head>
 			<meta charset="utf-8">
 		</head>
-		<h1>雇员管理系统</h1>
+		<h1>博客后台管理系统</h1>
 		<form action="loginProcess.php" method="post">
 			<table>
-				<tr><td>用户ID</td><td><input type="text" name="id"></td></tr>
+				<tr><td>用户名</td><td><input type="text" name="id"></td></tr>
 				<tr><td>密码</td><td><input type="password" name="password"></td></tr>
 				<tr><td><input type="submit" value="用户登陆"/></td><td><input type="reset" value="重新填写" /></td></tr>
 			</table>
