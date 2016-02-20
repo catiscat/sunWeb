@@ -3,8 +3,8 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <script type="text/javascript">
-            window.onload=function showTime(){               
-                document.getElementByName("post_date").value = new Date().toLocaleString();
+            function showTime(){               
+                document.getElementById("post_date").value = new Date().toLocaleString();
             }
         </script>
     </head>
@@ -12,10 +12,10 @@
     <form action="postProcess.php" method="post">
         <table>
             <tr><td>post_author</td><td><input type="text" name="post_author" /></td></tr>
-            <tr><td>post_date</td><td><input type="text" name="post_date" value='0' onclick="showTime()" /></td></tr>
+            <tr><td>post_date</td><td><input type="text" name="post_date" id="post_date" value='0' onclick="showTime(this)" /></td></tr>
 	        <tr><td>post_title</td><td><input type="text" name="post_title" /></td></tr> 
             <tr><td>post_type</td><td><input type="text" name="post_type" /></td></tr> 
-            <tr><td>post_content</td><td><textarea rows="150" cols="100" type="text" name="post_content" ></textarea></td></tr>
+            <tr><td>post_content</td><td><textarea rows="50" cols="100" type="text" name="post_content" ></textarea></td></tr>
 
 
             <input type="hidden" name="flag" value="addpost" />
