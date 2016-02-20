@@ -7,8 +7,9 @@
         private $post_author;
         private $post_date;
         private $post_content;
+        private $post_summary;
         private $post_title;
-	private $post_type;
+	    private $post_type;
         
         public function getId(){
             return $this->id;
@@ -20,6 +21,10 @@
         
         public function getPostDate(){
             return $this->post_date;
+        }
+        
+        public function getPostSummary(){
+            return $this->post_summary;
         }
         
         public function getPostContent(){

@@ -26,7 +26,7 @@
             <tr><td>post_date</td><td><input type="text" name="post_date" value="<?php echo $arr[0]['post_date'] ?>" /></td></tr>
 		    <tr><td>post_title</td><td><input type="text" name="post_title" value="<?php echo $arr[0]['post_title'] ?>" /></td></tr>
             <tr><td>post_type</td><td><input type="text" name="post_type" value="<?php echo $arr[0]['post_type'] ?>" /></td></tr>
-            <tr><td>post_content</td><td><textarea type="text" rows="100" cols="100" name="post_content" value="<?php echo $arr[0]['post_content'] ?>" ></textarea></td></tr>         
+            <tr><td>post_content</td><td><textarea type="text" rows="50" cols="100" name="post_content" value="<?php echo $arr[0]['post_content'] ?>" ></textarea></td></tr>         
 
             <input type="hidden" name="flag" value="updatepost" />
             <tr><td><input type="submit" value="修改博文" /></td><td><input type="reset" value="重新填写" /></td></tr>

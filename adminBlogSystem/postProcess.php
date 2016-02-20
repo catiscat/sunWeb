@@ -29,12 +29,13 @@
 		    //接受数据
 		    $post_author=$_POST['post_author'];
 		    $post_date=$_POST['post_date'];
+			$post_summary=$_POST['post_summary'];
 		    $post_content=$_POST['post_content'];
 		    $post_title=$_POST['post_title'];
 		    $post_type=$_POST['post_type'];
 		    
 		    //完成添加-》数据库
-		    $res=$postService->addPost($post_author,$post_date,$post_content,$post_title,$post_type);
+		    $res=$postService->addPost($post_author,$post_date,$post_summary,$post_content,$post_title,$post_type);
 		    if($res=1){
 		        header("Location:ok.php"); //操作成功
 		        exit();
@@ -48,12 +49,13 @@
 		    $id=$_POST['id'];
 		    $post_author=$_POST['post_author'];
 		    $post_date=$_POST['post_date'];
+		    $post_summary=$_POST['post_summary'];
 		    $post_content=$_POST['post_content'];
 		    $post_title=$_POST['post_title'];
 		    $post_type=$_POST['post_type'];
 		    
 		    //完成修改-》数据库
-		    $res=$postService->updatePost($id,$post_author,$post_date,$post_content,$post_title,$post_type);
+		    $res=$postService->updatePost($id,$post_author,$post_date,$post_summary,$post_content,$post_title,$post_type);
 		    if($res=1){
 		        header("Location:ok.php"); //操作成功
 		        exit();

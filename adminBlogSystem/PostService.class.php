@@ -4,8 +4,8 @@
     
     class PostService{
     
-        function updatePost($id,$post_author,$post_date,$post_content,$post_title,$post_type){
-            $sql="update posts set post_author='$post_author',post_date='$post_date',post_content='$post_content',post_title='$post_title',post_type='$post_type' where id=$id";
+        function updatePost($id,$post_author,$post_date,$post_summary,$post_content,$post_title,$post_type){
+            $sql="update posts set post_author='$post_author',post_date='$post_date',post_summary='$post_summary',post_content='$post_content',post_title='$post_title',post_type='$post_type' where id=$id";
             $sqlHelper=new SqlHelper();
             $res=$sqlHelper->execute_dml($sql);
             $sqlHelper->close_connect();
@@ -24,10 +24,10 @@
             return $arr;
         }
     
-        //添加用户的方法
-        function addPost($post_author,$post_date,$post_content,$post_title,$post_type){
+        //添加博文的方法
+        function addPost($post_author,$post_date,$post_summary,$post_content,$post_title,$post_type){
             //做一个$sql语句,字符串需要用''包起来
-            $sql="insert into posts(post_author,post_date,post_content,post_title,post_type) values ('$post_author','$post_date','$post_content','$post_title','$post_type')";
+            $sql="insert into posts(post_author,post_date,post_summary,post_content,post_title,post_type) values ('$post_author','$post_date','$post_summary',$post_content','$post_title','$post_type')";
             //通过sqlHelper完成添加
             $sqlHelper=new SqlHelper();
             $res=$sqlHelper->execute_dml($sql);
