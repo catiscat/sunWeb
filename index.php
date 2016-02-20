@@ -74,7 +74,7 @@
                   echo $rollPage->navigate;
 
 	          ?>
-	          <form action="./adminBlogSystem/postList.php">
+	          <form action="./readPost.php">
 	              跳转到:<input type="text" name="pageNow" />
 	              <input type="submit" value="GO" />
 	          </form>
