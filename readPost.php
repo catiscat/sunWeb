@@ -61,7 +61,7 @@
 
 	</div>
 	<div class='goTopDiv'>
-		<a href='readPost.php#'><img class='goTop' src='images/goTop.ico' /></a>
+		<?php echo "<a href='readPost.php?id={$id}'>";?><img class='goTop' src='images/goTop.ico' /></a>
 	</div>
 	<div class="footerDiv">
        <footer>
