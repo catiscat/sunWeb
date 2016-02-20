@@ -8,7 +8,7 @@
         <table>
             <tr><td>post_author</td><td><input type="text" name="post_author" /></td></tr>
             <tr><td>post_date</td><td><input type="text" name="post_date" /></td></tr>
-            <tr><td>post_content</td><td><input type="text" name="post_content" /></td></tr>
+            <tr><td>post_content</td><td><textarea type="text" name="post_content" ></textarea></td></tr>
             <tr><td>post_title</td><td><input type="text" name="post_title" /></td></tr> 
             <tr><td>post_type</td><td><input type="text" name="post_type" /></td></tr> 
 
