@@ -63,8 +63,8 @@
                   echo "<hr>";  
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];
-                      echo "<table width='600px'>";
-                      echo "<tr><td><h4><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h4></td></tr>";
+                      echo "<table width='600px' text-align='left'>";
+                      echo "<tr><td><h3><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h3></td></tr>";
                       echo "<tr><td>{$row['post_date']}</td><td>标签：{$row['post_type']}</td></tr>";
                   }
                   echo "</table>";
