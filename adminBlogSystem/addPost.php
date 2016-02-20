@@ -16,7 +16,7 @@
 	        <tr><td>post_title</td><td><input type="text" name="post_title" /></td></tr> 
             <tr><td>post_type</td><td><input type="text" name="post_type" /></td></tr> 
             <tr><td>post_summary</td><td><textarea rows="10" cols="20" type="text" name="post_summary" ></textarea></td></tr>
-            <tr><td>post_content</td><td><textarea rows="50" cols="20" type="text" name="post_content" ></textarea></td></tr>
+            <tr><td>post_content</td><td><textarea rows="30" cols="20" type="text" name="post_content" ></textarea></td></tr>
 
 
             <input type="hidden" name="flag" value="addpost" />
