@@ -65,7 +65,7 @@ li a:visited{
     margin:0 auto;
     width:1000px;
     height:1800px;
-   /* border:black solid 2px;*/
+    border:black solid 2px;
     background-color:white;	
 }
 
@@ -73,15 +73,15 @@ li a:visited{
     float:left;
     width:700px;
     height:1800px;
-  /*  border:black double 5px;*/
+    border:black double 5px;
     background-color:#ffcc66;
 }
 
 .div3{
     width:280px;
     height:1800px;
- /*   border:black double 5px;*/
-/*    background-color:#4CAF50;*/
+    border:black double 5px;
+    background-color:#4CAF50;
     float:right;
 }
 
