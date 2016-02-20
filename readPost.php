@@ -36,7 +36,7 @@
             <h2><?php echo $arr[0]['post_title'] ?></h2><br>
             <hr>
             作者：<?php echo $arr[0]['post_author'] ?><br>
-            日期：<?php echo $arr[0]['post_date'] ?><br>
+            日期：<?php echo $arr[0]['post_date'] ?><br><br><br>
             <?php echo $arr[0]['post_content'] ?>
       </div>
       <div class="div3">
