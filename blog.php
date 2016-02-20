@@ -59,30 +59,20 @@
 
                   //调用getPostListByPage方法，获取应当显示的博文信息列表
                   $res2=$postService->getPostListByPage($rollPage->pageNow,$rollPage->pageSize);
-
+                  echo "<h1>博文列表</h1>";
+                  echo "<hr>";  
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];
-                      echo "<table width='280px'>";
+                      echo "<table width='600px'>";
                       echo "<tr><td><h4><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h4></td></tr>";
                       echo "<tr><td>{$row['post_date']}</td><td>标签：{$row['post_type']}</td></tr>";
                   }
-                  
-                  
-                  echo "<h1>博文列表</h1>";
-                  echo "<hr>";  	
                   echo "</table>";
-
 
             
                   //显示上一页和下一页
                   echo $rollPage->navigate;
 
-          /*        
-
-
-	          //指定跳转到某页	
-	          echo "<br/><br/>";
-          */
 	          ?>
 	          <form action="./adminBlogSystem/postList.php">
 	              跳转到:<input type="text" name="pageNow" />
