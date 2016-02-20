@@ -63,13 +63,12 @@
                   echo "<hr>";  
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];
-                      echo "<div style='float:center'>";
-                      echo "<table width='90%' border='1px' celspacing='0'>";
-                      echo "<tr><td width='70%'><h3><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h3></td><td width='30%'></td></tr>";
+                      echo "<table width='90%' style='float:center'>";
+                      echo "<tr><td width='60%'><h3><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h3></td><td width='40%'></td></tr>";
                       echo "<tr><td width='70%'>{$row['post_date']}</td><td width='30%'>标签：{$row['post_type']}</td></tr>";
                   }
                   echo "</table>";
-                  echo "</div>";
+
 
             
                   //显示上一页和下一页
