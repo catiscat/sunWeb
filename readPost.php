@@ -54,9 +54,14 @@
                         <input type="hidden" name="flag" value="addcomment" />
                         <tr><td><input type="submit" value="添加评论" /></td><td><input type="reset" value="重新填写" /></td></tr>
                         
-                    </table>
+                    </table><br><br><hr>
                 </form>
-		    
+                
+            <!--显示所有关于该文章的评论-->
+            <br></br><h3>所有评论</h3><br><hr>
+		    <?php echo $arr[0]['comment_author'] ?>
+		    <?php echo $arr[0]['comment_date'] ?>
+		     <?php echo $arr[0]['comment_content'] ?>
       </div>
         </div>
       <div class="div3">

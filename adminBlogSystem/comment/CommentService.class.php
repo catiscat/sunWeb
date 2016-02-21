@@ -38,8 +38,8 @@
 
 	    function getPageCount($pageSize){
 	
-	        //需要查询 $rowCount
-		    $sql="select count(comment_id) from comments";
+	    //需要查询 $rowCount
+            $sql="select count(comment_id) from comments";
 		    $sqlHelper=new SqlHelper();
 		    $res=$sqlHelper->execute_dql($sql);
 
@@ -80,7 +80,18 @@
 	        
 	        $sqlHelper->close_connect();
 	    }
-
+        
+        
+        //一个函数可以获取用户查看的评论列表
+        function getUserCommentList($id){
+            $sql="select * from comments where comment_post_id=$id";
+            $sqlHelper=new SqlHelper();
+            $arr=$sqlHelper->execute_dql2($sql);
+            $sqlHelper->close_connect();         
+            return $arr;
+        
+        }    
+        
         //根据输入id删除某个评论
         function delCommentById($id){
             $sql="delete from comments where comment_id=$id";
