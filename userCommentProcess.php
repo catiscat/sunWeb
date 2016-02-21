@@ -10,7 +10,7 @@
 	if(!empty($_REQUEST['flag'])){ 
 	    //接收flag的值
 	    $flag=$_REQUEST['flag'];
-
+        
         if($flag=="addcomment"){
 		    //说明用户要执行添加评论的请求
 		    //接受数据

@@ -50,7 +50,7 @@
                         <tr><td>您的大名</td><td><input type="text" name="comment_author" /></td></tr>
                         <tr><td>评论时间</td><td><input type="text" name="comment_date" id="comment_date" value='0' onclick="showTime(this)" /></td></tr>
                         <tr><td>评论内容</td><td><textarea rows="15" cols="30" type="text" name="comment_content" ></textarea></td></tr>
-                        
+                       <?php echo "<input type='hidden' name='comment_post_id' value=$id />"; ?>
                         <input type="hidden" name="flag" value="addcomment" />
                         <tr><td><input type="submit" value="添加评论" /></td><td><input type="reset" value="重新填写" /></td></tr>
                         
