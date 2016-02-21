@@ -44,8 +44,8 @@
 		    
 		    <!--显示添加评论-->
 		    
-		    <h1>添加评论</h1>
-                <form action="./adminBlogSystem/comment/commentProcess.php" method="post">
+		    <h3>添加评论</h3>
+                <form action="./userCommentProcess.php" method="post">
                     <table>
                         <tr><td>comment_author</td><td><input type="text" name="comment_author" /></td></tr>
                         <tr><td>comment_date</td><td><input type="text" name="comment_date" id="comment_date" value='0' onclick="showTime(this)" /></td></tr>
@@ -56,6 +56,7 @@
 
                         <input type="hidden" name="flag" value="addcomment" />
                         <tr><td><input type="submit" value="添加评论" /></td><td><input type="reset" value="重新填写" /></td></tr>
+                        
                     </table>
                 </form>
 		    
