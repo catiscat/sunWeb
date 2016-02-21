@@ -46,8 +46,8 @@
             $row=$res2[$i];
             echo "<table>";
             echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr></table>";
-            echo "<br><br>{$row['comment_content']}";
-            echo "<hr>";
+            echo "<br>{$row['comment_content']}";
+            echo "<br><hr>";
 		}
 
 
