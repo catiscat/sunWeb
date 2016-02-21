@@ -14,6 +14,7 @@
   <body>
 	<nav>
 		<ul>
+		  <li><a href='index.php'>Home</a></li>  
 		  <li><a href='index.php'>Blog</a></li>
 		  <li><a href='contact.php'>Contact</a></li>
 		  <li><a href='about.php'>About</a></li>
@@ -64,7 +65,7 @@
             ?>
 	        
 	        	<div class='goTopDiv'>
-		        <?php echo "<a href='readPost.php?id={$id}'>";?><img class='goTop' src='images/goTop.ico' /></a>
+		        <?php echo "<a href='readPost.php?id={$id}#'>";?><img class='goTop' src='images/goTop.ico' /></a>
 	            </div>
 	           <div class="footerDiv">
                 <footer>

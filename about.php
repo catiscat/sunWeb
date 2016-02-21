@@ -12,8 +12,8 @@
 		<ul>
 		  <li><a href='index.php'>Home</a></li>  
 		  <li><a href='blogList.php'>Blog</a></li>
-		  <li><a href='contact.php#'>Contact</a></li>
-		  <li><a href='about.php'>About</a></li>
+		  <li><a href='contact.php'>Contact</a></li>
+		  <li><a href='about.php#'>About</a></li>
 		  
 		</ul>
 	</nav>
@@ -37,7 +37,7 @@
 
 
 	<div class='goTopDiv'>
-		<a href='contact.php#'><img class='goTop' src='images/goTop.ico' /></a>
+		<a href='about.php#'><img class='goTop' src='images/goTop.ico' /></a>
 	</div>
 	<div class="footerDiv">
        <footer>
