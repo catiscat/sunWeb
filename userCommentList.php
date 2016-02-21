@@ -49,17 +49,7 @@
             echo "<br>{$row['comment_content']}";
             echo "<br><hr>";
 		}
-
-
-
-////////////////////////
-           
-           /* echo "<tr><td>{$row['comment_author']}</td><td>{$row['comment_date']}</td><td>{$row['comment_content']}</td></tr>";
-        }
-        */
-       
-
-
+        echo "<br><br><br>";
 
 	?>
 	
