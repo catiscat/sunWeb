@@ -40,7 +40,7 @@
             <hr>
             作者：<?php echo $arr[0]['post_author'] ?><br><br>
             日期：<?php echo $arr[0]['post_date'] ?><br><br><br>
-            <?php echo $arr[0]['post_content'] ?><hr><br><br><br>
+            <?php echo $arr[0]['post_content'] ?><br><br><hr><br><br><br>
 		    
 		    <!--显示添加评论-->
 		    
