@@ -18,10 +18,10 @@
 		    $comment_date=$_POST['comment_date'];
 		    $comment_content=$_POST['comment_content'];
 		    $comment_post_id=$_POST['comment_post_id'];
-		    $comment_type=$_POST['comment_type'];
+		  
 		    
 		    //完成添加-》数据库
-		    $res=$commentService->addComment($comment_author,$comment_date,$comment_content,$comment_post_id,$comment_type);
+		    $res=$commentService->addComment($comment_author,$comment_date,$comment_content,$comment_post_id);
 		    if($res=1){
 		        header("Location:ok.php"); //操作成功
 		        exit();
