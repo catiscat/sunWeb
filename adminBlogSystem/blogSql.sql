@@ -28,7 +28,7 @@ insert into admin values (901,"c@t*9q",md5("c@t*9q"));
 
 
 --comment table for comment post,comment delete,comment select and comment update
-create table comment(
+create table comments(
     comment_id bigint primary key auto_increment,
     comment_post_id bigint,
     comment_author tinytext,
