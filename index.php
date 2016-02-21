@@ -100,7 +100,6 @@
     </div>
 
 
-	</div>
 
 	<div class="footerDiv">
        <footer>
@@ -113,5 +112,10 @@
 		<div class='goTopDiv'>
 		<a href='index.php#'><img class='goTop' src='images/goTop.ico' /></a>
 		</div>
+
+
+
+	</div>
+
   </body>
 </html>
