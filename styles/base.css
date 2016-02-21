@@ -64,7 +64,7 @@ li a:visited{
 .div1{
     margin:0 auto;
     width:1000px;
-    height:1800px;
+    height:100%;
     border:black solid 2px;
     background-color:white;	
 }
@@ -72,7 +72,7 @@ li a:visited{
 .div2{
     float:left;
     width:700px;
-    height:1800px;
+    height:100%;
     border:black double 5px;
     background-color:#ffcc66;
 }
@@ -85,7 +85,7 @@ li a:visited{
 }
 .div3{
     width:280px;
-    height:1800px;
+    height:100%;
     border:black double 5px;
     background-color:#4CAF50;
     float:right;
