@@ -18,7 +18,7 @@
 		    $comment_date=$_POST['comment_date'];
 		    $comment_content=$_POST['comment_content'];
 		    $comment_post_id=$_POST['comment_post_id'];
-		    echo 'comment_post_id'.$comment_post_id;
+		  
 		    
 		    //完成添加-》数据库
 		    $res=$commentService->addComment($comment_author,$comment_date,$comment_content,$comment_post_id);

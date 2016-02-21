@@ -25,9 +25,9 @@
         }
     
         //添加评论的方法
-        function addComment($comment_author,$comment_date,$comment_content,$comment_type,$comment_post_id){
+        function addComment($comment_author,$comment_date,$comment_content,$comment_post_id){
             //做一个$sql语句,字符串需要用''包起来
-            $sql="insert into comments(comment_author,comment_date,comment_content,comment_type,comment_post_id) values ('$comment_author','$comment_date','$comment_content','$comment_type','$comment_post_id')";
+            $sql="insert into comments(comment_author,comment_date,comment_content,comment_post_id) values ('$comment_author','$comment_date','$comment_content','$comment_post_id')";
             //通过sqlHelper完成添加
             $sqlHelper=new SqlHelper();
             $res=$sqlHelper->execute_dml($sql);
