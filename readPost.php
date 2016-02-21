@@ -40,20 +40,17 @@
             <hr>
             作者：<?php echo $arr[0]['post_author'] ?><br><br>
             日期：<?php echo $arr[0]['post_date'] ?><br><br><br>
-            <?php echo $arr[0]['post_content'] ?><br><br><hr><br><br><br>
+            <?php echo $arr[0]['post_content'] ?><br><br><hr><br><br>
 		    
 		    <!--显示添加评论-->
 		    
 		    <h3>添加评论</h3>
                 <form action="./userCommentProcess.php" method="post">
                     <table>
-                        <tr><td>comment_author</td><td><input type="text" name="comment_author" /></td></tr>
-                        <tr><td>comment_date</td><td><input type="text" name="comment_date" id="comment_date" value='0' onclick="showTime(this)" /></td></tr>
-	                    <tr><td>comment_post_id</td><td><input type="text" name="comment_post_id" /></td></tr> 
-                        <tr><td>comment_type</td><td><input type="text" name="comment_type" /></td></tr> 
-                        <tr><td>comment_content</td><td><textarea rows="15" cols="30" type="text" name="comment_content" ></textarea></td></tr>
-
-
+                        <tr><td>您的大名</td><td><input type="text" name="comment_author" /></td></tr>
+                        <tr><td>评论时间</td><td><input type="text" name="comment_date" id="comment_date" value='0' onclick="showTime(this)" /></td></tr>
+                        <tr><td>评论内容</td><td><textarea rows="15" cols="30" type="text" name="comment_content" ></textarea></td></tr>
+                        
                         <input type="hidden" name="flag" value="addcomment" />
                         <tr><td><input type="submit" value="添加评论" /></td><td><input type="reset" value="重新填写" /></td></tr>
                         
