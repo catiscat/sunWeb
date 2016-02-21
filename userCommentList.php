@@ -31,7 +31,7 @@
 	//给$rollPage指定必须的数据
 	$rollPage->pageNow=1;
 	$rollPage->pageSize=6;
-	$rollPage->gotoUrl="commentList.php";
+	$rollPage->gotoUrl="userCommentList.php";
         
         //这里我们需要根据用户的点击来修改$pageNow的值。
         //这里我们需要判断 是否有$pageNow 发送，有就使用；如果没有，则默认为显示第一页
@@ -77,7 +77,7 @@
 	echo "<br/><br/>";
 */
 	?>
-	<form action="CommentList.php">
+	<form action="userCommentList.php">
 	    跳转到:<input type="text" name="pageNow" />
 	    <input type="submit" value="GO" />
 	</form>
