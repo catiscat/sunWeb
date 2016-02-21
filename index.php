@@ -36,7 +36,7 @@
 	
 	          //给$rollPage指定必须的数据
 	          $rollPage->pageNow=1;
-	          $rollPage->pageSize=6;
+	          $rollPage->pageSize=10;
 	          $rollPage->gotoUrl="index.php";
                   
                   //这里我们需要根据用户的点击来修改$pageNow的值。

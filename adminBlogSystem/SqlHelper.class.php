@@ -91,7 +91,7 @@
 	        */
 	        
 	        //显示当前页和共有多少页,{}有隔离的作用，大括号里面是变量
-	        $navigate.= "当前页{$rollPage->pageNow}/共{$rollPage->pageCount}页<br>";
+	        $navigate.= "当前页{$rollPage->pageNow}/共{$rollPage->pageCount}页<br><br>";
 	        
       
             //把$arr赋给$rollPage
