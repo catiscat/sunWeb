@@ -19,7 +19,7 @@
 	
 	//给$rollPage指定必须的数据
 	$rollPage->pageNow=1;
-	$rollPage->pageSize=600000000000;
+	$rollPage->pageSize=600000000000000000;
 	$rollPage->gotoUrl="userCommentList.php";
         
         //这里我们需要根据用户的点击来修改$pageNow的值。
@@ -45,10 +45,20 @@
         echo "<table border='1px' width='700px' bordercolor='green' cellspacing='0px'>";
         for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];
-            echo "<tr><td>{$row['comment_author']}</td><td>{$row['comment_date']}</td><td>{$row['comment_content']}</td></tr>";
+            echo "<table width='90%'>";
+            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr>";
+            echo "<tr><td colspan='2'>{$row['comment_content']}</td></tr>";
+            echo "</table>";
+		}
+
+
+
+////////////////////////
+           
+           /* echo "<tr><td>{$row['comment_author']}</td><td>{$row['comment_date']}</td><td>{$row['comment_content']}</td></tr>";
         }
-        
-        echo "</table>";
+        */
+       
 
 
 
