@@ -1,9 +1,3 @@
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <title>评论信息列表</title>
-    </head>
-    
     <?php 
 	require_once "adminBlogSystem/comment/CommentService.class.php";	
 	require_once "adminBlogSystem/comment/RollPage.class.php";
@@ -64,4 +58,4 @@
         echo "<br><br><br>";
 	?>
 	
-</html>
+
