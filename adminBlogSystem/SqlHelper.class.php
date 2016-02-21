@@ -62,7 +62,7 @@
             $navigate="";
 	        if($rollPage->pageNow>1){
 	            $prePage=$rollPage->pageNow-1;
-	            $navigate="<a href='postList.php?pageNow=$prePage'>上一页</a>&nbsp";
+	            $navigate="<a href='{$rollPage->gotoUrl}?pageNow=$prePage'>上一页</a>&nbsp";
 	        }
 	
 	        if($rollPage->pageNow<$rollPage->pageCount){
