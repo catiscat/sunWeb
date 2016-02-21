@@ -28,7 +28,7 @@
 
             //该页面要显示指定博文的详细信息
             require_once './adminBlogSystem/PostService.class.php';
-            
+            require_once './adminBlogSystem/comment/commentList.php';
             $id=$_GET['id'];
             
             //查询数据库，调用sqlHelper  
