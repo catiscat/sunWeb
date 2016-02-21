@@ -42,13 +42,12 @@
 
         //调用getCommentListByPage方法，获取应当显示的评论信息列表
         $res2=$commentService->getCommentListByPage($rollPage->pageNow,$rollPage->pageSize);
-        echo "<table border='1px' width='700px' bordercolor='green' cellspacing='0px'>";
         for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];
             echo "<table width='90%'>";
-            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr>";
+            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr><br>";
             echo "<tr><td colspan='2'>{$row['comment_content']}</td></tr>";
-            echo "</table>";
+            echo "</table><br><br>";
 		}
 
 
