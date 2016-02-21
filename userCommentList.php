@@ -45,9 +45,9 @@
         for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];
             echo "<table width='90%'>";
-            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr><br>";
+            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr><br><br>";
             echo "<tr><td colspan='2'>{$row['comment_content']}</td></tr>";
-            echo "</table><br><br>";
+            echo "</table><br><hr><br>";
 		}
 
 
