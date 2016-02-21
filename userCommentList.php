@@ -39,7 +39,7 @@
 	    //调用getPageCount方法，获取一共有多少页
 	    $pageCount=$commentService->getPageCount($rollPage->pageSize);        
 
-
+/*
         //调用getCommentListByPage方法，获取应当显示的评论信息列表
         $res2=$commentService->getCommentListByPage($rollPage->pageNow,$rollPage->pageSize);
         for($i=0;$i<count($res2);$i++){
@@ -50,7 +50,18 @@
             echo "<br><hr>";
 		}
         echo "<br><br><br>";
-
+  */      
+        
+        //调用getCommentListByPage方法，获取当前文章对应的评论信息列表
+        $res=$commentService->getUserCommentList($id);
+            for($i=0;$i<count($res);$i++){
+            $row=$res[$i];
+            echo "<table>";
+            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr></table>";
+            echo "<br>{$row['comment_content']}";
+            echo "<br><hr>";
+		}
+        echo "<br><br><br>";
 	?>
 	
 </html>
