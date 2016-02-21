@@ -15,7 +15,7 @@
             <tr><td>comment_date</td><td><input type="text" name="comment_date" id="comment_date" value='0' onclick="showTime(this)" /></td></tr>
 	        <tr><td>comment_post_id</td><td><input type="text" name="comment_post_id" /></td></tr> 
             <tr><td>comment_type</td><td><input type="text" name="comment_type" /></td></tr> 
-            <tr><td>comment_content</td><td><textarea rows="30" cols="20" type="text" name="comment_content" ></textarea></td></tr>
+            <tr><td>comment_content</td><td><textarea rows="15" cols="30" type="text" name="comment_content" ></textarea></td></tr>
 
 
             <input type="hidden" name="flag" value="addcomment" />
