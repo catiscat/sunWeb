@@ -2,24 +2,10 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title>评论信息列表</title>
-        <script type="text/javascript">
-        <!-- 
-        
-        function confirmDel(val){
-            
-            return window.confirm("是否要删除id="+val+"的评论？");
-        }
-        
-        
-        -->
-        </script>
     </head>
     
     <?php 
-
-	require_once "adminBlogSystem/comment/CommentService.class.php";
-
-	
+	require_once "adminBlogSystem/comment/CommentService.class.php";	
 	require_once "adminBlogSystem/comment/RollPage.class.php";
 	
 
@@ -71,12 +57,6 @@
         //显示上一页和下一页
         echo $rollPage->navigate;
 
-/*        
-
-
-	//指定跳转到某页	
-	echo "<br/><br/>";
-*/
 	?>
 	<form action="userCommentList.php">
 	    跳转到:<input type="text" name="pageNow" />
