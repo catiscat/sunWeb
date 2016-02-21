@@ -27,15 +27,15 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color:#4CAF50;
+    background-color:#ccccb3;
 }
 
 .active {
-    background-color:#4CAF50;
+    background-color:#ccccb3;
 }
 
 li a:visited{
-    background-color:#4CAF50;
+    background-color:#ccccb3;
 }
 
 .div0{
@@ -77,6 +77,12 @@ li a:visited{
     background-color:#ffcc66;
 }
 
+.contentDiv{
+    margin:0 auto;
+    width:650px;
+    background-color:#ffcc66;
+
+}
 .div3{
     width:280px;
     height:1800px;
@@ -111,7 +117,4 @@ li a:visited{
     height:60px;
 }
 
-pre{    
-    font-size: 20px;
-    margin: 1em 0;
-} 
+
