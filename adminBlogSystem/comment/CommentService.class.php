@@ -1,6 +1,6 @@
 <?php 
 
-    require_once "sun/adminBlogSystem/SqlHelper.class.php";
+    require_once "../SqlHelper.class.php";
     
     class CommentService{
     
