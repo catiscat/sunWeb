@@ -30,7 +30,7 @@
 	           <br><br><br>
 	
 	    <div class='goTopDiv'>
-		<a href='error.php#'><img class='goTop' src='images/goTop.ico' /></a>
+		<a href='ok.php#'><img class='goTop' src='images/goTop.ico' /></a>
 		</div>
 	    <div class="footerDiv">
        <footer>
