@@ -8,7 +8,7 @@
             }
         </script>
     </head>
-    <h1>添加博文</h1>
+    <h1>添加评论</h1>
     <form action="commentProcess.php" method="post">
         <table>
             <tr><td>comment_author</td><td><input type="text" name="comment_author" /></td></tr>
@@ -19,7 +19,7 @@
 
 
             <input type="hidden" name="flag" value="addcomment" />
-            <tr><td><input type="submit" value="添加博文" /></td><td><input type="reset" value="重新填写" /></td></tr>
+            <tr><td><input type="submit" value="添加评论" /></td><td><input type="reset" value="重新填写" /></td></tr>
         </table>
     </form>
 </html>
