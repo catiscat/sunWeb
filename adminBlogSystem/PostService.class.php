@@ -1,6 +1,6 @@
 <?php 
 
-    require_once "SqlHelper.class.php";
+    require_once "./comment/SqlHelper.class.php";
     
     class PostService{
     
