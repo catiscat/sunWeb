@@ -69,14 +69,16 @@
 	            $nextPage=$rollPage->pageNow+1;
 	            //$navigate. 是将字符串拼接起来
 	            $navigate.="<a href='{$rollPage->gotoUrl}?pageNow=$nextPage'>下一页</a>&nbsp";
-	        }
+	        }else{
+                $navigate.="<a href='{$rollPage->gotoUrl}?pageNow={$rollPage->pageCount}'>末页</a>&nbsp"; 
+            }
 	       
-	        	//可以使用for打印超链接	
-	
+	        /* 
+	        //整体每10页翻动
 	        $page_whole=10;//整体每10页向后翻
 	        $start=floor(($rollPage->pageNow-1)/$page_whole)*10+1;
 	        $index=$start;
-/*	
+	
 	        //整体每10页向前翻
 	        //如果当前 $pageNow 在1-10页数之内，就没有向前翻动的超链接
 	        if($rollPage->pageNow>10){
@@ -86,14 +88,12 @@
 	        
 	        //整体每10页翻动
 	        $navigate.="&nbsp;&nbsp;<a href='{$rollPage->gotoUrl}?pageNow=$start'>&nbsp;&nbsp;>>&nbsp;&nbsp;</a>";
-*/	
+	        */
+	        
 	        //显示当前页和共有多少页,{}有隔离的作用，大括号里面是变量
 	        $navigate.= "当前页{$rollPage->pageNow}/共{$rollPage->pageCount}页";
 	        
-	        
-	        
-	        
-            
+      
             //把$arr赋给$rollPage
             $rollPage->res_array=$arr;
             $rollPage->navigate=$navigate;

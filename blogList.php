@@ -10,8 +10,8 @@
   <body>
 	<nav>
 		<ul>
-		  <li><a href='index.php#'>Home</a></li>  
-		  <li><a href='blogList.php'>Blog</a></li>
+	  	  <li><a href='index.php'>Home</a></li>
+		  <li><a href='blogList.php#'>Blog</a></li>
 		  <li><a href='contact.php'>Contact</a></li>
 		  <li><a href='about.php'>About</a></li>
 		  
@@ -37,7 +37,7 @@
 	          //给$rollPage指定必须的数据
 	          $rollPage->pageNow=1;
 	          $rollPage->pageSize=6;
-	          $rollPage->gotoUrl="index.php";
+	          $rollPage->gotoUrl="blogList.php";
                   
                   //这里我们需要根据用户的点击来修改$pageNow的值。
                   //这里我们需要判断 是否有$pageNow 发送，有就使用；如果没有，则默认为显示第一页
@@ -73,7 +73,7 @@
 
 	          ?>
 		
-	          <form action="index.php">
+	          <form action="blogList.php">
 	              跳转到:<input type="text" name="pageNow" />
 	              <input type="submit" value="GO" />
 	          </form> 
@@ -102,7 +102,7 @@
 
 	</div>
 	<div class='goTopDiv'>
-		<a href='index.php#'><img class='goTop' src='images/goTop.ico' /></a>
+		<a href='blogList#'><img class='goTop' src='images/goTop.ico' /></a>
 	</div>
 	<div class="footerDiv">
        <footer>
