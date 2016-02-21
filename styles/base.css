@@ -47,8 +47,6 @@ li a:visited{
 
 .footerDiv{
    text-align:center;
-   background-color:#4CAF50;
-   width:100%;
 }
 
 .goTop{
@@ -57,9 +55,6 @@ li a:visited{
     float:right;
 }
 
-.goTopDiv{
-    background-color:#4CAF50;
-}
 
 
 .div1{

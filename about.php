@@ -34,6 +34,21 @@
                 <p>后来的后来，<a href="https://blog.dogduck.co/">dog</a>告诉我，PHP简单易学，也可以建站。于是，我重新回归代码的怀抱。依旧是跟着韩顺平的系列视频学起了【PHP，Mysql】，一边学一边惦念着尚未诞生的网站。</p>
                 <p>终于，2016/1/15，在<a href="https://blog.dogduck.co/">dog</a>的鼓励下，我开始将【用PHP+MySql建站】纳入计划，准确地说，是边学边建。2016/2/21/，<a href="www.dogduck.lol">Duck</a>站点诞生。它也会在您的关注下继续成长。</p>
                 <p>最后，感谢<a href="https://blog.dogduck.co/">dog</a>一直以来的支持，鼓励和陪伴！</p>
+
+
+	<div class='goTopDiv'>
+		<a href='contact.php#'><img class='goTop' src='images/goTop.ico' /></a>
+	</div>
+	<div class="footerDiv">
+       <footer>
+            
+              <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
+               <p>转载请注明出处</p>            
+        </footer>
+	</div>
+
+
+
       </div>
         </div>
       <div class="div3">
@@ -57,15 +72,6 @@
 
 
 	</div>
-	<div class='goTopDiv'>
-		<a href='contact.php#'><img class='goTop' src='images/goTop.ico' /></a>
-	</div>
-	<div class="footerDiv">
-       <footer>
-            
-              <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
-               <p>转载请注明出处</p>            
-        </footer>
-	</div>
+
   </body>
 </html>
