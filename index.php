@@ -67,7 +67,7 @@
                       echo "<tr><td colspan='2'><h3><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h3></tr>";
                       echo "<tr><td width='50%'>{$row['post_date']}</td><td width='50%'>标签:{$row['post_type']}</td></tr>";
                   }
-                  echo "</table>";
+                  echo "</table><br><br>";
     
                  echo $rollPage->navigate;
 
