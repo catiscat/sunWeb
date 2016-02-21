@@ -33,7 +33,7 @@
                 <p>可是发现，建站也需要前端基础。于是就跟着韩顺平的系列视频学习了【html，css，javascript】，还写了一些网页小游戏。然后又回头捣鼓【Django】，但发现自己基础薄弱，有些内容很难理解，加上手头的实验项目要开始实施。于是，【Django】学习暂告一段落。</p>
                 <p>后来的后来，<a href="https://blog.dogduck.co/">dog</a>告诉我，PHP简单易学，也可以建站。于是，我重新回归代码的怀抱。依旧是跟着韩顺平的系列视频学起了【PHP，Mysql】，一边学一边惦念着尚未诞生的网站。</p>
                 <p>终于，2016/1/15，在<a href="https://blog.dogduck.co/">dog</a>的鼓励下，我开始将【用PHP+MySql建站】纳入计划，准确地说，是边学边建。2016/2/21/，<a href="www.dogduck.lol">Duck</a>站点诞生。它也会在您的关注下继续成长。</p>
-                <p>最后，感谢<a href="https://blog.dogduck.co/">dog</a>一直以来的支持，鼓励和陪伴！</p>
+                <p>最后，感谢<a href="https://blog.dogduck.co/">dog</a>一直以来的支持，鼓励和陪伴！</p><br><br><br>
 
 
 	<div class='goTopDiv'>

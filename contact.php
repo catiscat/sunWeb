@@ -28,9 +28,9 @@
 	        <a href="https://github.com/catiscat"><h4>关注我的GitHub</h4></a>or<br>
 	        <a href="index.php"><h4>收藏我的博客</h4></a><br><b>And</b>
 		<h3>I Am Always Here Waiting for you :)</h3><br><b>And</b>
-		<h3>期待与您一同成长 :)</h3>
+		<h3>期待与您一同成长 :)</h3><br><br><br>
 
-	
+		
 	<div class='goTopDiv'>
 		<a href='contact.php#'><img class='goTop' src='images/goTop.ico' /></a>
 	</div>
