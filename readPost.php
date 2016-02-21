@@ -62,6 +62,18 @@
             <?php 
                 require_once "userCommentList.php";
             ?>
+	        
+	        	<div class='goTopDiv'>
+		<?php echo "<a href='readPost.php?id={$id}'>";?><img class='goTop' src='images/goTop.ico' /></a>
+	</div>
+	<div class="footerDiv">
+       <footer>
+            
+              <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
+               <p>转载请注明出处</p>            
+        </footer>
+	</div>
+	        
       </div>
         </div>
       <div class="div3">
@@ -85,15 +97,6 @@
 
 
 	</div>
-	<div class='goTopDiv'>
-		<?php echo "<a href='readPost.php?id={$id}'>";?><img class='goTop' src='images/goTop.ico' /></a>
-	</div>
-	<div class="footerDiv">
-       <footer>
-            
-              <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
-               <p>转载请注明出处</p>            
-        </footer>
-	</div>
+
   </body>
 </html>

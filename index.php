@@ -77,6 +77,21 @@
 	              跳转到:<input type="text" name="pageNow" />
 	              <input type="submit" value="GO" />
 	          </form> 
+	            
+	
+	    <div class="footerDiv">
+       <footer>
+             
+              <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
+               <p>转载请注明出处</p>            
+        </footer>
+
+	</div>
+		<div class='goTopDiv'>
+		<a href='index.php#'><img class='goTop' src='images/goTop.ico' /></a>
+		</div>
+		
+		
 	
       </div>
         </div>
@@ -100,18 +115,6 @@
     </div>
 
 
-
-	<div class="footerDiv">
-       <footer>
-            
-              <i>DogDuck.lol 版权所有</i> &copy; 2016 - <?php echo date('Y'); ?>
-               <p>转载请注明出处</p>            
-        </footer>
-
-	</div>
-		<div class='goTopDiv'>
-		<a href='index.php#'><img class='goTop' src='images/goTop.ico' /></a>
-		</div>
 
 
 
