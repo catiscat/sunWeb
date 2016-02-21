@@ -59,7 +59,9 @@
                 
             <!--显示所有关于该文章的评论-->
             <br></br><h3>所有评论</h3><br><hr>
-
+            <?php 
+                require_once "userCommentList.php";
+            ?>
       </div>
         </div>
       <div class="div3">
