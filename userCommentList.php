@@ -19,8 +19,8 @@
 	
 	//给$rollPage指定必须的数据
 	$rollPage->pageNow=1;
-	$rollPage->pageSize=6;
-	$rollPage->gotoUrl="readPost.php";
+	$rollPage->pageSize=600000000000;
+	$rollPage->gotoUrl="userCommentList.php";
         
         //这里我们需要根据用户的点击来修改$pageNow的值。
         //这里我们需要判断 是否有$pageNow 发送，有就使用；如果没有，则默认为显示第一页
@@ -48,19 +48,10 @@
             echo "<tr><td>{$row['comment_author']}</td><td>{$row['comment_date']}</td><td>{$row['comment_content']}</td></tr>";
         }
         
-        
-        echo "<h1>评论信息列表</h1>";
         echo "</table>";
 
 
-  
-        //显示上一页和下一页
-        echo $rollPage->navigate;
 
 	?>
-	<form action="userCommentList.php">
-	    跳转到:<input type="text" name="pageNow" />
-	    <input type="submit" value="GO" />
-	</form>
 	
 </html>
