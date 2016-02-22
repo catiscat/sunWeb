@@ -1,7 +1,7 @@
 <?php 
     
     require_once "./adminBlogSystem/comment/CommentService.class.php";
-    require_once "./adminBlogSystem/SqlHelper.class.php";
+  //  require_once "./adminBlogSystem/SqlHelper.class.php";
 	//创建了一个CommentService的对象实例
 	$commentService=new CommentService();
 	$sqlHelper=new SqlHelper();
@@ -13,10 +13,10 @@
         if($flag=="addcomment"){
 		    //说明用户要执行添加评论的请求
 		    //接受数据,并将用户输入的html标签都去掉
-		    $comment_author=mysqli_real_escape_string($sqlHelper->conn,strip_tags($_POST['comment_author']));
-		    $comment_date=mysqli_real_escape_string($sqlHelper->conn,strip_tags($_POST['comment_date']));
-		    $comment_content=mysqli_real_escape_string($sqlHelper->conn,strip_tags($_POST['comment_content']));
-		    $comment_post_id=mysqli_real_escape_string($sqlHelper->conn,strip_tags($_POST['comment_post_id']));
+		    $comment_author=mysql_real_escape_string(strip_tags($_POST['comment_author']));
+		    $comment_date=mysql_real_escape_string (strip_tags($_POST['comment_date']));
+		    $comment_content=mysql_real_escape_string(strip_tags($_POST['comment_content']));
+		    $comment_post_id=mysql_real_escape_string(strip_tags($_POST['comment_post_id']));
 		  
 		    
 		    //完成添加-》数据库
