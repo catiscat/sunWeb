@@ -67,7 +67,7 @@
 		    <!--显示添加评论-->
 		    
 		    <h3>添加评论</h3>
-                <form action="adminBlogSystem/comment/CommentProcess.php" method="post">
+                <form action="adminBlogSystem/comment/commentProcess.php" method="post">
                     <table>
                         <tr><td>您的大名</td><td><input wrap="physical" type="text" name="comment_author" /></td></tr>
                         <tr><td>评论时间</td><td><input wrap="physical" type="text" name="comment_date" id="comment_date" value='0' onclick="showTime(this)" /></td></tr>
