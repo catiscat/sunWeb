@@ -7,10 +7,10 @@
     // 1 id
 
     $sqlHelper=new SqlHelper();
-    $id=sql_real_escape_string(strip_tags($_POST["id"]));
+    $id=mysql_real_escape_string(strip_tags($_POST["id"]));
 	
     //2 密码
-    $password=sql_real_escape_string(strip_tags($_POST["password"]));
+    $password=mysql_real_escape_string(strip_tags($_POST["password"]));
         
         //实例化一个AdminService方法
         $adminService=new AdminService();
