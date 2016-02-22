@@ -59,7 +59,7 @@
         ?>
             
             <?php 
-                    if(!empty($arr[0])){
+                    if(!empty($arr[0])){//这里是为了防止用户从地址栏中sql注入漏洞
                         echo "<h2>".$arr[0]['post_title']."</h2><hr>";
                         echo $arr[0]['post_author']."<br><br>";
                         echo $arr[0]['post_date']."<br><br>";
