@@ -27,12 +27,12 @@
 		}else if($flag=="addpost"){
 		    //说明用户要执行添加博文的请求
 		    //接受数据
-		    $post_author=$_POST['post_author'];
-		    $post_date=$_POST['post_date'];
-			$post_summary=$_POST['post_summary'];
-		    $post_content=$_POST['post_content'];
-		    $post_title=$_POST['post_title'];
-		    $post_type=$_POST['post_type'];
+		    $post_author=mysql_real_escape_string(strip_tags($_POST['post_author']));
+		    $post_date=mysql_real_escape_string(strip_tags($_POST['post_date']));
+		    $post_summary=mysql_real_escape_string(strip_tags($_POST['post_summary']));
+		    $post_content=mysql_real_escape_string(strip_tags($_POST['post_content']));
+		    $post_title=mysql_real_escape_string(strip_tags($_POST['post_title']));
+		    $post_type=mysql_real_escape_string(strip_tags($_POST['post_type']));
 		    
 		    //完成添加-》数据库
 		    $res=$postService->addPost($post_author,$post_date,$post_summary,$post_content,$post_title,$post_type);
