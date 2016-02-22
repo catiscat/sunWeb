@@ -13,6 +13,8 @@
     //该页面要显示准备修改的博文信息
     
     require_once 'PostService.class.php';
+    $sqlHelper=new SqlHelper();
+
     $id=mysql_real_escape_string(strip_tags($_GET['id']));
     //通过id得到该博文的其他信息
     //查询数据库，调用sqlHelper
