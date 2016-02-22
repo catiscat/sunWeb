@@ -23,8 +23,8 @@
         <div class='contentDiv'>
           <?php 
 
-	          require_once "./adminBlogSystem/PostService.class.php";
-	          require_once "./adminBlogSystem/RollPage.class.php";
+	          require_once "./adminBlogSystem/comment/admin/PostService.class.php";
+	          require_once "./adminBlogSystem/comment/admin/RollPage.class.php";
 
 	          //创建了一个PostService的对象实例
 	          $postService=new PostService();
