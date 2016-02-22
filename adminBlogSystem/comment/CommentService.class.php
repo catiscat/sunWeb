@@ -1,6 +1,6 @@
 <?php 
 
-
+    // 【../】表示当前路径的上一级路径 
     require_once "../SqlHelper.class.php";
     
     class CommentService{
