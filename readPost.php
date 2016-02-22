@@ -32,7 +32,7 @@
      //       require_once 'index.php';
           
             $postService=new PostService();
-            $pageCount=$_REQUIRE['$pageCount']
+            $pageCount=$_REQUIRE['pageCount']
             
             //创建一个sqlHelper对象实例，用于让 mysql_real_escape_string()函数得到现在的连接。
             $sqlHelper=new SqlHelper();
