@@ -36,7 +36,7 @@
             $id=mysql_real_escape_string(strip_tags($_GET['id']));
             
             if(strlen($id)){
-                if(!preg_match("^[0-9]$",$id)){
+                if( !preg_match("/d",$id)){
                     header("Location:index.php"); //文章id不合法，将用户送回Homepage。
 		            exit();
                 }            
