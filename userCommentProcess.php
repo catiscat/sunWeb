@@ -12,11 +12,11 @@
         
         if($flag=="addcomment"){
 		    //说明用户要执行添加评论的请求
-		    //接受数据
-		    $comment_author=$_POST['comment_author'];
-		    $comment_date=$_POST['comment_date'];
-		    $comment_content=$_POST['comment_content'];
-		    $comment_post_id=$_POST['comment_post_id'];
+		    //接受数据,并将用户输入的html标签都去掉
+		    $comment_author=strip_tags($_POST['comment_author']);
+		    $comment_date=strip_tags($_POST['comment_date']);
+		    $comment_content=strip_tags($_POST['comment_content']);
+		    $comment_post_id=strip_tags($_POST['comment_post_id']);
 		  
 		    
 		    //完成添加-》数据库
