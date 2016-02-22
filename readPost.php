@@ -46,6 +46,9 @@
             }
             
  */           
+            if(preg_match("[0-9]$",$id) && 0<strlen($id)<5){
+                echo "true";
+            }
             
             //查询数据库，调用sqlHelper  
             $postService=new PostService();
