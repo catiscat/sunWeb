@@ -8,8 +8,9 @@
 
     //该页面要显示指定博文的详细信息
     require_once 'PostService.class.php';
-    
-    $id=$_GET['id'];
+  
+    $sqlHelper=new SqlHelper();
+    $id=mysql_real_escape_string(strip_tags($_GET['id']));
     echo "你正在阅读id=".$id."的博文";
     
     //查询数据库，调用sqlHelper  
