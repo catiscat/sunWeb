@@ -62,6 +62,7 @@
                     if(!empty($arr[0])){
                         echo "<h2>".$arr[0]['post_title']."</h2><hr>";
                         echo $arr[0]['post_author']."<br><br>";
+                        echo $arr[0]['post_date']."<br><br>";
                         echo $arr[0]['post_content']."<br><br><hr><br><br>";
                     }else{
                         header("Location:index.php");
