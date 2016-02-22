@@ -1,6 +1,6 @@
 <?php 
 
-    require_once "../adminBlogSystem/SqlHelper.class.php";
+    require "../adminBlogSystem/SqlHelper.class.php";
     
     class CommentService{
     
