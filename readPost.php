@@ -32,7 +32,7 @@
      //       require_once 'index.php';
           
             $postService=new PostService();
-            $pageCount=$_REQUIRE['pageCount']
+     //       $pageCount=$_REQUIRE['pageCount']
             
             //创建一个sqlHelper对象实例，用于让 mysql_real_escape_string()函数得到现在的连接。
             $sqlHelper=new SqlHelper();
@@ -40,7 +40,7 @@
             $id=intval(mysql_real_escape_string(strip_tags($_GET['id'])));
             
             if(!empty($id)){
-            	if($id>$pageCount){
+            	if($id>100000){
 			        header("Location:index.php"); //文章id为空不合法，将用户送回Homepage。
 		            exit();
             	}           
