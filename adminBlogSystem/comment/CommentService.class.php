@@ -1,6 +1,6 @@
 <?php 
 
-    include "../adminBlogSystem/SqlHelper.class.php";
+    include "../SqlHelper.class.php";
     
     class CommentService{
     
