@@ -72,7 +72,7 @@
 
 
 	?>
-	<form action="comment/commentList.php">
+	<form action="commentList.php">
 	    跳转到:<input type="text" name="pageNow" />
 	    <input type="submit" value="GO" />
 	</form>
