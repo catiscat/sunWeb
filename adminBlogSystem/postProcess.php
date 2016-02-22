@@ -47,12 +47,12 @@
 		    //说明用户希望执行修改博文
 		    //接收数据
 		    $id=$_POST['id'];
-		    $post_author=$_POST['post_author'];
-		    $post_date=$_POST['post_date'];
-		    $post_summary=$_POST['post_summary'];
-		    $post_content=$_POST['post_content'];
-		    $post_title=$_POST['post_title'];
-		    $post_type=$_POST['post_type'];
+		    $post_author=mysql_real_escape_string(strip_tags($_POST['post_author']));
+		    $post_date=mysql_real_escape_string(strip_tags($_POST['post_date']));
+		    $post_summary=mysql_real_escape_string(strip_tags($_POST['post_summary']));
+		    $post_content=mysql_real_escape_string(strip_tags($_POST['post_content']));
+		    $post_title=mysql_real_escape_string(strip_tags($_POST['post_title']));
+		    $post_type=mysql_real_escape_string(strip_tags($_POST['post_type']));
 		    
 		    //完成修改-》数据库
 		    $res=$postService->updatePost($id,$post_author,$post_date,$post_summary,$post_content,$post_title,$post_type);
