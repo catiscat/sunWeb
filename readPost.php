@@ -46,7 +46,7 @@
             }
             
  */           
-            if(preg_match("^[0-9]$",$id) && (0<strlen($id)<5)){
+            if(preg_match("^[0-9]$",$id) && strlen($id)<5){
                 echo "true";
             }
             
