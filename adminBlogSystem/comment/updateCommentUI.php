@@ -13,7 +13,10 @@
     //该页面要显示准备修改的评论信息
     
     require_once 'CommentService.class.php';
-    $id=$_GET['id'];
+    $sqlHelper=new SqlHelper();
+
+
+    $id=mysql_real_escape_string(strip_tags($_GET['id']));
     //通过id得到该评论的其他信息
     //查询数据库，调用sqlHelper
     
