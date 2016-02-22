@@ -46,9 +46,7 @@
             }
             
  */           
-            if(preg_match('\d',$id)){
-                echo "true";
-            }
+
             
             //查询数据库，调用sqlHelper  
             $postService=new PostService();
