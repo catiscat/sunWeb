@@ -1,10 +1,11 @@
 <?php 
     
     require_once "./adminBlogSystem/comment/CommentService.class.php";
-  //  require_once "./adminBlogSystem/SqlHelper.class.php";
+
+
 	//创建了一个CommentService的对象实例
 	$commentService=new CommentService();
-	$sqlHelper=new SqlHelper();
+
    	//先看看用户要分页还是删除某个评论
 	if(!empty($_REQUEST['flag'])){ 
 	    //接收flag的值
