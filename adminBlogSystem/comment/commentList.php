@@ -70,14 +70,9 @@
         //显示上一页和下一页
         echo $rollPage->navigate;
 
-/*        
 
-
-	//指定跳转到某页	
-	echo "<br/><br/>";
-*/
 	?>
-	<form action="CommentList.php">
+	<form action="commentList.php">
 	    跳转到:<input type="text" name="pageNow" />
 	    <input type="submit" value="GO" />
 	</form>
