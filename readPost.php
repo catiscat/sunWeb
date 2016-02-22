@@ -29,7 +29,7 @@
 
             //该页面要显示指定博文的详细信息
             require_once './adminBlogSystem/PostService.class.php';
-            require_once 'index.php';
+     //       require_once 'index.php';
           
             $postService=new PostService();
             
