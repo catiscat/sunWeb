@@ -35,8 +35,8 @@
             //注意：对得到的任何来自页面的输入$_GET[];$_POST[]，都要进行过滤，不给sql注入漏洞留下任何契机。
             $id=intval(mysql_real_escape_string(strip_tags($_GET['id'])));
             
-            if(strlen($id)){
-                if(!preg_match("^[0-9]+$",$id)){
+            if(!empty($id)){
+                if(preg_match("^[0-9]+$",$id)){
                     header("Location:index.php"); //文章id不合法，将用户送回Homepage。
 		            exit();
                 }            
