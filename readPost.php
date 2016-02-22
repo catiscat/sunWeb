@@ -29,12 +29,17 @@
 
             //该页面要显示指定博文的详细信息
             require_once './adminBlogSystem/PostService.class.php';
-    
-            $id=$_GET['id'];
+            
+            //创建一个sqlHelper对象实例，用于让 mysql_real_escape_string()函数得到现在的连接。
+            $sqlHelper=new SqlHelper();
+            //注意：对得到的任何来自页面的输入$_GET[];$_POST[]，都要进行过滤，不给sql注入漏洞留下任何契机。
+            $id=mysql_real_escape_string(strip_tags($_GET['id']));
             
             //查询数据库，调用sqlHelper  
             $postService=new PostService();
             $arr=$postService->getPostById($id);
+            
+
         ?>
             
             <h2><?php echo $arr[0]['post_title'] ?></h2>
