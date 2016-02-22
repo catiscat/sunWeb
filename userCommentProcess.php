@@ -1,7 +1,7 @@
 <?php 
     
     require_once "./adminBlogSystem/comment/CommentService.class.php";
-    require_once "./adminBlogSystem/SqlHelper.class.php";
+   // require_once "./adminBlogSystem/SqlHelper.class.php";
 
 	//创建了一个CommentService的对象实例
 	$commentService=new CommentService();
