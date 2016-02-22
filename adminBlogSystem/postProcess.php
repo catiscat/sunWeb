@@ -5,7 +5,8 @@
    	
 	//创建了一个PostService的对象实例
 	$postService=new PostService();
-	
+	$sqlHelper=new SqlHelper();
+
    	//先看看用户要分页还是删除某个博文
 	if(!empty($_REQUEST['flag'])){ 
 	    //接收flag的值
@@ -46,7 +47,7 @@
 		}else if($flag=="updatepost"){
 		    //说明用户希望执行修改博文
 		    //接收数据
-		    $id=$_POST['id'];
+		    $id=mysql_real_escape_string(strip_tags($_POST['id']));
 		    $post_author=mysql_real_escape_string(strip_tags($_POST['post_author']));
 		    $post_date=mysql_real_escape_string(strip_tags($_POST['post_date']));
 		    $post_summary=mysql_real_escape_string(strip_tags($_POST['post_summary']));
