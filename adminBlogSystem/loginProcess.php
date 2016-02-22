@@ -2,12 +2,15 @@
 <?php 
 
     require_once 'AdminService.php';
-    require_once 'SqlHelper.php';
+
     //接受用户数据,strip_tags()函数用于过滤掉所有的html标签
     // 1 id
-    $id=mysql_real_escape_string(strip_tags($_POST["id"]));
+
+    $sqlHelper=new SqlHelper();
+    $id=sql_real_escape_string(strip_tags($_POST["id"]));
+	
     //2 密码
-    $password=mysql_real_escape_string(strip_tags($_POST["password"]));
+    $password=sql_real_escape_string(strip_tags($_POST["password"]));
         
         //实例化一个AdminService方法
         $adminService=new AdminService();
