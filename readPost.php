@@ -41,7 +41,7 @@
             
             if(!empty($id)){
             	if($id>100000){
-			        header("Location:index.php"); //文章id为空不合法，将用户送回Homepage。
+			        header("Location:index.php"); //文章id过大不合法，将用户送回Homepage。
 		            exit();
             	}           
             }else{
@@ -58,12 +58,19 @@
 
         ?>
             
-            <h2><?php echo $arr[0]['post_title'] ?></h2>
+            <?php 
+                    if(!empty($arr[0])){
+                        echo "<h2>".$arr[0]['post_title']."</h2><hr>";
+                        echo $arr[0]['post_author']."<br><br>";
+                        echo $arr[0]['post_content']."<br><br><hr><br><br>";
+                    }
+           /* 
+            echo $arr[0]['post_title'] ?></h2>
             <hr>
             作者：<?php echo $arr[0]['post_author'] ?><br><br>
             日期：<?php echo $arr[0]['post_date'] ?><br><br><br>
             <?php echo $arr[0]['post_content'] ?><br><br><hr><br><br>
-		    
+		    */
 		    <!--显示添加评论-->
 		    
 		    <h3>添加评论</h3>
