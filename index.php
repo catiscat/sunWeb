@@ -98,7 +98,7 @@
         </div>
       <div class="div3">
         <div class="div4">
-     		<img class="bigduck" src="images/bigDuck.png" /><br>
+     		<a href="index.php"><img class="bigduck" src="images/bigDuck.png" /></a><br>
 			<a href="index.php"><h5>Duck's Site</h5></a>
 			<a href="contact.php"><h5>Duck's Email</h5></a>
 			<a href="https://github.com/catiscat"><h5>Duck's GitHub</h5></a>
