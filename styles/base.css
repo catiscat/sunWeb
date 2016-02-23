@@ -26,6 +26,12 @@ li a {
     text-decoration: none;
 }
 
+a{
+
+    text-decoration: none;	
+
+}
+
 li a:hover:not(.active) {
     background-color:#ccccb3;
 }
