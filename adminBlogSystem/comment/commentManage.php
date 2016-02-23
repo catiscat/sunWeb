@@ -5,6 +5,9 @@
     </head>
     
     <?php 
+        require_once "commen.php";
+        checkUserValidate();
+        getLastTime();
         echo "欢迎您登陆";
         echo "<br/><a href='login.php'>返回重新登陆</a>";
     ?>

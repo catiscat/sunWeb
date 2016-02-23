@@ -17,6 +17,8 @@
         $name=$adminService->checkAdmin($id,$password);
         if($name!=""){
             //合法
+            session_start();
+            $_SESSION['loginuser']=$name;
             header("Location:postManage.php");
             exit();
         }else{
