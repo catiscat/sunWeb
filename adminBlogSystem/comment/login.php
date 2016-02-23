@@ -12,6 +12,7 @@
 			</table>
 		</form>
 		<?php 
+			
 		    //接收errno
 		    if(!empty($_GET["errno"])){
 		        $errno=$_GET["errno"];

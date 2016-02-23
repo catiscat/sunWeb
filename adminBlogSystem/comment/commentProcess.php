@@ -46,7 +46,7 @@
 		}else if($flag=="updatecomment"){
 		    //说明用户希望执行修改评论
 		    //接收数据
-		    $id=$_POST['comment_id'];
+		    $id=mysql_real_escape_string(strip_tags($_POST['comment_id']));
 		    $comment_author=mysql_real_escape_string(strip_tags($_POST['comment_author']));
 		    $comment_date=mysql_real_escape_string(strip_tags($_POST['comment_date']));
 		    $comment_content=mysql_real_escape_string(strip_tags($_POST['comment_content']));
