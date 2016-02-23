@@ -5,7 +5,7 @@
     </head>
     
     <?php 
-        require_once "commen.php";
+        require_once "admin/commen.php";
         checkUserValidate();
         getLastTime();
         echo "欢迎您登陆";
