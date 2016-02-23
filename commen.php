@@ -8,7 +8,7 @@
             //更新时间
             setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }else{
-            echo "<hr><br>朋友，你第一次访问<a href=www.dogduck.lol>duck</a>站点哦 :)<br><hr>";
+            echo "<br>朋友，你第一次访问<a href=www.dogduck.lol>duck</a>站点哦 :)<br><hr>";
             //更新时间
             setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }
