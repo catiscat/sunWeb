@@ -74,7 +74,8 @@
 
                   //调用getPostListByPage方法，获取应当显示的博文信息列表
                   $res2=$postService->getPostListByPage($rollPage->pageNow,$rollPage->pageSize);
-                  echo "<h1>博文列表</h1>";getLastTime();
+                  echo "<h1>博文列表</h1>";
+                  getLastTime();
                   echo "<hr>";  
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];

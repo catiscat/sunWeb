@@ -4,7 +4,7 @@
         //首先看看cookie有没有上次登陆信息
         if(!empty($_COOKIE['lastVisit'])){
 
-            echo "上次访问<b>duck</b>：".$_COOKIE['lastVisit'];
+            echo "上次访问 <b>duck</b>：".$_COOKIE['lastVisit'];
             //更新时间
             setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }else{
