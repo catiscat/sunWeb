@@ -15,14 +15,14 @@
     }
     
     
-        function getCookieVal($key){
+	function getCookieVal($key){
             
-            if(empty($_COOKIE[$key])){
-                return "";
-            }else{
-                return $_COOKIE[$key];
-            }
+        if(empty($_COOKIE[$key])){
+            return "";
+        }else{
+            return $_COOKIE[$key];
         }
+    }
         
       //把验证用户是否合法封装成函数
     function checkUserValidate(){
@@ -30,6 +30,6 @@
         if(empty($_SESSION['loginuser'])){
             header("Location:login.php?errno=1");
         }
-      }
+     }
     
 ?>
