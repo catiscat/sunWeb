@@ -19,10 +19,20 @@
 	$rollPage->pageSize=600000000000000000;
 	$rollPage->gotoUrl="userCommentList.php";
         
-        //这里我们需要根据用户的点击来修改$pageNow的值。
-        //这里我们需要判断 是否有$pageNow 发送，有就使用；如果没有，则默认为显示第一页
-        if(!empty($_GET['pageNow'])){
-            $rollPage->pageNow=sql_real_escape_string(strip_tags($_GET['pageNow']));  
+    //这里我们需要根据用户的点击来修改$pageNow的值。
+    //这里我们需要判断 是否有$pageNow 发送，有就使用；如果没有，则默认为显示第一页
+    if(!empty($_GET['pageNow'])){
+        $id=intval(mysql_real_escape_string(strip_tags($_GET['pageNow'])));
+        if(!empty($id)){
+            if($id>$pageCount){
+			    header("Location:index.php"); //文章id大于总页数，将用户送回Homepage。
+		        exit();
+            }           
+        }else{
+            header("Location:index.php"); //文章id为空不合法，将用户送回Homepage。
+		    exit();
+        }
+            $rollPage->pageNow=$id;  
         }
         
 	
