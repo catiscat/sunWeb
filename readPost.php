@@ -29,7 +29,7 @@
 
             //该页面要显示指定博文的详细信息
             require_once './adminBlogSystem/comment/admin/PostService.class.php';
-     //       require_once 'index.php';
+            require_once 'comment.php';
           
             $postService=new PostService();
      //       $pageCount=$_REQUIRE['pageCount']
@@ -60,7 +60,9 @@
             
             <?php 
                     if(!empty($arr[0])){//这里是为了防止用户从地址栏中sql注入漏洞
+                        
                         echo "<h2>".$arr[0]['post_title']."</h2><hr>";
+                        getLastTime();
                         echo $arr[0]['post_author']."<br><br>";
                         echo $arr[0]['post_date']."<br><br>";
                         echo $arr[0]['post_content']."<br><br><hr><br><br>";
