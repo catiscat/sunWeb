@@ -11,7 +11,10 @@
     <?php 
 
     //该页面要显示准备修改的博文信息
-    
+        
+    require_once "commen.php";
+    checkUserValidate();
+    getLastTime();
     require_once 'PostService.class.php';
     $sqlHelper=new SqlHelper();
 

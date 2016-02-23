@@ -8,9 +8,16 @@
             }
         </script>
     </head>
+    <?php 
+            
+        require_once "commen.php";
+        checkUserValidate();
+        getLastTime();
+    
+    ?>
     <h1>添加博文</h1>
     <form action="postProcess.php" method="post">
-        <table>
+        <table>		
             <tr><td>post_author</td><td><input type="text" wrap="physical" name="post_author" /></td></tr>
             <tr><td>post_date</td><td><input type="text" name="post_date" id="post_date" value='0' onclick="showTime(this)" /></td></tr>
 	        <tr><td>post_title</td><td><input type="text" wrap="physical" name="post_title" /></td></tr> 

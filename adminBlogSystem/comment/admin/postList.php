@@ -16,6 +16,10 @@
     </head>
     
     <?php 
+	    
+        require_once "commen.php";
+        checkUserValidate();
+        getLastTime();
 
 	require_once "PostService.class.php";
 	require_once "RollPage.class.php";

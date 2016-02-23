@@ -19,6 +19,7 @@
             //合法
             session_start();
             $_SESSION['loginuser']=$name;
+            
             header("Location:postManage.php");
             exit();
         }else{
