@@ -4,7 +4,7 @@
         //首先看看cookie有没有上次登陆信息
         if(!empty($_COOKIE['lastVisit'])){
 
-            echo "<font size='3' color='#00cc99'>朋友，你上次访问 duck 站点</font>".$_COOKIE['lastVisit']." :)<hr color='#00cc99'>";
+            echo "<font size='1'>朋友，你上次访问 duck 站点".$_COOKIE['lastVisit']." :)</font><hr color='#00cc99'>";
             //更新时间
             setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }else{
