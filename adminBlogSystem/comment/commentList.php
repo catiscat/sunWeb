@@ -19,7 +19,9 @@
 
 	require_once "CommentService.class.php";
 	require_once "RollPage.class.php";
-
+    require_once "commen.php";
+    checkUserValidate();
+    getLastTime();
 	//创建了一个CommentService的对象实例
 	$commentService=new CommentService();
     

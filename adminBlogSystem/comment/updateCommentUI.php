@@ -13,6 +13,9 @@
     //该页面要显示准备修改的评论信息
     
     require_once 'CommentService.class.php';
+    require_once "commen.php";
+    checkUserValidate();
+    getLastTime();
     $sqlHelper=new SqlHelper();
 
 

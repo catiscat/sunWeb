@@ -8,6 +8,13 @@
             }
         </script>
     </head>
+    <?php 
+    
+        require_once "commen.php";
+        checkUserValidate();
+        getLastTime();
+    
+    ?>
     <h1>添加评论</h1>
     <form action="commentProcess.php" method="post">
         <table>
