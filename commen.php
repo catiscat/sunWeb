@@ -4,11 +4,11 @@
         //首先看看cookie有没有上次登陆信息
         if(!empty($_COOKIE['lastVisit'])){
 
-            echo "<br>朋友，你上次访问<a href=www.dogduck.lol>duck</a>站点是".$_COOKIE['lastVisit'].",Welcome:)<br><hr>";
+            echo "朋友，你上次访问<a href=#>duck</a>站点是".$_COOKIE['lastVisit'].",Welcome:)<hr>";
             //更新时间
             setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }else{
-            echo "<br>朋友，你第一次访问<a href=www.dogduck.lol>duck</a>站点哦,Welcome :)<br><hr>";
+            echo "朋友，你第一次访问<a href=#>duck</a>站点哦,Welcome :)<hr>";
             //更新时间
             setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }
