@@ -127,7 +127,7 @@
 			<?php 
 			    for($i=0;$i<count($res2);$i++){
                     $row=$res2[$i];                    
-                    echo "<h5><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h5>";
+                    echo "<a href='readPost.php?id={$row['id']}'>{$row['post_title']}<br><br>";
                 }
                   
             ?>
