@@ -29,7 +29,7 @@
 
             //该页面要显示指定博文的详细信息
             require_once './adminBlogSystem/comment/admin/PostService.class.php';
-            require_once 'comment.php';
+            require_once 'commen.php';
           
             $postService=new PostService();
      //       $pageCount=$_REQUIRE['pageCount']
