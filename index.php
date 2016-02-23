@@ -25,7 +25,7 @@
 
 	          require_once "./adminBlogSystem/comment/admin/PostService.class.php";
 	          require_once "./adminBlogSystem/comment/admin/RollPage.class.php";
-
+                  require_once 'commen.php';
 	          //创建了一个PostService的对象实例
 	          $postService=new PostService();
               
@@ -74,7 +74,7 @@
 
                   //调用getPostListByPage方法，获取应当显示的博文信息列表
                   $res2=$postService->getPostListByPage($rollPage->pageNow,$rollPage->pageSize);
-                  echo "<h1>博文列表</h1>";
+                  echo "<h1>博文列表</h1>";getLastTime();
                   echo "<hr>";  
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];
