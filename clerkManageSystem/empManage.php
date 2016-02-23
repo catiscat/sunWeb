@@ -5,12 +5,16 @@
     </head>
     
     <?php 
+    
+        require_once "commen.php";
+        //先验证
+        getLastTime();
+        checkUserValidate();
+        
         echo "欢迎您登陆";
         echo "<br/><a href='login.php'>返回重新登陆</a>";
-    
-        if(empty($_SESSION['loginuser'])){
-            header("Location:login.php?errno=1");
-        }
+       
+
 	
     ?>
     <body>
