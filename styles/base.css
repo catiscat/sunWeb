@@ -3,6 +3,11 @@ body {
     background:#4CAF50;
 }
 
+a:link{
+    color:red;
+    text-decoration: none;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,6 +18,8 @@ ul {
     top: 0;
     width: 100%;
 }
+
+
 
 li {
     float: left;
@@ -26,11 +33,7 @@ li a {
     text-decoration: none;
 }
 
-a:link{
-    display: block;
-    text-decoration: none;	
 
-}
 
 li a:hover:not(.active) {
     background-color:#ccccb3;
