@@ -6,8 +6,7 @@
     // 1 id
     $id=$_POST["id"];
     //2 密码
-    $password=$_POST["password"];
-        
+    $password=$_POST["password"];   
         //实例化一个AdminService方法
         $adminService=new AdminService();
         $name=$adminService->checkAdmin($id,$password);
@@ -15,9 +14,7 @@
         
             //合法
             session_start();
-            $_SESSION['loginuser']=$name;
-            
-            
+            $_SESSION['loginuser']=$name;            
             header("Location:empManage.php?name=$name");
             exit();
         }else{
