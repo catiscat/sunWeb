@@ -124,6 +124,7 @@
         </div><hr>
         <div class="div5">
 			<h3>推荐帖子</h3>
+			<?php echo "<a href='readPost.php?id={$row['id']}'>{$row['post_title']}";?>
         
         </div><hr>
         <div class="div6">
