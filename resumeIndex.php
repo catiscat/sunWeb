@@ -58,13 +58,7 @@
         </div><hr>
         <div class="div5">
 			<h3>推荐帖子</h3>
-			<?php 
-			    for($i=0;$i<count($res2);$i++){
-                    $row=$res2[$i];                    
-                    echo "<a href='readPost.php?id={$row['id']}'>{$row['post_title']}</a><br><br>";
-                }
-                  
-            ?>
+
         
         </div><hr>
         <div class="div6">
