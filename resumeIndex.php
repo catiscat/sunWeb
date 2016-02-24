@@ -21,6 +21,7 @@
     <div class="div1">
       <div class="div2">
         <div class='contentDiv'>
+        
           <?php 
 
 
@@ -29,7 +30,37 @@
             getLastTime();
             echo "<hr>";  
 	      ?>
-	
+	      
+	      <h3>联系方式</h3>
+	      <p>手机：RR</p><br>
+	      <p>邮箱：WGRGWTR</p><br>
+	      <p>微信号：WGRGWTR</p><br><hr>
+	      
+	      
+	      <h3>个人信息</h3>
+	      <p>Duck/女/1999</p><br>
+	      <p>211/西南大学心理学系</p><br>
+	      <p>英语六级已过，托福裸考78分</p><br>
+	      <p>技术博客</p><br>
+	      <p>Github</p><br>
+	      <p>期望职位</p><br>
+	      <p>期望城市</p><br><hr>
+	      
+	      <h3>开源项目与作品</h3>
+	      <p>开源项目</p><br>
+	      <p>项目链接1</p><br>
+	      <p>项目2</p><br>
+	      <p>项目3</p><br>
+	      <p>技术文章</p><br>
+	      <p>文章链接1翻译或原创</p>
+	      <p>期望城市</p><br><hr>
+	      
+	      <h3>技能清单</h3>
+	      <p>掌握的语言</p><br>
+	      <p>使用的工具</p><br>
+	      <p>使用的开发环境</p><br><br><br>
+
+	      
 	    <div class='goTopDiv'>
 		<a href='index.php#'><img class='goTop' src='images/goTop.ico' /></a>
 		</div>
