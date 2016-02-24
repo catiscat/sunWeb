@@ -25,7 +25,7 @@
 
 	          require_once "./adminBlogSystem/comment/admin/PostService.class.php";
 	          require_once "./adminBlogSystem/comment/admin/RollPage.class.php";
-
+                  require_once 'commen.php';
 	          //创建了一个PostService的对象实例
 	          $postService=new PostService();
               
@@ -39,7 +39,7 @@
 	          //给$rollPage指定必须的数据
 	          $rollPage->pageNow=1;
 	          $rollPage->pageSize=15;
-	          $rollPage->gotoUrl="index.php";
+	          $rollPage->gotoUrl="blogList.php";
                   
                   	
                   //$pageCount=0;//这个表一共有多少页，是计算出来的。
@@ -75,6 +75,7 @@
                   //调用getPostListByPage方法，获取应当显示的博文信息列表
                   $res2=$postService->getPostListByPage($rollPage->pageNow,$rollPage->pageSize);
                   echo "<h1>博文列表</h1>";
+                  getLastTime();
                   echo "<hr>";  
                   for($i=0;$i<count($res2);$i++){
                       $row=$res2[$i];
@@ -88,7 +89,7 @@
 
 	          ?>
 		
-	          <form action="index.php">
+	          <form action="blogList.php">
 	              跳转到:<input type="text" name="pageNow" />
 	              <input type="submit" value="GO" />
 	              
@@ -123,11 +124,24 @@
         </div><hr>
         <div class="div5">
 			<h3>推荐帖子</h3>
+			<?php 
+			    for($i=0;$i<count($res2);$i++){
+                    $row=$res2[$i];                    
+                    echo "<a href='readPost.php?id={$row['id']}'>{$row['post_title']}</a><br><br>";
+                }
+                  
+            ?>
         
         </div><hr>
         <div class="div6">
         	<h3>分类标签</h3>
-        </div><hr>
+        	<a href='#'>> IT</a><br><br>
+        	<a href='#'>> 编程</a><br><br>
+        	<a href='#'>> 心理学</a><br><br>
+        	<a href='#'>> 职场</a><br><br>
+		<a href='#'>> 随感</a><br><br>
+        	<a href='#'>> 转载</a><br><br>
+        </div><br><br><br>
       </div>
     </div>
 
