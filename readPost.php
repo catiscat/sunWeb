@@ -120,6 +120,12 @@
         </div><hr>
         <div class="div6">
         	<h3>分类标签</h3>
+		    <a href='#'>> IT</a><br><br>
+        	<a href='#'>> 编程</a><br><br>
+        	<a href='#'>> 心理学</a><br><br>
+        	<a href='#'>> 职场</a><br><br>
+		    <a href='#'>> 随感</a><br><br>
+        	<a href='#'>> 转载</a><br><br>
         </div><hr>
       </div>
     </div>

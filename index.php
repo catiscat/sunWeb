@@ -83,6 +83,7 @@
                       echo "<tr><td colspan='2'><h3><a href='readPost.php?id={$row['id']}'>{$row['post_title']}</h3></tr>";
                       echo "<tr><td width='50%'>{$row['post_date']}</td><td width='50%'>标签:{$row['post_type']}</td></tr>";
                   }
+
                   echo "</table><br><br>";
     
                  echo $rollPage->navigate;
@@ -138,7 +139,7 @@
         	<a href='#'>> IT</a><br><br>
         	<a href='#'>> 编程</a><br><br>
         	<a href='#'>> 心理学</a><br><br>
-		<a href='#'>> 随感</a><br><br>
+		    <a href='#'>> 随感</a><br><br>
         	<a href='#'>> 职场</a><br><br>
         	<a href='#'>> 转载</a><br><br>
         </div><br><br><br>
