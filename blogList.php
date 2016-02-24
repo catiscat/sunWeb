@@ -28,7 +28,7 @@
                   require_once 'commen.php';
 	          //创建了一个PostService的对象实例
 	          $postService=new PostService();
-              
+              date_default_timezone_set('PRC');
               //创建一个sqlHelper对象实例，用于让 mysql_real_escape_string()函数得到现在的连接。
               $sqlHelper=new SqlHelper();
 	

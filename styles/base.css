@@ -47,7 +47,6 @@ li a .active {
 
 li a:visited{
     background-color:#ccccb3;
-    text:expression(target="_blank");
 }
 
 .contentDiv a:link{
