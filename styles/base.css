@@ -3,13 +3,13 @@ body {
     background:#4CAF50;
 }
 
-a:link{
-    color:red;
-    text-decoration: none;
+.ul5 ul{
+    list-style-type:square;
+
 }
 
 ul {
-    list-style-type: none;
+    list-style-type:none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -39,13 +39,40 @@ li a:hover:not(.active) {
     background-color:#ccccb3;
 }
 
-.active {
+li a .active {
     background-color:#ccccb3;
 }
 
 li a:visited{
     background-color:#ccccb3;
 }
+
+.contentDiv a:link{
+    color:#006622;
+    text-decoration: none;
+}
+
+.contentDiv a:hover{
+    text-decoration: underline;
+    color:#993366;
+}
+
+.contentDiv a:visited{
+    color:#ccccb3;
+}
+
+.div3 a:link{
+    color:#000066;
+    text-decoration: none;
+}
+
+.div3 a:hover{
+    text-decoration: underline;
+    color:#993366;
+}
+
+
+
 
 .div0{
 

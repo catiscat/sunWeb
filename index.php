@@ -127,7 +127,7 @@
 			<?php 
 			    for($i=0;$i<count($res2);$i++){
                     $row=$res2[$i];                    
-                    echo "<a href='readPost.php?id={$row['id']}'>{$row['post_title']}</a><br><br>";
+                    echo "<a href='readPost.php?id={$row['id']}'><h5>{$row['post_title']}</h5></a><br>";
                 }
                   
             ?>
@@ -135,7 +135,12 @@
         </div><hr>
         <div class="div6">
         	<h3>分类标签</h3>
-        </div><hr>
+        	<a href='#'><h5>IT</h5></a>
+        	<a href='#'><h5>编程</h5></a>
+        	<a href='#'><h5>心理学</h5></a>
+        	<a href='#'><h5>职场</h5></a>
+        	<a href='#'><h5>转载</h5></a>
+        </div><br><br><br>
       </div>
     </div>
 
