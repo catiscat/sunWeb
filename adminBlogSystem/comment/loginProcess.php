@@ -20,7 +20,7 @@
             session_start();
             $_SESSION['loginuser']=$name;
             
-            header("Location:postManage.php");
+            header("Location:commentManage.php");
             exit();
         }else{
             //不合法
