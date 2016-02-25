@@ -1,6 +1,6 @@
 <?php 
 
-    require_once './SqlHelper.class.php';
+    require_once 'SqlHelper.class.php';
     //该类是一个业务逻辑处理类，主要完成对admin表的操作
     
     
