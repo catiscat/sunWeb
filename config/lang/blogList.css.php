@@ -5,6 +5,7 @@
     $title="";
     
     
+    
     public function setdiv5Lang($language){
         if($language=="zh"){
             $lang->setLangZh();
