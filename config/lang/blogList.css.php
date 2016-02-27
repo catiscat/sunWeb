@@ -1,19 +1,9 @@
 <?php 
     require_once "./lang.class.php";
     
-    class Css{    
+ 
         $lan = new Langu();
-        /*
-        function setdiv5Lang($language){
 
-            if($language=="zh"){
-                $lan->setLangZh();
-            }else if($language=="en"){
-            
-                //$lan->setLangEn();
-            }
-        }*/
-        
 
         function div5(){
             $title="";
@@ -24,7 +14,7 @@
             }
             return $title;
         }
-    }
+
     
     
 ?>

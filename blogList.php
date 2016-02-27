@@ -125,9 +125,9 @@
         <div class="div5">
 			<?php 
 				require_once "config/lang/blogList.css.php";
-				$css = new Css();
 				
-				echo '<h3>'.$css->div5().'</h3>';
+				
+				echo '<h3>'.div5().'</h3>';
 			
 			?>
 			
