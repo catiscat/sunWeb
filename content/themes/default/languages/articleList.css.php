@@ -1,5 +1,5 @@
 <?php 
-    require_once "lang.class.php";
+    require_once dirname(__FILE__)."/../../../../includes/lang.class.php";
     
      function div5(){
             $lan = new Lang();
