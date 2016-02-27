@@ -3,12 +3,13 @@
     
     
 
-
+        
         function div5(){
+            $lan = new Lang();
             $title="";
-            if(getLang()=="zh"){
+            if($lan->getLang()=="zh"){
                 $title="推荐帖子";
-            }else if(getLang()=="en"){
+            }else if($lan->getLang()=="en"){
                 $title="Recommend";
             }
             return $title;
