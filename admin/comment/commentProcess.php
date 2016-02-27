@@ -56,13 +56,14 @@
 		    
 		    //完成修改-》数据库
 		    $res=$commentService->updateComment($id,$comment_author,$comment_date,$comment_content,$comment_post_id,$comment_type);
+		    /*
 		    if($res=1){
 		        header("Location:ok.php"); //操作成功
 		        exit();
 		    }else{
 		        header("Location:error.php");//操作失败
 		        exit();
-		    }
+		    }*/
 		}
 	} 
 

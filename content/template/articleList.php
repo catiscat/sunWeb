@@ -23,9 +23,9 @@
         <div class='contentDiv'>
           <?php 
 
-	          require_once "./adminBlogSystem/comment/admin/PostService.class.php";
-	          require_once "./adminBlogSystem/comment/admin/RollPage.class.php";
-                  require_once 'commen.php';
+	          require_once "../../includes/PostService.class.php";
+	          require_once "../../includes/RollPage.class.php";
+              	  require_once '../../includes/commen.php';
 	          //创建了一个PostService的对象实例
 	          $postService=new PostService();
               date_default_timezone_set('PRC');
@@ -124,7 +124,7 @@
         </div><hr>
         <div class="div5">
 			<?php 
-				require_once "config/lang/blogList.css.php";
+				require_once "../themes/default/languages/blogList.css.php";
 				
 				
 				echo '<h3>'.div5().'</h3>';
