@@ -125,8 +125,9 @@
         <div class="div5">
 			<?php 
 				require_once "config/lang/blogList.css.php";
-				setdiv5Lang("en");
-				echo '<h3>'.div5().'</h3>';
+				$css = new Css();
+				$css->setdiv5Lang("en");
+				echo '<h3>'.$css->div5().'</h3>';
 			
 			?>
 			
