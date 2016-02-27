@@ -64,7 +64,7 @@
             for($i=0;$i<count($res);$i++){
             $row=$res[$i];
             echo "<table>";
-            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'>{$row['comment_date']}</td></tr></table>";
+            echo "<tr><td width='50%'>{$row['comment_author']}说：</td><td width='50%'></td></tr></table>";
             echo "<br>{$row['comment_content']}";
             echo "<br><hr>";
 		}
