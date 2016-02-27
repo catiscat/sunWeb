@@ -1,7 +1,7 @@
 <?php 
     require_once "lang.class.php";
     
- 
+    
 
 
         function div5(){
