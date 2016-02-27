@@ -1,5 +1,5 @@
 
 <?php  
-	require dirname(__FILE__)."/../content/template/articleList.php";
+	require ABSPATH."/temp/content/template/articleList.php";
 	
 ?>
