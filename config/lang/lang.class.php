@@ -1,6 +1,6 @@
 <?php 
 
-    $lang = "en";
+    public $lang = "en";
     
     function getLang(){
         return $lang;
