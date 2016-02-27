@@ -17,12 +17,6 @@
             $this->lang="zh";
         }
         
-        function setColor(){
-            
-        }
-        
-        function setFont(){
-            
-        }
+
     } 
 ?>

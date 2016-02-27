@@ -4,8 +4,9 @@
     
     
     class Css{
-        $lan = new Langu();
         $title="";
+        $lan = new Langu();
+        
     
     
   
