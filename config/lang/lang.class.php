@@ -1,27 +1,27 @@
 <?php 
 
-    public class Lang{
+    class Lang{
         private $lang = "zh";
         
-        public function getLang(){
+        function getLang(){
             return $this->lang;
         }
-        public function setLangZh(){
+        function setLangZh(){
             $this->lang="zh";
         }
-        public function setLangEn(){
+        function setLangEn(){
             $this->lang="en";
         }
         
-        public function setLangDefault(){
+        function setLangDefault(){
             $this->lang="zh";
         }
         
-        public function setColor(){
+        function setColor(){
             
         }
         
-        public function setFont(){
+        function setFont(){
             
         }
     } 
