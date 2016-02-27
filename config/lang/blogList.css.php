@@ -1,27 +1,27 @@
 <?php 
     require_once "lang.class.php";
     
-    $lang = new Lang();
+    $lan = new Lang();
     $title="";
     
     
     
     function setdiv5Lang($language){
         if($language=="zh"){
-            $lang->setLangZh();
+            $lan->setLangZh();
         }else if($language=="en"){
-            $lang->setLangEn();
+            $lan->setLangEn();
         }else{
-            $lang->setLangDefault();
+            $lan->setLangDefault();
         }
     }
     
 
     function div5(){
         
-        if($lang->getLang()=="zh"){
+        if($lan->getLang()=="zh"){
             $title="推荐帖子";
-        }else if($lang->getLang()=="en"){
+        }else if($lan->getLang()=="en"){
             $title="Recommend";
         }
         return $title;
