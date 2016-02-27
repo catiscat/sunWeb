@@ -6,11 +6,11 @@
 
             echo "你上次登陆时间是".$_COOKIE['lastVisit'];
             //更新时间
-            setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30,true);
+            setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }else{
             echo "你是第一次登陆";
             //更新时间
-            setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30,true);
+            setcookie("lastVisit",date("Y-m-d H:i:s"),time()+24*3600*30);
         }
     }
     
