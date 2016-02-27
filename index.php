@@ -1,3 +1,3 @@
 <?php 
-	require_once dirname(__FILE__)."/content/template/articleList.php";
+	require_once "./content/template/articleList.php";
 ?>
