@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="/images/duck.ico" />
-    <link rel="stylesheet" href="<?php echo dirname(__FILE__). ?>/css/base.css" type="text/css"  />
+    <link rel="stylesheet" href="<?php echo dirname(__FILE__) ;?>/css/base.css" type="text/css"  />
 
     <title>DuckBlog</title>
   </head>
