@@ -5,17 +5,17 @@
         public $lang = "en";
     
         function getLang(){
-            return $lang;
+            return $this->lang;
         }
         function setLangZh(){
-            $lang="zh";
+            $this->lang="zh";
         }
         function setLangEn(){
-            $lang="en";
+            $this->lang="en";
         }
         
         function setLangDefault(){
-            $lang="en";
+            $this->lang="en";
         }
     }
     
