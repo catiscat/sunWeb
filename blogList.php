@@ -123,7 +123,12 @@
 			<a href="#feed"><img class="feed" src="images/feed.ico" /></a>
         </div><hr>
         <div class="div5">
-			<h3>推荐帖子</h3>
+			<?php 
+				require_once "config/lang/blogList.css.php";
+				echo '<h3>'.div5().'</h3>';
+			
+			?>
+			
 			<?php 
 			    for($i=0;$i<count($res2);$i++){
                     $row=$res2[$i];                    
