@@ -6,6 +6,16 @@
 	$commentService=new CommentService();
     //创建一个sqlHelper对象实例，用于让 mysql_real_escape_string()函数得到现在的连接。
     $sqlHelper=new SqlHelper();
+    
+
+    $checkCode=$_POST['checkcode'];	
+	//先看看验证码是否ok
+	session_start();
+	if($checkCode!=$_SESSION['myCheckCode']){
+	    header("Location:readPost.php?errno=2");
+	    exit();
+	}
+
    	//先看看用户要分页还是删除某个评论
 	if(!empty($_REQUEST['flag'])){ 
 	    //接收flag的值

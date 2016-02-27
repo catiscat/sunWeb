@@ -9,6 +9,16 @@
     $sqlHelper=new SqlHelper();
     $id=mysql_real_escape_string(strip_tags($_POST["id"]));
 	
+	$checkCode=$_POST['checkcode'];
+	
+	//先看看验证码是否ok
+	session_start();
+	if($checkCode!=$_SESSION['myCheckCode']){
+	    header("Location:login.php?errno=2");
+	    exit();
+	}
+	
+	
     //2 密码
     $password=mysql_real_escape_string(strip_tags($_POST["password"]));
         

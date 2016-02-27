@@ -8,6 +8,7 @@
 			<table>
 				<tr><td>用户名</td><td><input type="text" name="id"></td></tr>
 				<tr><td>密码</td><td><input type="password" name="password"></td></tr>
+                <tr><td>验证码</td><td><input type="text" name="checkcode"></td><td><img src="checkCode.php" onclick="this.src='checkCode.php?aa='+Math.random()" /></td></tr>
 				<tr><td><input type="submit" value="用户登陆"/></td><td><input type="reset" value="重新填写" /></td></tr>
 			</table>
 		</form>
@@ -17,6 +18,8 @@
 		        $errno=$_GET["errno"];
 		        if($errno==1){
 		            echo "<br><font color='red' size='3'>用户名或密码错误，请重新输入";
+		        }else if($errno==2){
+		            echo "<br><font color='red' size='3'>验证码错误，请重新输入";
 		        }
 		    }
 		?>
