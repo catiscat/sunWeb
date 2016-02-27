@@ -25,7 +25,7 @@
         <?php 
 
             //该页面要显示指定博文的详细信息
-            require_once '../../../includes/PostService.class.php';
+            require_once dirname(__FILE__).'/../../../includes/PostService.class.php';
 
           
             $postService=new PostService();
