@@ -5,14 +5,22 @@
     $title="";
     
     
-    
+  
     function setdiv5Lang($language){
+        /*
         if($language=="zh"){
             $lan->setLangZh();
         }else if($language=="en"){
+        
             $lan->setLangEn();
         }else{
             $lan->setLangDefault();
+        }*/
+        if($language=="zh"){
+            $lan->setLangZh();
+        }else if($language=="en"){
+        
+            $lan->setLangEn();
         }
     }
     
