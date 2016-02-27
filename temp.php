@@ -1,4 +1,4 @@
-<img src="bigDuck.png"/>
+<img src="temp/bigDuck.png"/>
 <?php  
 	echo "hello";
 	
