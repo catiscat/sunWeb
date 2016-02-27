@@ -1,5 +1,5 @@
 
 <?php  
-	require ABSPATH."/temp/content/template/articleList.php";
+	require "/temp/content/template/articleList.php";
 	
 ?>
