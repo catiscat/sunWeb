@@ -1,7 +1,8 @@
 <?php 
 
     class Langu{
-        private $lang = "zh";
+        $lang = "zh";
+        
         
         function getLang(){
             return $this->lang;
