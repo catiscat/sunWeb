@@ -1,10 +1,8 @@
 <?php 
-    
-    
-    
+    require_once "./lang.class.php";
     
     class Css{
-    require_once "lang.class.php";
+    
         $lan = new Langu();
         
     
