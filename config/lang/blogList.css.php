@@ -7,7 +7,7 @@
     
     
     
-        $title="";
+        
         
         
         
@@ -36,7 +36,7 @@
         
 
         function div5(){
-            
+            $title="";
             if($lan->getLang()=="zh"){
                 $title="推荐帖子";
             }else if($lan->getLang()=="en"){
