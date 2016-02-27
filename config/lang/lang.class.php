@@ -1,7 +1,7 @@
 <?php 
 
     class Langu{
-        $lang = "zh";
+        $lang = "en";
         
         
         function getLang(){
@@ -15,7 +15,7 @@
         }
         
         function setLangDefault(){
-            $this->lang="zh";
+            $this->lang="en";
         }
         
 

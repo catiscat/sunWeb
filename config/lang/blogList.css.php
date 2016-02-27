@@ -1,30 +1,18 @@
 <?php 
     require_once "./lang.class.php";
     
-    class Css{
-    
+    class Css{    
         $lan = new Langu();
-        
-    
-    
-  
+        /*
         function setdiv5Lang($language){
-            /*
-            if($language=="zh"){
-                $lan->setLangZh();
-            }else if($language=="en"){
-            
-                $lan->setLangEn();
-            }else{
-                $lan->setLangDefault();
-            }*/
+
             if($language=="zh"){
                 $lan->setLangZh();
             }else if($language=="en"){
             
                 //$lan->setLangEn();
             }
-        }
+        }*/
         
 
         function div5(){
