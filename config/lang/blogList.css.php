@@ -1,5 +1,5 @@
 <?php 
-    require_once "./lang.class.php";
+    require_once "lang.class.php";
     
  
         $lan = new Langu();
