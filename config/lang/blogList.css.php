@@ -6,7 +6,7 @@
     
     
     
-    public function setdiv5Lang($language){
+    function setdiv5Lang($language){
         if($language=="zh"){
             $lang->setLangZh();
         }else if($language=="en"){
@@ -17,7 +17,7 @@
     }
     
 
-    public function div5(){
+    function div5(){
         
         if($lang->getLang()=="zh"){
             $title="推荐帖子";
