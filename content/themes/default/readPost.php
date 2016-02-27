@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 	
     <link rel="shortcut icon" href="images/duck.ico" >
-    <link rel="stylesheet" href="styles/base.css" type="text/css"  >
+    <link rel="stylesheet" href="css/base.css" type="text/css"  >
 
     <title>DuckBlog</title>
   </head>
