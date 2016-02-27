@@ -13,6 +13,10 @@
             $this->lang="en";
         }
         
+        public function setLangDefault(){
+            $this->lang="zh";
+        }
+        
         public function setColor(){
             
         }
