@@ -20,7 +20,7 @@
             $lan->setLangZh();
         }else if($language=="en"){
         
-            $lan->setLangEn();
+            //$lan->setLangEn();
         }
     }
     
