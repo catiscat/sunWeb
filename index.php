@@ -1,4 +1,4 @@
-<link href="content/template/articleList.php">
+
 <?php 
 	
 	//require_once "temp/temp.php";
