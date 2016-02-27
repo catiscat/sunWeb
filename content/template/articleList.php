@@ -124,7 +124,7 @@
         </div><hr>
         <div class="div5">
 			<?php 
-				require_once dirname(__FILE__)."/../themes/default/languages/blogList.css.php";
+				require_once dirname(__FILE__)."/../themes/default/languages/articleList.css.php";
 				
 				
 				echo '<h3>'.div5().'</h3>';
