@@ -4,7 +4,7 @@
     
     class PostService{
     	
-	$tableName="";
+	$tableName;
 	function PostService($tableName){
 		$this->tableName=$tableName;
 	}
