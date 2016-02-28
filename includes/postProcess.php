@@ -15,7 +15,7 @@
 	    if($flag=="del"){
 		    //这时我们知道要删除博文
 		    $id=$_REQUEST['id'];
-
+		    $postService->delPostById($id);
 		}else if($flag=="addpost"){
 		    //说明用户要执行添加博文的请求
 		    //接受数据
