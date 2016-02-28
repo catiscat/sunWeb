@@ -110,9 +110,9 @@
 	    }
 
 
-		 function getComment($id){
+          function getComment($id){
             //做一个$sql语句,字符串需要用''包起来
-            $sql="select comment_author,comment_date,comment_content from ."$this->tableName;
+            $sql="select comment_author,comment_date,comment_content from ".$this->tableName;
             //通过sqlHelper完成添加
             $sqlHelper=new SqlHelper();
             $res=$sqlHelper->execute_dml($sql);
