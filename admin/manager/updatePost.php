@@ -31,6 +31,6 @@
     <h1>修改博文</h1>
     <?php
         require_once (dirname(__FILE__)."/../content/themes/default/updatePostTable.php");
-	updatePostTable();
+	updatePostTable($arr);
     ?>
 </html>
