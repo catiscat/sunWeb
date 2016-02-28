@@ -20,7 +20,7 @@
 	    ?>
 	
 	    <?php 
-            require_once dirname(__FILE__)."/../../../includes/getArticleList.class.php";
+             require_once (dirname(__FILE__)."/../../../includes/getArticleList.class.php");
 	    
 	        for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];                    
