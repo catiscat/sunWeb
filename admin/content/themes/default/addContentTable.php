@@ -1,7 +1,7 @@
 <?php 
    function addContent($title){
         echo "<!-dck-->
-<form action='postProcess.php' method='post'>
+<form action='../../../../includes/postProcess.php' method='post'>
     <table>		
         <tr><td>post_author</td><td><input type='text' wrap='physical' name='post_author' /></td></tr>
         <tr><td>post_date</td><td><input type='text' name='post_date' id='post_date' value='0' onclick='showTime(this)' /></td></tr>
