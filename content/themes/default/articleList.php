@@ -14,7 +14,7 @@
       <div class="div2">
         <div class='contentDiv'>
           <?php 
-                  require_once dirname(__FILE__)."/../../../includes/getArticleList.class.php";
+                  require_once (dirname(__FILE__)."/../../../includes/getArticleList.class.php");
                   echo "<h1>博文列表</h1>";
                   getLastTime();
                   echo "<hr>";  
