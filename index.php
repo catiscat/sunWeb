@@ -1,7 +1,6 @@
 
-<?php 
-	
-	//require_once "temp/temp.php";
-	require_once dirname(__FILE__)."/content/template/articleList.php";
+<?php 		
+	require_once "content/template/articleList.php";
+	//如果是当前文件夹，就"content/template/articleList.php"; 或者等价于  "./content/template/articleList.php";  
 	
 ?>
