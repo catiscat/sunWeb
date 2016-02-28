@@ -24,7 +24,7 @@
 
         for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];
-            echo "<tr><td>{$row['id']}</td><td>{$row['post_author']}</td><td>{$row['post_date']}</td><td>{$row['post_summary']}</td><td>{$row['post_title']}</td><td>{$row['post_type']}</td><td><a onclick='return confirmDel({$row['id']})' href='postProcess.php?flag=del&id={$row['id']}'>删除博文</td><td><a href='updatePost.php?id={$row['id']}'>修改博文</td><td><a href='readPost.php?id={$row['id']}'>阅读博文</td></tr>";
+            echo "<tr><td>{$row['id']}</td><td>{$row['post_author']}</td><td>{$row['post_date']}</td><td>{$row['post_summary']}</td><td>{$row['post_title']}</td><td>{$row['post_type']}</td><td><a onclick='return confirmDel({$row['id']})' href='delPost.php?flag=del&id={$row['id']}'>删除博文</td><td><a href='updatePost.php?id={$row['id']}'>修改博文</td><td><a href='readPost.php?id={$row['id']}'>阅读博文</td></tr>";
         }
         
         
