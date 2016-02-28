@@ -16,7 +16,7 @@
     
     ?>
     <h1>添加博文</h1>
-    <?php require_once (dirname(__FILE__)."/../content/themes/default/laddContentTable.php");
+    <?php require_once (dirname(__FILE__)."/../content/themes/default/addContentTable.php");
 	    addContent("添加博文");
     ?>
 </html>
