@@ -30,7 +30,7 @@
     
     <h1>修改博文</h1>
     <?php
-        require_once (dirname(__FILE__)."../default/updatePostTable.php");
+        require_once (dirname(__FILE__)."/../default/updatePostTable.php");
 
     ?>
 </html>
