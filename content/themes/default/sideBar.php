@@ -20,6 +20,13 @@
 	    ?>
 	
 	    <?php 
+	    	  require_once dirname(__FILE__)."/../../../includes/PostService.class.php";
+	          require_once dirname(__FILE__)."/../../../includes/RollPage.class.php";
+	            //创建了一个PostService的对象实例
+	          $postService=new PostService();
+	          //调用getPostListByPage方法，获取应当显示的博文信息列表
+              $res2=$postService->getPostListByPage($rollPage->pageNow,$rollPage->pageSize);
+	    
 	        for($i=0;$i<count($res2);$i++){
             $row=$res2[$i];                    
             echo "<a href='readPost.php?id={$row['id']}'>{$row['post_title']}</a><br><br>";
