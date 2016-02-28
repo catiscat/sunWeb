@@ -5,7 +5,7 @@
 	    echo "
     <form action='postProcess.php' method='post'>
         <table>
-            <tr><td>ID</td><td><input readonly='readonly' type='text' name='id' value=".{$arr[0]['id']}." /></td></tr>        
+            
             <tr><td>post_author</td><td><input type='text' name='post_author' value=" .{$arr[0]['post_author']}. " /></td></tr>
             <tr><td>post_date</td><td><input type='text' onclick='showTime(this)' name='post_date' value=" .{$arr[0]['post_date']}." /></td></tr>
 		    <tr><td>post_title</td><td><input type='text' name='post_title' value=".{$arr[0]['post_title'].} " /></td></tr>
