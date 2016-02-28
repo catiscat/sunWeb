@@ -15,7 +15,7 @@
     ?>
     <body>
         <h1>主界面</h1>
-        <a href="postList.php">管理博文</a><br>
+        <a href="articleManager.php">管理博文</a><br>
         <a href="addPost.php">添加博文</a><br>
         <a href="#">查询博文</a><br>
         <a href="#">退出系统</a><br>
