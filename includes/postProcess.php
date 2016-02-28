@@ -1,5 +1,5 @@
 <?php 
-    
+    echo "<meta charset='utf-8' />";
     require_once "PostService.class.php";
 
    	
@@ -18,12 +18,11 @@
 		    echo "你希望删除的博文id=$id";
 		    if($postService->delPostById($id)==1){
 		        //成功
-		        header("Location:error.php");
-		        exit();
+		        echo "succeed!";
+		 
 		    }else{
 		        //失败
-		        header("Location:ok.php");
-		        exit();
+		        echo "failed";
 		    }
 		}else if($flag=="addpost"){
 		    //说明用户要执行添加博文的请求
