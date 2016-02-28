@@ -8,15 +8,7 @@
     <title>DuckBlog</title>
   </head>
   <body>
-	<nav>
-		<ul>
-		  <li><a href='index.php'>Home</a></li>  
-		  <li><a href='blogList.php#'>Blog</a></li>
-		  <li><a href='contact.php'>Contact</a></li>
-		  <li><a href='about.php'>About</a></li>
-		  
-		</ul>
-	</nav>
+	<?php require_once("headBar.php")?>
 	<div class="div0">
     <div class="div1">
       <div class="div2">
