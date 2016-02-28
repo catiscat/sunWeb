@@ -6,7 +6,7 @@
 		<h1>博客后台管理系统</h1>
 		
 		<?php 
-		    require_once(dirname(__FILE__)."/../../themes/default/loginTable.php");
+		    require_once(dirname(__FILE__)."/../content/themes/default/loginTable.php");
 		    loginTable("用户名","密&nbsp;码","验证码","登陆","重新填写");
 		?>
 		
