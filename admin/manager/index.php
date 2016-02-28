@@ -7,7 +7,7 @@
     <?php 
     
     
-        require_once (dirname(__FILE__)."/../includes/commen.php");
+        require_once (dirname(__FILE__)."/../../includes/commen.php");
         checkUserValidate();
         getLastTime();
         echo "欢迎您登陆";
