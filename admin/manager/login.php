@@ -4,14 +4,12 @@
 			<meta charset="utf-8">
 		</head>
 		<h1>博客后台管理系统</h1>
-		<form action="loginProcess.php" method="post">
-			<table>
-				<tr><td>用户名</td><td><input type="text" name="id"></td></tr>
-				<tr><td>密码</td><td><input type="password" name="password"></td></tr>
-                <tr><td>验证码</td><td><input type="text" name="checkcode"></td><td><img src="checkCode.php" onclick="this.src='checkCode.php?aa='+Math.random()" /></td></tr>
-				<tr><td><input type="submit" value="用户登陆"/></td><td><input type="reset" value="重新填写" /></td></tr>
-			</table>
-		</form>
+		
+		<?php 
+		    require_once(dirname(__FILE__)."/../../themes/default/loginTable.php");
+		    loginTable("用户名","密&nbsp;码","验证码","登陆","重新填写");
+		?>
+		
 		<?php 
 		    //接收errno
 		    if(!empty($_GET["errno"])){
