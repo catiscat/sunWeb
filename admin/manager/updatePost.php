@@ -22,7 +22,7 @@
     //通过id得到该博文的其他信息
     //查询数据库，调用sqlHelper
     
-    $postService=new PostService();
+    $postService=new PostService("posts");
     $arr=$postService->getPostById($id);
     
     ?>
