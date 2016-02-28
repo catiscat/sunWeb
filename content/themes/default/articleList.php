@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/images/duck.ico" />
-    <?php echo "<link rel='stylesheet' href='/css/base.css' type='text/css'  />";  ?>
+    <link rel="shortcut icon" href="images/duck.ico" />
+    <link rel='stylesheet' href='css/base.css' type='text/css'  />
 
     <title>DuckBlog</title>
   </head>
@@ -23,9 +23,9 @@
         <div class='contentDiv'>
           <?php 
 
-	          require_once dirname(__FILE__)."/../../includes/PostService.class.php";
-	          require_once dirname(__FILE__)."/../../includes/RollPage.class.php";
-              	  require_once dirname(__FILE__)."/../../includes/commen.php";
+	          require_once dirname(__FILE__)."../../../includes/PostService.class.php";
+	          require_once dirname(__FILE__)."../../../includes/RollPage.class.php";
+              	  require_once dirname(__FILE__)."../../../includes/commen.php";
 	          //创建了一个PostService的对象实例
 	          $postService=new PostService();
               date_default_timezone_set('PRC');
@@ -124,7 +124,7 @@
         </div><hr>
         <div class="div5">
 			<?php 
-				require_once dirname(__FILE__)."/../themes/default/languages/articleList.css.php";
+				require_once dirname(__FILE__)."languages/articleList.css.php";
 				
 				
 				echo '<h3>'.div5().'</h3>';

@@ -1,5 +1,5 @@
 
 <?php 		
-	echo "I love scala so much!"
+	echo "I love scala so much!";
 	
 ?>
