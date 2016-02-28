@@ -12,10 +12,10 @@
 
     //该页面要显示准备修改的博文信息
         
-    require_once "commen.php";
+    require_once dirname(__FILE__)."/../includes/commen.php";
     checkUserValidate();
     getLastTime();
-    require_once 'PostService.class.php';
+    require_once dirname(__FILE__)."/../includes/PostService.class.php";
     $sqlHelper=new SqlHelper();
 
     $id=mysql_real_escape_string(strip_tags($_GET['id']));

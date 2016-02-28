@@ -17,7 +17,7 @@
     
     <?php 
 	
-        require_once(dirname(__FILE__)."/../../includes/getArticleList.class.php");
+        require_once(dirname(__FILE__)."/../includes/getArticleList.class.php");
  
         echo "<table border='1px' width='700px' bordercolor='green' cellspacing='0px'>";
         echo "<tr><th>id</th><th>post_author</th><th>post_date</th><th>post_summary</th><th>post_title</th><th>post_type</th><th>删除博文</th><th>修改博文</th><th>阅读博文</th></tr>";

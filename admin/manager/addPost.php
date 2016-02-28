@@ -10,7 +10,7 @@
     </head>
     <?php 
             
-        require_once "commen.php";
+        require_once dirname(__FILE__)."/../includes/commen.php";
         checkUserValidate();
         getLastTime();
     
