@@ -15,15 +15,7 @@
 	    if($flag=="del"){
 		    //这时我们知道要删除博文
 		    $id=$_REQUEST['id'];
-		    echo "你希望删除的博文id=$id";
-		    if($postService->delPostById($id)==1){
-		        //成功
-		        echo "succeed!";
-		 
-		    }else{
-		        //失败
-		        echo "failed";
-		    }
+
 		}else if($flag=="addpost"){
 		    //说明用户要执行添加博文的请求
 		    //接受数据
@@ -36,13 +28,7 @@
 		    
 		    //完成添加-》数据库
 		    $res=$postService->addPost($post_author,$post_date,$post_summary,$post_content,$post_title,$post_type);
-		    if($res=1){
-		        header("Location:ok.php"); //操作成功
-		        exit();
-		    }else{
-		        header("Location:error.php");//操作失败
-		        exit();
-		    }
+
 		}else if($flag=="updatepost"){
 		    //说明用户希望执行修改博文
 		    //接收数据
