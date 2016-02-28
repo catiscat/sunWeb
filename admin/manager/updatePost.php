@@ -11,8 +11,8 @@
     <?php 
 
     //该页面要显示准备修改的博文信息
-        
-    require_once dirname(__FILE__)."/../includes/commen.php";
+     require_once(dirname(__FILE__)."/../includes/commen.php");
+   
     checkUserValidate();
     getLastTime();
     require_once dirname(__FILE__)."/../includes/PostService.class.php";
