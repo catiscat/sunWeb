@@ -86,7 +86,7 @@
 	    //一个函数可以获取应当显示的博文信息
 	    function getPostListByPage($pageNow,$pageSize){
 	       
-	       $sql="select * from ".$this->tableName limit ($pageNow-1)*$pageSize.",".$pageSize;
+	       $sql="select * from ".$this->tableName." limit ".($pageNow-1)*$pageSize.",".$pageSize;
 	       
 	        $sqlHelper=new SqlHelper();
 	        $res=$sqlHelper->execute_dql2($sql);
