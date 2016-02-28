@@ -1,0 +1,154 @@
+body {
+    margin:0;
+    background:#4CAF50;
+}
+
+.ul5 ul{
+    list-style-type:square;
+
+}
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#993366;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+
+
+li a:hover:not(.active) {
+    background-color:#ccccb3;
+}
+
+li a .active {
+    background-color:#ccccb3;
+	
+}
+
+li a:visited{
+    background-color:#ccccb3;
+}
+
+.contentDiv a:link{
+    color:#006622;
+    text-decoration: none;
+}
+
+.contentDiv a:hover{
+    text-decoration: underline;
+    color:#993366;
+}
+
+.contentDiv a:visited{
+    color:#ccccb3;
+}
+
+.div3 a:link{
+    color:#000066;
+    text-decoration: none;
+}
+
+.div3 a:hover{
+    text-decoration: underline;
+    color:#993366;
+}
+
+
+
+
+.div0{
+
+	margin-top:40px;
+	background-color:#4CAF50;
+	height:100%;
+}
+
+.footerDiv{
+   text-align:center;
+}
+
+.goTop{
+    width:30px;
+    height:40px;
+    float:right;
+}
+
+
+
+.div1{
+    margin:0 auto;
+    width:1000px;
+    height:95%;
+    border:black solid 2px;
+    background-color:white;	
+}
+
+.div2{
+    float:left;
+    width:700px;
+    height:90%;
+    border:black double 5px;
+    background-color:#ffcc66;
+}
+
+.contentDiv{
+    margin:0 auto;
+    width:650px;
+    background-color:#ffcc66;
+	height:90%;
+
+}
+.div3{
+    width:280px;
+    border:black double 5px;
+    background-color:#4CAF50;
+    float:right;
+}
+
+.div4{
+    width:265px;
+    margin-left:5px;
+    background-color:#4CAF50;
+}
+
+.div5{
+    width:265px;
+    margin-left:5px;
+    background-color:#4CAF50;    
+}
+.div6{
+    width:265px;
+    margin-left:5px;
+    background-color:#4CAF50;    
+}
+.bigduck{
+	width:100px;
+	height:100px;
+}
+
+.feed{
+    width:60px;
+    height:60px;
+}
+
+
