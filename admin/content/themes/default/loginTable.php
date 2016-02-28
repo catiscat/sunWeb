@@ -11,7 +11,7 @@ function loginTable($username,$password,$checkcode,$buttonLeft,$buttonRight){
 		<tr><td><input type='submit' value=$buttonLeft/></td><td><input type='reset' value=$buttonRight /></td></tr>
 	</table>
 </form>
-    "
+    ";
 }
    
 ?>
