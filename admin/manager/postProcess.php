@@ -57,13 +57,7 @@
 		    
 		    //完成修改-》数据库
 		    $res=$postService->updatePost($id,$post_author,$post_date,$post_summary,$post_content,$post_title,$post_type);
-		    if($res=1){
-		        header("Location:ok.php"); //操作成功
-		        exit();
-		    }else{
-		        header("Location:error.php");//操作失败
-		        exit();
-		    }
+		   
 		}
 	} 
 
