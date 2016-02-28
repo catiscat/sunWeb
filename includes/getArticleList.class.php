@@ -1,8 +1,8 @@
 <?php
 
 	          require_once "PostService.class.php";
-	          require_once "RollPage.class.php";
-              	  require_once "commen.php";
+	          require_once "RollPage.class.php";              
+              require_once "commen.php";
 	          //创建了一个PostService的对象实例
 	          $postService=new PostService();
               date_default_timezone_set('PRC');
