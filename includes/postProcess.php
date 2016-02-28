@@ -4,7 +4,7 @@
 
    	
 	//创建了一个PostService的对象实例
-	$postService=new PostService();
+	$postService=new PostService("posts");
 	$sqlHelper=new SqlHelper();
 
    	//先看看用户要分页还是删除某个博文
