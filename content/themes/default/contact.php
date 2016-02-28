@@ -37,21 +37,7 @@
       </div>
         </div>
       <div class="div3">
-        <div class="div4">
-     		<img class="bigduck" src="images/bigDuck.png" /><br>
-			<a href="index.php"><h5>Duck's Site</h5></a>
-			<a href="contact.php"><h5>Duck's Email</h5></a>
-			<a href="https://github.com/catiscat"><h5>Duck's GitHub</h5></a>
-			<h3>订阅DuckBlog</h3>
-			<a href="#feed"><img class="feed" src="images/feed.ico" /></a>
-        </div><hr>
-        <div class="div5">
-			<h3>推荐帖子</h3>
-        
-        </div><hr>
-        <div class="div6">
-        	<h3>分类标签</h3>
-        </div><hr>
+        <?php require_once("sideBar.php")?>
       </div>
     </div>
 
