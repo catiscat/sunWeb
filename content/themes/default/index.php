@@ -1,3 +1,3 @@
 <?php 
-	require_once("articleList.php")
+	require_once("articleList.php");
 ?>
