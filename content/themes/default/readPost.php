@@ -28,7 +28,7 @@
             require_once dirname(__FILE__).'/../../../includes/PostService.class.php';
 
           
-            $postService=new PostService();
+            $postService=new PostService("posts");
      //       $pageCount=$_REQUIRE['pageCount']
             
             //创建一个sqlHelper对象实例，用于让 mysql_real_escape_string()函数得到现在的连接。
