@@ -3,7 +3,7 @@
 function loginTable($username,$password,$checkcode,$buttonLeft,$buttonRight){
  echo "
 
-<form action='loginProcess.php' method='post'>
+<form action='../../../../includes/loginProcess.php' method='post'>
 	<table>
 		<tr><td>$username</td><td><input type='text' name='id'></td></tr>
 		<tr><td>$password</td><td><input type='password' name='password'></td></tr>
