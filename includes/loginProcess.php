@@ -30,11 +30,11 @@
             session_start();
             $_SESSION['loginuser']=$name;
             
-            header("Location:postManage.php");
+            header("Location:../admin/manager/index.php");
             exit();
         }else{
             //不合法
-            header("Location:login.php?errno=1");
+            header("Location:../admin/manager/login.php?errno=1");
 	        exit();
 
         }
