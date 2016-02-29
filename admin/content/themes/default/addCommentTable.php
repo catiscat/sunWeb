@@ -1,4 +1,6 @@
 <?php 
+
+	echo "<meta charset='utf-8' />";
     function addCommentTable($title){
         echo  "      
         <form action='postProcess.php' method='post'>
