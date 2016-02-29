@@ -4,7 +4,7 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     </head>
     <?php 
-    require_once (dirname(__FILE__)."/../content/themes/default/updateCommentTable.php");
+
     //该页面要显示准备修改评论的信息
     require_once(dirname(__FILE__)."/../../includes/commen.php");   
     //checkUserValidate();
@@ -25,7 +25,7 @@
     
     <h1>修改</h1>
     <?php
-       
-	    updateCommentTable($arr);
+           require_once (dirname(__FILE__)."/../content/themes/default/updateCommentTable.php");
+	   updateCommentTable($arr);
     ?>
 </html>
