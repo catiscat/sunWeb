@@ -1,6 +1,6 @@
 <?php 
 
     $tableName="posts";
-    $gotoUrl="articleList.php";
+    $gotoUrl="articleManager.php";
     require_once "getListByPage.php";
 ?>

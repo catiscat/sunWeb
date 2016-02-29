@@ -1,6 +1,6 @@
 <?php 
 
     $tableName="comments";
-    $gotoUrl="commentList.php";
+    $gotoUrl="commentManager.php";
     require_once "getListByPage.php";
 ?>
