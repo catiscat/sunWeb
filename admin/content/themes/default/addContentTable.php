@@ -1,6 +1,6 @@
 <?php 
    function addContent($title){
-        echo "<!-dck-->
+        echo "
 <form action='../../../../includes/postProcess.php' method='post'>
     <table>		
         <tr><td>post_author</td><td><input type='text' wrap='physical' name='post_author' /></td></tr>
