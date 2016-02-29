@@ -23,7 +23,7 @@
         }
     
         function updateComment($id,$post_author,$post_date,$post_content){
-            $sql="update ".$this->tableName." set post_author='$post_author',post_date='$post_date',post_content='$post_content' where id=$id";
+            $sql="update ".$this->tableName." set comment_author='$post_author',comment_date='$post_date',comment_content='$post_content' where id=$id";
             $sqlHelper=new SqlHelper();
             $res=$sqlHelper->execute_dml($sql);
             $sqlHelper->close_connect();
@@ -54,7 +54,7 @@
         
          function addComment($post_author,$post_date,$post_content){
             //做一个$sql语句,字符串需要用''包起来
-            $sql="insert into ".$this->tableName."(post_author,post_date,post_content) values ('$post_author','$post_date','$post_content')";
+            $sql="insert into ".$this->tableName."(comment_author,comment_date,comment_content) values ('$post_author','$post_date','$post_content')";
             //通过sqlHelper完成添加
             $sqlHelper=new SqlHelper();
             $res=$sqlHelper->execute_dml($sql);

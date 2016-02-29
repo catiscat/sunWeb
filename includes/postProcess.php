@@ -35,7 +35,7 @@
 		}else if($flag=="updatepost"){
 		    //说明用户希望执行修改博文
 		    //接收数据
-		    $id=mysql_real_escape_string(strip_tags($_POST['id']));
+		//    $id=mysql_real_escape_string(strip_tags($_POST['id']));
 		    $post_author=mysql_real_escape_string(strip_tags($_POST['post_author']));
 		    $post_date=mysql_real_escape_string(strip_tags($_POST['post_date']));
 		    $post_content=mysql_real_escape_string(strip_tags($_POST['post_content']));
