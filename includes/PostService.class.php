@@ -1,13 +1,18 @@
 <?php 
 
     require_once "SqlHelper.class.php";
-    
+
+	    
+
     class PostService{
     	
-	public $tableName="posts";
-	function PostService($tableName){
-		$this->tableName=$tableName;
-	}
+	    public $tableName="posts";
+	
+	
+	
+	    function PostService($tableName){
+		    $this->tableName=$tableName;
+	    }
 
         function updatePost($id,$post_author,$post_date,$post_summary,$post_content,$post_title,$post_type){
             $sql="update ".$this->tableName." set post_author='$post_author',post_date='$post_date',post_summary='$post_summary',post_content='$post_content',post_title='$post_title',post_type='$post_type' where id=$id";
