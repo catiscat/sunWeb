@@ -7,7 +7,7 @@
 
     //该页面要显示准备修改评论的信息
     require_once(dirname(__FILE__)."/../../includes/commen.php");   
-    checkUserValidate();
+    //checkUserValidate();
     
     
     require_once dirname(__FILE__)."/../../includes/PostService.class.php";
