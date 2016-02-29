@@ -14,7 +14,7 @@
 	//先看看验证码是否ok
 	session_start();
 	if($checkCode!=$_SESSION['myCheckCode']){
-	    header("Location:../admin/manager/login.phplogin.php?errno=2");
+	    header("Location:../admin/manager/login.php?errno=2");
 	    exit();
 	}
 	
