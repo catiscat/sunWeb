@@ -31,9 +31,9 @@
         }
     
         //根据id号获取一个博文的信息
-        function getPostById($id){
+        function getPostById($id,$post_author,$post_date,$post_contents){
             
-            $sql="select * from ".$this->tableName." where id=$id";
+            $sql="select $post_author,$post_date,$post_content from ".$this->tableName." where id=$id";
             $sqlHelper=new SqlHelper();
             $arr=$sqlHelper->execute_dql2($sql);
             $sqlHelper->close_connect();
