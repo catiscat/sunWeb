@@ -1,6 +1,6 @@
 <?php 
 	
-	function updatePostTable($arr){
+	function updateCommentTable($arr){
 	
 	    echo "
     <form action='../../../../includes/postProcess.php' method='post'>
