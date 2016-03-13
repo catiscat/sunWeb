@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class CommentCRUD</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AdminCRUD.html">AdminCRUD</a></li>
+				<li class="active"><a href="class-CommentCRUD.html">CommentCRUD</a></li>
+				<li><a href="class-Lang.html">Lang</a></li>
+				<li><a href="class-PostCRUD.html">PostCRUD</a></li>
+				<li><a href="class-SqlHelper.html">SqlHelper</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-addComment.html">addComment</a></li>
+				<li><a href="function-addPost.html">addPost</a></li>
+				<li><a href="function-checkSessionInfo.html">checkSessionInfo</a></li>
+				<li><a href="function-cleanData.html">cleanData</a></li>
+				<li><a href="function-deleteComment.html">deleteComment</a></li>
+				<li><a href="function-deletePost.html">deletePost</a></li>
+				<li><a href="function-endsWith.html">endsWith</a></li>
+				<li><a href="function-getAdminInfo.html">getAdminInfo</a></li>
+				<li><a href="function-getAdminSessionInfo.html">getAdminSessionInfo</a></li>
+				<li><a href="function-getAllComments.html">getAllComments</a></li>
+				<li><a href="function-getCommentByCommentId.html">getCommentByCommentId</a></li>
+				<li><a href="function-getCommentByPostId.html">getCommentByPostId</a></li>
+				<li><a href="function-getCookieVal.html">getCookieVal</a></li>
+				<li><a href="function-getLastTime.html">getLastTime</a></li>
+				<li><a href="function-getPostAll.html">getPostAll</a></li>
+				<li><a href="function-getPostByType.html">getPostByType</a></li>
+				<li><a href="function-getPostContent.html">getPostContent</a></li>
+				<li><a href="function-getPostList.html">getPostList</a></li>
+				<li><a href="function-getPostProfile.html">getPostProfile</a></li>
+				<li><a href="function-getPostRecomand.html">getPostRecomand</a></li>
+				<li><a href="function-getPostType.html">getPostType</a></li>
+				<li><a href="function-getThemePath.html">getThemePath</a></li>
+				<li><a href="function-listAllCommentsDetail.html">listAllCommentsDetail</a></li>
+				<li><a href="function-listCommentByCommentId.html">listCommentByCommentId</a></li>
+				<li><a href="function-listCommentByPostId.html">listCommentByPostId</a></li>
+				<li><a href="function-listPostByType.html">listPostByType</a></li>
+				<li><a href="function-listPostContent.html">listPostContent</a></li>
+				<li><a href="function-listPostProfile.html">listPostProfile</a></li>
+				<li><a href="function-listPostRecomandProfile.html">listPostRecomandProfile</a></li>
+				<li><a href="function-listPostTypeProfile.html">listPostTypeProfile</a></li>
+				<li><a href="function-listSinglePostAll.html">listSinglePostAll</a></li>
+				<li><a href="function-listSinglePostProfile.html">listSinglePostProfile</a></li>
+				<li><a href="function-manageAllComments.html">manageAllComments</a></li>
+				<li><a href="function-manageAllPosts.html">manageAllPosts</a></li>
+				<li><a href="function-rollPage.html">rollPage</a></li>
+				<li><a href="function-rollPageByPostType.html">rollPageByPostType</a></li>
+				<li><a href="function-showBigTitle.html">showBigTitle</a></li>
+				<li><a href="function-showCommentByPost.html">showCommentByPost</a></li>
+				<li><a href="function-showFooter.html">showFooter</a></li>
+				<li><a href="function-showHead.html">showHead</a></li>
+				<li><a href="function-showHeader.html">showHeader</a></li>
+				<li><a href="function-showLoginInfo.html">showLoginInfo</a></li>
+				<li><a href="function-showPostByRecomand.html">showPostByRecomand</a></li>
+				<li><a href="function-showPostByType.html">showPostByType</a></li>
+				<li><a href="function-showPostContent.html">showPostContent</a></li>
+				<li><a href="function-showPostList.html">showPostList</a></li>
+				<li><a href="function-showPostType.html">showPostType</a></li>
+				<li><a href="function-showSidebar.html">showSidebar</a></li>
+				<li><a href="function-showSinglePostProfile.html">showSinglePostProfile</a></li>
+				<li><a href="function-showSlideshow.html">showSlideshow</a></li>
+				<li><a href="function-startsWith.html">startsWith</a></li>
+				<li><a href="function-switchTheme.html">switchTheme</a></li>
+				<li><a href="function-updateComment.html">updateComment</a></li>
+				<li><a href="function-updatePost.html">updatePost</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class CommentCRUD</h1>
+
+
+	<div class="description">
+	<p>该类用于对评论的增删改查操作。同时过滤指定参数。</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> <a href="source-class-CommentCRUD.html#12-257" title="Go to source code">utils/crud/CommentCRUD.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="construct" id="_construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			void;
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_construct">#</a>
+		<code><a href="source-class-CommentCRUD.html#23-42" title="Go to source code">construct</a>( )</code>
+
+		<div class="description short">
+			<p>此函数是手动调用，初始化flag的值</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>此函数是手动调用，初始化flag的值</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					void;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEmpty" id="_isEmpty">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isEmpty">#</a>
+		<code><a href="source-class-CommentCRUD.html#45-64" title="Go to source code">isEmpty</a>( <span> <var>$link</var></span>, <span> <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>定义一个检测是否为空的函数，如果为空，终止运行，否则返回接收的值。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>定义一个检测是否为空的函数，如果为空，终止运行，否则返回接收的值。</p>
+
+<p>如果$str==0,{};
+如果$str不为空，用cleanDate过滤 $str;
+否则，终止执行。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$link</var></dt>
+					<dd>String</dd>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$str: String
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="del" id="_del">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_del">#</a>
+		<code><a href="source-class-CommentCRUD.html#68-83" title="Go to source code">del</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行删除comment的操作。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行删除comment的操作。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array(); #array($commentId)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Int;  #如果执行成功，返回1;否则，返回0;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-CommentCRUD.html#86-107" title="Go to source code">add</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行添加 comment 的操作。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行添加 comment 的操作。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array(); #array($commentAuthor,$commentContent,$postId),$commentDate是自动生成。</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Int;  #如果执行成功，返回1;否则，返回0;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-CommentCRUD.html#112-138" title="Go to source code">update</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行更新comment的操作。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行更新comment的操作。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array(); #array($commentId,$commentDate,$commentAuthor,$commentContent);</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Int;  #如果执行成功，返回1;否则，返回0;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectAllComments" id="_selectAllComments">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectAllComments">#</a>
+		<code><a href="source-class-CommentCRUD.html#143-162" title="Go to source code">selectAllComments</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于 分页查询所有评论的具体信息，包括 comment_date,comment_author,comment_id,comment_content。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于 分页查询所有评论的具体信息，包括 comment_date,comment_author,comment_id,comment_content。</p>
+
+<p>*如果执行成功，返回$res，默认释放资源,关闭链接;
+*</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array()  #array(_,代表评论的第几页,代表每页显示多少评论);</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Array(Array)  #$res 是一个结果集合，一个内层Array一条记录。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectByPostId" id="_selectByPostId">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectByPostId">#</a>
+		<code><a href="source-class-CommentCRUD.html#164-184" title="Go to source code">selectByPostId</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于 分页查询指定文章的所有评论的具体信息，包括 comment_date,comment_author,comment_id,comment_content。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于 分页查询指定文章的所有评论的具体信息，包括 comment_date,comment_author,comment_id,comment_content。</p>
+
+<p>*如果执行成功，返回$res，默认释放资源,关闭链接;
+*</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array()  #array($postId,代表评论的第几页,代表每页显示多少评论);</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Array(Array)  #$res 是一个结果集合，一个内层Array一条记录。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectByCommentId" id="_selectByCommentId">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectByCommentId">#</a>
+		<code><a href="source-class-CommentCRUD.html#188-204" title="Go to source code">selectByCommentId</a>( <span> <var>$commentId</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于 查询某个评论的具体信息，包括 comment_date,comment_author,comment_id,comment_content。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于 查询某个评论的具体信息，包括 comment_date,comment_author,comment_id,comment_content。</p>
+
+<p>*如果执行成功，返回$res，默认释放资源,关闭链接;
+*</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$commentId</var></dt>
+					<dd>Int;</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Array(Array)  #$res 是一个结果集合，一个内层Array一条记录。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRes" id="_getRes">
+
+		<td class="attributes"><code>
+			 public 
+
+			删改结果。
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRes">#</a>
+		<code><a href="source-class-CommentCRUD.html#206-227" title="Go to source code">getRes</a>( )</code>
+
+		<div class="description short">
+			<p>该函数根据flag的值，确定执行删，改。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数根据flag的值，确定执行删，改。</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					删改结果。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAddRes" id="_getAddRes">
+
+		<td class="attributes"><code>
+			 public 
+
+			增加结果。
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAddRes">#</a>
+		<code><a href="source-class-CommentCRUD.html#229-247" title="Go to source code">getAddRes</a>( )</code>
+
+		<div class="description short">
+			<p>该函数根据flag的值，确定执行增。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数根据flag的值，确定执行增。</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					增加结果。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="goBack" id="_goBack">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_goBack">#</a>
+		<code><a href="source-class-CommentCRUD.html#250-256" title="Go to source code">goBack</a>( )</code>
+
+		<div class="description short">
+			<p>返回上一页，当给该函数请求时返回。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>返回上一页，当给该函数请求时返回。</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="flag" id="$flag">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-CommentCRUD.html#18-21" title="Go to source code"><var>$flag</var></a>
+
+			<div class="description short">
+				<p>$flag 用于识别具体执行哪种类型（增，删，改）的操作。</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>$flag 用于识别具体执行哪种类型（增，删，改）的操作。</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$flag" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<themes>
+    <theme>
+        <themeName>default</themeName>
+        <themePath>default/</themePath>
+    </theme>
+    <theme>
+        <themeName>grey-style</themeName>
+        <themePath>grey-style/</themePath>
+    </theme>
+</themes>
+

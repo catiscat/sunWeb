@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class SqlHelper</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AdminCRUD.html">AdminCRUD</a></li>
+				<li><a href="class-CommentCRUD.html">CommentCRUD</a></li>
+				<li><a href="class-Lang.html">Lang</a></li>
+				<li><a href="class-PostCRUD.html">PostCRUD</a></li>
+				<li class="active"><a href="class-SqlHelper.html">SqlHelper</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-addComment.html">addComment</a></li>
+				<li><a href="function-addPost.html">addPost</a></li>
+				<li><a href="function-checkSessionInfo.html">checkSessionInfo</a></li>
+				<li><a href="function-cleanData.html">cleanData</a></li>
+				<li><a href="function-deleteComment.html">deleteComment</a></li>
+				<li><a href="function-deletePost.html">deletePost</a></li>
+				<li><a href="function-endsWith.html">endsWith</a></li>
+				<li><a href="function-getAdminInfo.html">getAdminInfo</a></li>
+				<li><a href="function-getAdminSessionInfo.html">getAdminSessionInfo</a></li>
+				<li><a href="function-getAllComments.html">getAllComments</a></li>
+				<li><a href="function-getCommentByCommentId.html">getCommentByCommentId</a></li>
+				<li><a href="function-getCommentByPostId.html">getCommentByPostId</a></li>
+				<li><a href="function-getCookieVal.html">getCookieVal</a></li>
+				<li><a href="function-getLastTime.html">getLastTime</a></li>
+				<li><a href="function-getPostAll.html">getPostAll</a></li>
+				<li><a href="function-getPostByType.html">getPostByType</a></li>
+				<li><a href="function-getPostContent.html">getPostContent</a></li>
+				<li><a href="function-getPostList.html">getPostList</a></li>
+				<li><a href="function-getPostProfile.html">getPostProfile</a></li>
+				<li><a href="function-getPostRecomand.html">getPostRecomand</a></li>
+				<li><a href="function-getPostType.html">getPostType</a></li>
+				<li><a href="function-getThemePath.html">getThemePath</a></li>
+				<li><a href="function-listAllCommentsDetail.html">listAllCommentsDetail</a></li>
+				<li><a href="function-listCommentByCommentId.html">listCommentByCommentId</a></li>
+				<li><a href="function-listCommentByPostId.html">listCommentByPostId</a></li>
+				<li><a href="function-listPostByType.html">listPostByType</a></li>
+				<li><a href="function-listPostContent.html">listPostContent</a></li>
+				<li><a href="function-listPostProfile.html">listPostProfile</a></li>
+				<li><a href="function-listPostRecomandProfile.html">listPostRecomandProfile</a></li>
+				<li><a href="function-listPostTypeProfile.html">listPostTypeProfile</a></li>
+				<li><a href="function-listSinglePostAll.html">listSinglePostAll</a></li>
+				<li><a href="function-listSinglePostProfile.html">listSinglePostProfile</a></li>
+				<li><a href="function-manageAllComments.html">manageAllComments</a></li>
+				<li><a href="function-manageAllPosts.html">manageAllPosts</a></li>
+				<li><a href="function-rollPage.html">rollPage</a></li>
+				<li><a href="function-rollPageByPostType.html">rollPageByPostType</a></li>
+				<li><a href="function-showBigTitle.html">showBigTitle</a></li>
+				<li><a href="function-showCommentByPost.html">showCommentByPost</a></li>
+				<li><a href="function-showFooter.html">showFooter</a></li>
+				<li><a href="function-showHead.html">showHead</a></li>
+				<li><a href="function-showHeader.html">showHeader</a></li>
+				<li><a href="function-showLoginInfo.html">showLoginInfo</a></li>
+				<li><a href="function-showPostByRecomand.html">showPostByRecomand</a></li>
+				<li><a href="function-showPostByType.html">showPostByType</a></li>
+				<li><a href="function-showPostContent.html">showPostContent</a></li>
+				<li><a href="function-showPostList.html">showPostList</a></li>
+				<li><a href="function-showPostType.html">showPostType</a></li>
+				<li><a href="function-showSidebar.html">showSidebar</a></li>
+				<li><a href="function-showSinglePostProfile.html">showSinglePostProfile</a></li>
+				<li><a href="function-showSlideshow.html">showSlideshow</a></li>
+				<li><a href="function-startsWith.html">startsWith</a></li>
+				<li><a href="function-switchTheme.html">switchTheme</a></li>
+				<li><a href="function-updateComment.html">updateComment</a></li>
+				<li><a href="function-updatePost.html">updatePost</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class SqlHelper</h1>
+
+
+	<div class="description">
+	<p>这是一个工具类，作用是完成对数据库的操作
+execute_dml->更新 删除 添加语句
+execute_dql->查询语句</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> <a href="source-class-SqlHelper.html#7-108" title="Go to source code">includes/drivers/MySql/SqlHelper.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-SqlHelper.html#23-43" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			<p>该函数是一个连接mysql数据库的构造函数。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数是一个连接mysql数据库的构造函数。</p>
+
+<p>初始化 $this->conn。
+如果连接mysql数据库失败，echo 错误信息。</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute_dql" id="_execute_dql">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute_dql">#</a>
+		<code><a href="source-class-SqlHelper.html#46-70" title="Go to source code">execute_dql</a>( <span> <var>$sql</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行数据库查询语句。
+如果执行成功，返回$res，并释放资源;否则，echo 查询失败及错误信息。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行数据库查询语句。
+如果执行成功，返回$res，并释放资源;否则，echo 查询失败及错误信息。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd>String  #SQL查询语句</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res : Array(Array()) #是从mysqli_result对象中取出的 记录 ，一条记录是一个array，取出N条记录，形成一个二维array。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute_dml" id="_execute_dml">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute_dml">#</a>
+		<code><a href="source-class-SqlHelper.html#75-92" title="Go to source code">execute_dml</a>( <span> <var>$sql</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行SQL增、删、改的语句。
+如果执行成功，返回1;否则，echo 查询失败及错误信息。返回 0。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行SQL增、删、改的语句。
+如果执行成功，返回1;否则，echo 查询失败及错误信息。返回 0。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd>String  #SQL增、删、改语句</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res : Int # 成功,返回 1, 否则，返回 0。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="close_connect" id="_close_connect">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_close_connect">#</a>
+		<code><a href="source-class-SqlHelper.html#95-107" title="Go to source code">close_connect</a>( )</code>
+
+		<div class="description short">
+			<p>该函数用于关闭mysql数据库连接。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于关闭mysql数据库连接。</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="conn" id="$conn">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SqlHelper.html#16" title="Go to source code"><var>$conn</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$conn" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="dbname" id="$dbname">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SqlHelper.html#17" title="Go to source code"><var>$dbname</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$dbname" class="anchor">#</a>
+				<code><span class="php-quote">&quot;your_db_name&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="username" id="$username">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SqlHelper.html#18" title="Go to source code"><var>$username</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$username" class="anchor">#</a>
+				<code><span class="php-quote">&quot;your_username&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="password" id="$password">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SqlHelper.html#19" title="Go to source code"><var>$password</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$password" class="anchor">#</a>
+				<code><span class="php-quote">&quot;your_password&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="host" id="$host">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-SqlHelper.html#20" title="Go to source code"><var>$host</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$host" class="anchor">#</a>
+				<code><span class="php-quote">&quot;127.0.0.1&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

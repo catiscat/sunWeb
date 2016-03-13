@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PostCRUD</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AdminCRUD.html">AdminCRUD</a></li>
+				<li><a href="class-CommentCRUD.html">CommentCRUD</a></li>
+				<li><a href="class-Lang.html">Lang</a></li>
+				<li class="active"><a href="class-PostCRUD.html">PostCRUD</a></li>
+				<li><a href="class-SqlHelper.html">SqlHelper</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-addComment.html">addComment</a></li>
+				<li><a href="function-addPost.html">addPost</a></li>
+				<li><a href="function-checkSessionInfo.html">checkSessionInfo</a></li>
+				<li><a href="function-cleanData.html">cleanData</a></li>
+				<li><a href="function-deleteComment.html">deleteComment</a></li>
+				<li><a href="function-deletePost.html">deletePost</a></li>
+				<li><a href="function-endsWith.html">endsWith</a></li>
+				<li><a href="function-getAdminInfo.html">getAdminInfo</a></li>
+				<li><a href="function-getAdminSessionInfo.html">getAdminSessionInfo</a></li>
+				<li><a href="function-getAllComments.html">getAllComments</a></li>
+				<li><a href="function-getCommentByCommentId.html">getCommentByCommentId</a></li>
+				<li><a href="function-getCommentByPostId.html">getCommentByPostId</a></li>
+				<li><a href="function-getCookieVal.html">getCookieVal</a></li>
+				<li><a href="function-getLastTime.html">getLastTime</a></li>
+				<li><a href="function-getPostAll.html">getPostAll</a></li>
+				<li><a href="function-getPostByType.html">getPostByType</a></li>
+				<li><a href="function-getPostContent.html">getPostContent</a></li>
+				<li><a href="function-getPostList.html">getPostList</a></li>
+				<li><a href="function-getPostProfile.html">getPostProfile</a></li>
+				<li><a href="function-getPostRecomand.html">getPostRecomand</a></li>
+				<li><a href="function-getPostType.html">getPostType</a></li>
+				<li><a href="function-getThemePath.html">getThemePath</a></li>
+				<li><a href="function-listAllCommentsDetail.html">listAllCommentsDetail</a></li>
+				<li><a href="function-listCommentByCommentId.html">listCommentByCommentId</a></li>
+				<li><a href="function-listCommentByPostId.html">listCommentByPostId</a></li>
+				<li><a href="function-listPostByType.html">listPostByType</a></li>
+				<li><a href="function-listPostContent.html">listPostContent</a></li>
+				<li><a href="function-listPostProfile.html">listPostProfile</a></li>
+				<li><a href="function-listPostRecomandProfile.html">listPostRecomandProfile</a></li>
+				<li><a href="function-listPostTypeProfile.html">listPostTypeProfile</a></li>
+				<li><a href="function-listSinglePostAll.html">listSinglePostAll</a></li>
+				<li><a href="function-listSinglePostProfile.html">listSinglePostProfile</a></li>
+				<li><a href="function-manageAllComments.html">manageAllComments</a></li>
+				<li><a href="function-manageAllPosts.html">manageAllPosts</a></li>
+				<li><a href="function-rollPage.html">rollPage</a></li>
+				<li><a href="function-rollPageByPostType.html">rollPageByPostType</a></li>
+				<li><a href="function-showBigTitle.html">showBigTitle</a></li>
+				<li><a href="function-showCommentByPost.html">showCommentByPost</a></li>
+				<li><a href="function-showFooter.html">showFooter</a></li>
+				<li><a href="function-showHead.html">showHead</a></li>
+				<li><a href="function-showHeader.html">showHeader</a></li>
+				<li><a href="function-showLoginInfo.html">showLoginInfo</a></li>
+				<li><a href="function-showPostByRecomand.html">showPostByRecomand</a></li>
+				<li><a href="function-showPostByType.html">showPostByType</a></li>
+				<li><a href="function-showPostContent.html">showPostContent</a></li>
+				<li><a href="function-showPostList.html">showPostList</a></li>
+				<li><a href="function-showPostType.html">showPostType</a></li>
+				<li><a href="function-showSidebar.html">showSidebar</a></li>
+				<li><a href="function-showSinglePostProfile.html">showSinglePostProfile</a></li>
+				<li><a href="function-showSlideshow.html">showSlideshow</a></li>
+				<li><a href="function-startsWith.html">startsWith</a></li>
+				<li><a href="function-switchTheme.html">switchTheme</a></li>
+				<li><a href="function-updateComment.html">updateComment</a></li>
+				<li><a href="function-updatePost.html">updatePost</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PostCRUD</h1>
+
+
+	<div class="description">
+	<p>该类用于对文章的增删改查操作。同时过滤指定参数。</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> <a href="source-class-PostCRUD.html#14-292" title="Go to source code">utils/crud/PostCRUD.class.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="construct" id="_construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			void;
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_construct">#</a>
+		<code><a href="source-class-PostCRUD.html#27-46" title="Go to source code">construct</a>( )</code>
+
+		<div class="description short">
+			<p>此函数是手动调用，初始化flag的值</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>此函数是手动调用，初始化flag的值</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					void;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEmpty" id="_isEmpty">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isEmpty">#</a>
+		<code><a href="source-class-PostCRUD.html#49-68" title="Go to source code">isEmpty</a>( <span> <var>$link</var></span>, <span> <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>定义一个检测是否为空的函数，如果为空，终止运行，否则返回接收的值</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>定义一个检测是否为空的函数，如果为空，终止运行，否则返回接收的值</p>
+
+<p>如果$str==0,{};
+如果$str不为空，用cleanDate过滤 $str
+否则，终止执行。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$link</var></dt>
+					<dd>String</dd>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$str: String
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="del" id="_del">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_del">#</a>
+		<code><a href="source-class-PostCRUD.html#71-86" title="Go to source code">del</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行删除post的操作。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行删除post的操作。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array(); #array($postId)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Int;  #如果执行成功，返回1;否则，返回0;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-PostCRUD.html#89-111" title="Go to source code">add</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行添加post的操作。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行添加post的操作。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array(); #array($postTitle,$postDate,$postType,$postAuthor,$postContent)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Int;  #如果执行成功，返回1;否则，返回0;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-PostCRUD.html#113-140" title="Go to source code">update</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于执行更新post的操作。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于执行更新post的操作。</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array(); #array($postId，$postTitle,$postDate,$postType,$postAuthor,$postContent)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Int;  #如果执行成功，返回1;否则，返回0;
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectByProfile" id="_selectByProfile">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectByProfile">#</a>
+		<code><a href="source-class-PostCRUD.html#144-163" title="Go to source code">selectByProfile</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于 分页查询 post_title, post_date,post_type,post_author,post_id，不包括文章内容。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于 分页查询 post_title, post_date,post_type,post_author,post_id，不包括文章内容。</p>
+
+<p>*如果执行成功，返回$res，默认释放资源,关闭链接;
+*</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array()  #array(___,代表文章的第几页 ,代表文章每页多少篇文章)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Array(Array)  #$res 是一个结果集合，一个内层Array一条记录。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectByProfileInputPostIdOnly" id="_selectByProfileInputPostIdOnly">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectByProfileInputPostIdOnly">#</a>
+		<code><a href="source-class-PostCRUD.html#165-182" title="Go to source code">selectByProfileInputPostIdOnly</a>( <span> <var>$postId</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于 查询 post_title, post_date,post_type,post_author,post_id，不包括文章内容。和selectByProfile的区别是传入值只有$postId.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于 查询 post_title, post_date,post_type,post_author,post_id，不包括文章内容。和selectByProfile的区别是传入值只有$postId.</p>
+
+<p>*如果执行成功，返回$res，默认释放资源,关闭链接;
+*</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$postId</var></dt>
+					<dd>Int  #代表文章id.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Array(Array)  #$res 是一个结果集合，一个内层Array一条记录 并且仅仅 一条 记录。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectByContent" id="_selectByContent">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectByContent">#</a>
+		<code><a href="source-class-PostCRUD.html#183-201" title="Go to source code">selectByContent</a>( <span> <var>$postId</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于 查询 post_title, post_date,post_type,post_author,post_id，包括 文章内容。和selectByProfileSingle的区别是 返回文章内容.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于 查询 post_title, post_date,post_type,post_author,post_id，包括 文章内容。和selectByProfileSingle的区别是 返回文章内容.</p>
+
+<p>*如果执行成功，返回$res，默认释放资源,关闭链接;
+*</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$postId</var></dt>
+					<dd>Int  #代表文章id.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Array(Array)  #$res 是一个结果集合，一个内层Array一条记录。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectByRecomand" id="_selectByRecomand">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectByRecomand">#</a>
+		<code><a href="source-class-PostCRUD.html#203-223" title="Go to source code">selectByRecomand</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>该函数用于 分页查询 post_title, post_date,post_type,post_author,post_id，不包括文章内容。第一个留空值可以为将来选择推荐文章算法用。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数用于 分页查询 post_title, post_date,post_type,post_author,post_id，不包括文章内容。第一个留空值可以为将来选择推荐文章算法用。</p>
+
+<p>*如果执行成功，返回$res，默认释放资源,关闭链接;
+*</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array()  #array(___,代表文章的第几页 ,代表文章每页多少篇文章),第一个留空值可以为将来选择推荐文章算法用。</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<br>$res :Array(Array)  #$res 是一个结果集合，一个内层Array一条记录。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectByType" id="_selectByType">
+
+		<td class="attributes"><code>
+			 public 
+
+			array(array(post_title,
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectByType">#</a>
+		<code><a href="source-class-PostCRUD.html#225-239" title="Go to source code">selectByType</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>此函数用来通过传入文章类型，返回文章的标题，时间，作者，id 的信息。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>此函数用来通过传入文章类型，返回文章的标题，时间，作者，id 的信息。</p>
+
+<p>传入的参数有三个，如下</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array  # array(postType,代表文章的第几页 ,代表文章每页多少篇文章)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(array(post_title,<br>post_date,post_type,post_author,post_id)) : Array(Array)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectType" id="_selectType">
+
+		<td class="attributes"><code>
+			 public 
+
+			array(array(post_type))
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectType">#</a>
+		<code><a href="source-class-PostCRUD.html#241-258" title="Go to source code">selectType</a>( <span> <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			<p>此函数用于查询所有的文章类型</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>此函数用于查询所有的文章类型</p>
+
+<p>传入的参数有三个，如下</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd>Array  # array(_,代表文章的第几页，代表文章每页多少篇文章)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array(array(post_type))<br>:Array(Array)
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRes" id="_getRes">
+
+		<td class="attributes"><code>
+			 public 
+
+			增删改结果。
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRes">#</a>
+		<code><a href="source-class-PostCRUD.html#260-283" title="Go to source code">getRes</a>( )</code>
+
+		<div class="description short">
+			<p>该函数根据flag的值，确定执行增，删，改。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>该函数根据flag的值，确定执行增，删，改。</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					增删改结果。
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="goBack" id="_goBack">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_goBack">#</a>
+		<code><a href="source-class-PostCRUD.html#285-291" title="Go to source code">goBack</a>( )</code>
+
+		<div class="description short">
+			<p>返回上一页，当给该函数请求时返回。</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>返回上一页，当给该函数请求时返回。</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="flag" id="$flag">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PostCRUD.html#21-24" title="Go to source code"><var>$flag</var></a>
+
+			<div class="description short">
+				<p>$flag 用于识别具体执行哪种类型（增，删，改）的操作。</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>$flag 用于识别具体执行哪种类型（增，删，改）的操作。</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$flag" class="anchor">#</a>
+				<code><span class="php-quote">&quot;&quot;</span> </code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
