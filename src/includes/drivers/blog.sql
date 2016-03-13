@@ -1,8 +1,4 @@
---  Root User: adminz9QmQqP
-   --Root Password: yxeQ8twYmgKe
-   --Database Name: duckblog
---httpd   127.0.0.1:8080  =>  127.9.91.129:8080
---mysql   127.0.0.1:3307  =>  127.9.91.130:3306
+
 
 create table admin(
     id   tinyint auto_increment ,

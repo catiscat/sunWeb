@@ -14,10 +14,10 @@
     class SqlHelper{
         
         public $conn;
-        public $dbname="your_db_name";
-        public $username="your_username";
-        public $password="your_password";
-        public $host="127.0.0.1";
+        public $dbname="duckblog";
+        public $username="adminz9QmQqP";
+        public $password="yxeQ8twYmgKe";
+        public $host="127.9.91.130";
 
 		/**
 		 *该函数是一个连接mysql数据库的构造函数。
