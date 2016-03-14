@@ -372,6 +372,7 @@
 		
 		
 		<meta http-equiv='content-type' content='text/html; charset=utf-8' />
+		<link rel='shortcut icon' href=".THEMES_URL."images/duck.ico />
         <link href=".THEMES_URL."css/styles.css rel='stylesheet' type='text/css' media='screen' />
 		<link rel='stylesheet' href=".THEMES_URL."css/nivo-slider.css type='text/css' media='screen' />
 		<script type='text/javascript' src=".THEMES_URL."js/cufon-yui.js ></script>

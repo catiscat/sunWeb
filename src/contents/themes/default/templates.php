@@ -424,6 +424,7 @@
 		<meta name='description' content='duckBlog for thinking and sharing' />
 		<meta name='keywords' content='duckBlog,thinking,sharing' />
 		<meta http-equiv='content-type' content='text/html; charset=utf-8' />
+		<link rel='shortcut icon' href=".THEMES_URL."images/duck.ico />
 		<link rel='stylesheet' type='text/css' href=".THEMES_URL."css/style.css />
 		<script type='text/javascript' src=".THEMES_URL."js/modernizr-1.5.min.js></script>
 		<script type='text/javascript' src=".THEMES_URL."js/jquery.min.js></script> <!-- javascript at the bottom for fast page loading -->
