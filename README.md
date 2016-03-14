@@ -52,7 +52,7 @@ Frames here explain how DogDuck Blog System works.
 # About
 
 
- ###  DogDuck Blog System is highly Scalable, beacause
+###  DogDuck Blog System is highly Scalable, beacause
 
 
 - #### High cohesion & Low Coupling
@@ -90,12 +90,12 @@ Frames here explain how DogDuck Blog System works.
 
     - When request of manager files are submit, only ones with correct login session info are given access to these manager files, which is safe for admin.
 
- ###  DogDuck Blog System is Readable,beacuse
+###  DogDuck Blog System is Readable,beacuse
 
 
- - #### The function names are regular and  meaningful
+- #### The function names are regular and  meaningful
 
-   - You can easily get features of these functions just by reading their names.
+    - You can easily get features of these functions just by reading their names.
 
 - #### With documentation for you
 
