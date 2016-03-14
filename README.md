@@ -51,7 +51,8 @@ Frames here explain how DogDuck Blog System works.
 
 # About 
 
- #### DogDuck Blog System is highly Scalable, beacause 
+
+ ###  DogDuck Blog System is highly Scalable, beacause 
 
 
 - #### High cohesion & Low Coupling
@@ -60,7 +61,7 @@ Frames here explain how DogDuck Blog System works.
    
 - #### It is easy to add new themes 
 
-    - Just copy any one dir in contents/themes/  and change a little of html tags in several php file there. A new theme is born. 
+   - Just copy any one dir in contents/themes/  and change a little of html tags in several php file there. A new theme is born. 
     
 - #### It is easy to add new features
  
@@ -68,13 +69,14 @@ Frames here explain how DogDuck Blog System works.
   
 - #### It is easy to add new database
 
-    - Just add a new php file in includes/drivers/  with the API provided by the includes/drivers/MySql/SqlHelper.class.php there.With this, you will own a new database.
+   - Just add a new php file in includes/drivers/  with the API provided by the includes/drivers/MySql/SqlHelper.class.php there.With this, you will own a new database.
 
 - #### It is easy to add new users
 
     - You can add new users manually by copy a template.
     
- #### DogDuck Blog System is safe, beacause 
+ ###  DogDuck Blog System is safe, beacause 
+
  
 - #### All data input is cleaned.
 
@@ -88,11 +90,12 @@ Frames here explain how DogDuck Blog System works.
 
     - When request of manager files are submit, only ones with correct login session info are given access to these manager files, which is safe for admin.
 
- #### DogDuck Blog System is Readable,beacuse
+ ###  DogDuck Blog System is Readable,beacuse
+
 
  - #### The function names are regular and  meaningful
  
-    - You can easily get features of these functions just by reading their names.
+   - You can easily get features of these functions just by reading their names.
  
 - #### With documentation for you 
     
