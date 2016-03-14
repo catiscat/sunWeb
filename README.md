@@ -1,8 +1,8 @@
-# [DogDuck Blog System](https://www.dogduck.lol)
-##  [Preview](https://www.dogduck.lol)
+# [Demo](https://www.dogduck.lol)
 
  - A personal blog system.
  - Designed by myself without using any PHP framework.
+ - Support for both PHP5 and PHP7 
 
 # Features
 - Personalized
