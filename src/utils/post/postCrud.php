@@ -1,9 +1,9 @@
 <?php
     echo "<meta charset='utf-8'/>";
     require_once($_SERVER['DOCUMENT_ROOT']."load.php");
-	require_once (CRUD_TOOL_PATH."PostCRUD.class.php");
-	require_once(INCLUDES_PATH."checkSessionInfo.php");
-	checkSessionInfo();
+    require_once (CRUD_TOOL_PATH."PostCRUD.class.php");
+    require_once(INCLUDES_PATH."checkSessionInfo.php");
+    checkSessionInfo();
 ?>
 
 <?php

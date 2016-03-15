@@ -1,16 +1,16 @@
 <?php
 
-	//require_once($_SERVER['DOCUMENT_ROOT']."/includes/checkSessionInfo.php");
-	//checkSessionInfo();
-	/**
-	 *该函数用于画出验证码的图片并输出。
-	 *
-	 *@param  void;
-	 *@return  void;
-	 *
-	 */
-	//function checkCode(){
-	
+    //require_once($_SERVER['DOCUMENT_ROOT']."/includes/checkSessionInfo.php");
+    //checkSessionInfo();
+    /**
+     *该函数用于画出验证码的图片并输出。
+     *
+     *@param  void;
+     *@return  void;
+     *
+     */
+    //function checkCode(){
+    
         session_start();
         $checkCode="";
         for($i=0;$i<4;$i++){

@@ -1,26 +1,26 @@
 <?php
        // $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
         
-		
-		if(!empty($_SERVER['HTTPS'])){
-				define("PROTOCOL","https://");
-		}else{
-				define("PROTOCOL","http://");
-		}
+        
+        if(!empty($_SERVER['HTTPS'])){
+                define("PROTOCOL","https://");
+        }else{
+                define("PROTOCOL","http://");
+        }
         define("SERVER_NAME",$_SERVER['SERVER_NAME']);
-		define("ROOT_PATH",$_SERVER['DOCUMENT_ROOT']);
+        define("ROOT_PATH",$_SERVER['DOCUMENT_ROOT']);
         define("ROOT_URL",PROTOCOL.SERVER_NAME."/");
-		//define("SELF_PATH",$_SERVER['PHP_SELF']);
+        //define("SELF_PATH",$_SERVER['PHP_SELF']);
         
         //define("THEME","grey-style/");
-		
-		session_start();
-		if(!empty($_SESSION['themePath'])){
-				define("THEME",$_SESSION['themePath']);
-		}else{
-				define("THEME","default/");
-		}
-		
+        
+        session_start();
+        if(!empty($_SESSION['themePath'])){
+                define("THEME",$_SESSION['themePath']);
+        }else{
+                define("THEME","default/");
+        }
+        
         
         define("USER","admin/");
         define("USER_MANAGER",USER."manager/");
@@ -36,12 +36,12 @@
         define("POST_CRUD_TOOL","post/");
         
         
-        	
+            
 
         
-		define("THEMES_URL",PROTOCOL.SERVER_NAME."/contents/themes/".THEME);
-		define("THEMES_PATH",ROOT_PATH."/contents/themes/".THEME);
-		define("THEMES_PATH_SELF","/contents/themes/".THEME);
+        define("THEMES_URL",PROTOCOL.SERVER_NAME."/contents/themes/".THEME);
+        define("THEMES_PATH",ROOT_PATH."/contents/themes/".THEME);
+        define("THEMES_PATH_SELF","/contents/themes/".THEME);
         
         define("INCLUDES_URL",PROTOCOL.SERVER_NAME."/includes/");
         define("INCLUDES_PATH",ROOT_PATH."/includes/");
@@ -67,7 +67,7 @@
         
         
 
-		
+        
 
-		
+        
  ?>

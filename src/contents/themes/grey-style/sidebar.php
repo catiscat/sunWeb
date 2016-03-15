@@ -1,45 +1,45 @@
 <?php
-	require_once($_SERVER['DOCUMENT_ROOT']."load.php");
+    require_once($_SERVER['DOCUMENT_ROOT']."load.php");
     require_once(THEMES_PATH."/templates.php");
 
 ?>
-	          <div id="content_right">
-                	<h2>Recommend</h2>
-					
-					<!--sidebar one-->
-                	<div class="content_right_pad">
-                    	<div class="news">
-                        	<!--sidebar content one-->
+              <div id="content_right">
+                    <h2>Recommend</h2>
+                    
+                    <!--sidebar one-->
+                    <div class="content_right_pad">
+                        <div class="news">
+                            <!--sidebar content one-->
                             <?php  showPostByRecomand(array('',1,10)); ?>
                         
                            <!--end sidebar content one-->
                             <div class="clear"></div>
                         </div>
                     </div>
-					<!--end sidebar one-->
-					
+                    <!--end sidebar one-->
+                    
                     <div class="bor_goriz"></div>
-					
-					<!--sidebar two-->
+                    
+                    <!--sidebar two-->
                     <div class="content_right_pad">
-                    	<div class="news">
-							<h2>Type</h2>
-                        	<!--sidebar content two-->
+                        <div class="news">
+                            <h2>Type</h2>
+                            <!--sidebar content two-->
                       
                         <?php  showPostType(array('',1,30)); ?>
-					
+                    
                            <!--end sidebar content two-->
                        
                             <div class="clear"></div>
                         </div>
                     </div>
-					<!--end sidebar two-->
-					
+                    <!--end sidebar two-->
+                    
                     <!--sidebar three-->
-					<hr>
-                	<div class="content_right_pad">
-                    	<div class="news">
-                        	<!--sidebar content three-->
+                    <hr>
+                    <div class="content_right_pad">
+                        <div class="news">
+                            <!--sidebar content three-->
                             <h2>Contact</h2><br><br>
                             <ul class='left_sidebar'>
                                 <li><a href='mailto:duckHere@tutamail.com'>Email:duckHere@tutamail.com</a></li><br>
@@ -51,7 +51,7 @@
                             <div class="clear"></div>
                         </div>
                     </div>
-					<!--end sidebar three-->
+                    <!--end sidebar three-->
                     <?php  echo "<hr> <br/>";  echo  switchTheme();?>
                 </div>
               

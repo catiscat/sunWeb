@@ -55,13 +55,13 @@ Frames here explain how DogDuck Blog System works.
 ###  DogDuck Blog System is highly Scalable, beacause
 
 
-- #### High cohesion & Low Coupling
+- #### High Cohesion & Low Coupling
 
-   - As you can see in the Frames, DogDuck Blog System works like a production line.There are five big Workshop,they are db, drivers,post/comment/user, functions, templates. Nonadjacent Workshops are Relatively independent.Which means when some files in one workshop changed,there is only one workshop which references it should be changed a little. As for other workshops, nothing to change, they just need to keep still. Beacuse all files are linear referenced in DogDuck Blog System.
+   - As you can see in the Frames, DogDuck Blog System works like a production line.There are five big Workshops.They are db, drivers,post/comment/user, functions, templates. Nonadjacent Workshops are Relatively independent.Which means when some files in one workshop changed,there is only one workshop which references it should be changed a little. As for other workshops, nothing to change, and they just need to keep still. Beacuse all files are linear referenced in DogDuck Blog System.
 
 - #### It is easy to add new themes
 
-   - Just copy any one dir in contents/themes/  and change a little of html tags in several php file there. A new theme is born.
+   - Just copy any one dir in contents/themes/  and change a little of html tags in several php files there. A new theme is born.
 
 - #### It is easy to add new features
 
@@ -80,7 +80,7 @@ Frames here explain how DogDuck Blog System works.
 
 - #### All data input is cleaned.
 
-    - There is a CleanData.class.php file to clean all the input data to make sure the basic safety of the blog system.
+    - There is a CleanData.class.php file in order to clean all the input data to make sure the basic safety of the blog system.
 
 - #### Checkcode is required
 
@@ -99,9 +99,9 @@ Frames here explain how DogDuck Blog System works.
 
 - #### With documentation for you
 
-    - There is a documentation of DogDuck Blog System to help you quickly and easily understand how it works.
+    - There is a [documentation](./docs/index.html) of DogDuck Blog System to help you quickly and easily understand how it works.
 
-- #### All codes are neat and  ordered
+- #### All codes are neat and ordered
 
 # Version
 1.0
