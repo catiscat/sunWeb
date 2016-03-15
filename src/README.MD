@@ -2,7 +2,7 @@
 [DogDuck Blog Preview](https://www.dogduck.lol).
 
 - This is the tree of DogDuck Blog System.
-
+<pre>
 .
 ├── about.php
 ├── admin
@@ -194,5 +194,5 @@
     │   └── postFunctions.php
     ├── README.MD
     └── switchThemes.php
-
+</pre>
 38 directories, 152 files
