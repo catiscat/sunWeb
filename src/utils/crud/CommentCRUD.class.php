@@ -52,11 +52,11 @@ class CommentCRUD{
      *@param $str: String
      *@return $str: String
     */
-    function isEmpty($link,$str){
+    function isEmpty($str){
         if($str==0){}
         else if(!empty($str)){
 
-                $str=cleanData($link,$str);        
+                $str=cleanData($str);        
         }else{
             echo $str."is empty";return;
         }
@@ -75,7 +75,7 @@ class CommentCRUD{
     function del($arr){
             //创建了一个$sqlHelper的对象实例
         $sqlHelper=new SqlHelper();
-        $commentId= $this->isEmpty($sqlHelper->conn,$arr[0]);
+        $commentId= $this->isEmpty($arr[0]);
         $sql = "delete from comments where comment_id= $commentId";
         $res=$sqlHelper->execute_dml($sql);
         $sqlHelper->close_connect();
@@ -93,9 +93,9 @@ class CommentCRUD{
     function add($arr){
 
         $sqlHelper=new SqlHelper();
-        $commentAuthor=$this->isEmpty($sqlHelper->conn,$arr[0]);
-        $commentContent=$this->isEmpty($sqlHelper->conn,$arr[1]);
-        $postId = $this->isEmpty($sqlHelper->conn,$arr[2]);
+        $commentAuthor=$this->isEmpty($arr[0]);
+        $commentContent=$this->isEmpty($arr[1]);
+        $postId = $this->isEmpty($arr[2]);
         $commentDate = date("Y-m-d H:i:sa");
         $sql="insert into 
         comments (comment_date,comment_author,comment_content,post_id) 
@@ -119,10 +119,10 @@ class CommentCRUD{
     function update($arr){
 
         $sqlHelper=new SqlHelper();
-        $commentId=$this->isEmpty($sqlHelper->conn,$arr[0]);       
-        $commentDate = $this->isEmpty($sqlHelper->conn,$arr[1]);        
-        $commentAuthor=$this->isEmpty($sqlHelper->conn,$arr[2]);
-        $commentContent=$this->isEmpty($sqlHelper->conn,$arr[3]);    
+        $commentId=$this->isEmpty($arr[0]);       
+        $commentDate = $this->isEmpty($arr[1]);        
+        $commentAuthor=$this->isEmpty($arr[2]);
+        $commentContent=$this->isEmpty($arr[3]);    
     
         $sql="update  comments 
         set 
@@ -175,7 +175,7 @@ class CommentCRUD{
        $sqlHelper=new SqlHelper();
     
         if(!(is_int($arr[1]) && is_int($arr[2]))){echo "请检查错误！以下二者存在非int,字符类型不合法-> str[1]=".$arr[1]." str[2]=".$arr[2];  return ;}
-        $postId= $this->isEmpty($sqlHelper->conn,$arr[0]);
+        $postId= $this->isEmpty($arr[0]);
         $sql = "select comment_date,comment_author,comment_id,comment_content from comments where post_id='$postId' limit ".($arr[1] -1)*$arr[2]." ,".$arr[2];       
         $res=  $sqlHelper-> execute_dql($sql);
         $sqlHelper->close_connect();
@@ -196,7 +196,7 @@ class CommentCRUD{
     
     function selectByCommentId($commentId){
         $sqlHelper=new SqlHelper();
-        $commentId=$this->isEmpty($sqlHelper->conn,$commentId);
+        $commentId=$this->isEmpty($commentId);
         $sql = "select comment_date,comment_author,comment_id,comment_content from comments where comment_id='$commentId'";
         $res=  $sqlHelper-> execute_dql($sql);
         $sqlHelper->close_connect();

@@ -1,7 +1,45 @@
-<?php
+<?php 
+    require_once($_SERVER['DOCUMENT_ROOT']."load.php");
+
 
 ?>
-<?php 
+
+<?php
+
+    /**
+     *@author  kcleung
+     *kcleung at kcleung dot no-ip dot org 03-May-2010 12:47
+     *该类用于通过PDO进行数据库操作。
+     */
+    class Database {
+        private static $link = null ;
+        private static function getLink ( ) {
+            if ( self :: $link ) {
+                return self :: $link ;
+            }
+            $ini = CONFIG_PATH."config.ini" ;
+            $parse = parse_ini_file ( $ini , true ) ;
+            $driver = $parse [ "db_driver" ] ;
+            $dsn = "${driver}:" ;
+            $user = $parse [ "db_user" ] ;
+            $password = $parse [ "db_password" ] ;
+            $options = $parse [ "db_options" ] ;
+            $attributes = $parse [ "db_attributes" ] ;
+            foreach ( $parse [ "dsn" ] as $k => $v ) {
+                $dsn .= "${k}=${v};" ;
+            }
+            self :: $link = new PDO ( $dsn, $user, $password, $options ) ;
+            foreach ( $attributes as $k => $v ) {
+                self :: $link -> setAttribute ( constant ( "PDO::{$k}" )
+                    , constant ( "PDO::{$v}" ) ) ;
+            }
+            return self :: $link ;
+        }
+        public static function __callStatic ( $name, $args ) {
+            $callback = array ( self :: getLink ( ), $name ) ;
+            return call_user_func_array ( $callback , $args ) ;
+        }
+    }
 
     /**
      *
@@ -12,36 +50,8 @@
      */
 
     class SqlHelper{
-        
         public $conn;
-        public $dbname="duckblog";
-        public $username="adminz9QmQqP";
-        public $password="yxeQ8twYmgKe";
-        public $host="127.9.91.130";
 
-        /**
-         *该函数是一个连接mysql数据库的构造函数。
-         *
-         *初始化 $this->conn。
-         *如果连接mysql数据库失败，echo 错误信息。
-         *
-         *@param void
-         *@return void
-         *
-         */
-
-        public function __construct(){
-        
-            $this->conn=mysqli_connect($this->host,$this->username,$this->password,$this->dbname);
-            if(!$this->conn){
-                echo "Error: Unable to connect to MySQL." . PHP_EOL;
-                echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-                echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-                exit;
-            }
-   
-        }
-        
         /**
          *该函数用于执行数据库查询语句。
          *如果执行成功，返回$res，并释放资源;否则，echo 查询失败及错误信息。
@@ -53,19 +63,11 @@
         
         public function execute_dql($sql){
             
-            $arr=array();
-            if ($res = mysqli_query($this->conn,$sql)) {
-
-                $i=0;
-                while($row=$res->fetch_assoc()){
-                    $arr[$i++]=$row;
-                }
-                $res->free();
-            }else{
-                
-                echo "查询失败:".mysqli_error($this->conn);
-            }
             
+
+            $this->conn = Database::prepare($sql) ;
+            $this->conn -> execute ();
+            $arr=$this->conn -> fetchAll () ;
             return $arr;
         }
         
@@ -81,8 +83,10 @@
          */
         
         public function execute_dml($sql){
-        
-            $res=mysqli_query($this->conn,$sql);
+ 
+            $this->conn = Database :: prepare ( $sql ) ;
+            $res=$this->conn -> execute () ;
+
             if(!$res){
                 echo "查询失败:".mysqli_error($this->conn);
                 return 0;
@@ -102,7 +106,7 @@
         public function close_connect(){
             
             if(!empty($this->conn)){
-                mysqli_close($this->conn);
+                $this->conn -> closeCursor() ;
             }
         }
     }

@@ -28,11 +28,11 @@
          *@param $str: String
          *@return $str: String
          */    
-        function isEmpty($link,$str){
+        function isEmpty($str){
             if($str==0){}
             else if(!empty($str)){
     
-                    $str=cleanData($link,$str);        
+                    $str=cleanData($str);        
             }else{
                 echo $str."is empty";return;
             }
@@ -47,8 +47,8 @@
          */
         function selectAdminInfo ($arr){
             $sqlHelper=new SqlHelper();
-            $adminId=$this->isEmpty($sqlHelper->conn,$arr[0]);
-            $adminPassword=$this->isEmpty($sqlHelper->conn,$arr[1]);
+            $adminId=$this->isEmpty($arr[0]);
+            $adminPassword=$this->isEmpty($arr[1]);
             $sql="select admin_password from admin where admin_id=$adminId ";
             
             $res=$sqlHelper->execute_dql($sql);
@@ -71,8 +71,8 @@
          */
         function selectAdminSessionInfo ($arr){
             $sqlHelper=new SqlHelper();
-            $adminId=$this->isEmpty($sqlHelper->conn,$arr[0]);
-            $adminPassword=$this->isEmpty($sqlHelper->conn,$arr[1]);
+            $adminId=$this->isEmpty($arr[0]);
+            $adminPassword=$this->isEmpty($arr[1]);
             $sql="select admin_password from admin where admin_id=$adminId ";
 
             $res=$sqlHelper->execute_dql($sql);

@@ -17,7 +17,7 @@ def recursion(files,tail):
 
     for f in files:
         if os.path.isdir(f):
-             recursion(glob.glob("%s/*"%f))
+             recursion(glob.glob("%s/*"%f),tail)
         elif f[-4:]==tail:
             replace_tab(f)
             #print(f)

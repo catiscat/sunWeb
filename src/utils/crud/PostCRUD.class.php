@@ -56,11 +56,11 @@ class PostCRUD{
      *@param $str: String
      *@return $str: String
     */
-    function isEmpty($link,$str){
+    function isEmpty($str){
         if($str==0){}
         else if(!empty($str)){
 
-                $str=cleanData($link,$str);        
+                $str=cleanData($str);        
         }else{
             echo $str."is empty";return;
         }
@@ -78,7 +78,7 @@ class PostCRUD{
     function del($arr){
             //创建了一个$sqlHelper的对象实例
         $sqlHelper=new SqlHelper();
-        $postId= $this->isEmpty($sqlHelper->conn,$arr[0]);
+        $postId= $this->isEmpty($arr[0]);
         $sql = "delete from posts where post_id= $postId";
         $res=$sqlHelper->execute_dml($sql);
         $sqlHelper->close_connect();
@@ -96,10 +96,10 @@ class PostCRUD{
     function add($arr){
         
         $sqlHelper=new SqlHelper();
-        $postTitle=$this->isEmpty($sqlHelper->conn,$arr[0]);
-        $postAuthor=$this->isEmpty($sqlHelper->conn,$arr[1]);
-        $postType = $this->isEmpty($sqlHelper->conn,$arr[2]);
-        $postContent=$this->isEmpty($sqlHelper->conn,$arr[3]);
+        $postTitle=$this->isEmpty($arr[0]);
+        $postAuthor=$this->isEmpty($arr[1]);
+        $postType = $this->isEmpty($arr[2]);
+        $postContent=$this->isEmpty($arr[3]);
         
         $postDate = date("Y-m-d H:i:sa");
         $sql="insert into 
@@ -120,12 +120,12 @@ class PostCRUD{
     function update($arr){
         
         $sqlHelper=new SqlHelper();
-        $postId=$this->isEmpty($sqlHelper->conn,$arr[0]);
-        $postTitle=$this->isEmpty($sqlHelper->conn,$arr[1]);
-        $postDate = $this->isEmpty($sqlHelper->conn,$arr[2]);
-        $postType = $this->isEmpty($sqlHelper->conn,$arr[3]);
-        $postAuthor=$this->isEmpty($sqlHelper->conn,$arr[4]);
-        $postContent=$this->isEmpty($sqlHelper->conn,$arr[5]);    
+        $postId=$this->isEmpty($arr[0]);
+        $postTitle=$this->isEmpty($arr[1]);
+        $postDate = $this->isEmpty($arr[2]);
+        $postType = $this->isEmpty($arr[3]);
+        $postAuthor=$this->isEmpty($arr[4]);
+        $postContent=$this->isEmpty($arr[5]);    
     
         $sql="update  posts 
         set post_title ='$postTitle',
@@ -191,7 +191,7 @@ class PostCRUD{
      */
     function selectByContent($postId){
         $sqlHelper=new SqlHelper();
-        $postId= $this->isEmpty($sqlHelper->conn,$postId);
+        $postId= $this->isEmpty($postId);
         
         $sql = "select post_title, post_date,post_type,post_author,post_id,post_content from posts where post_id='$postId' ";
         $res=  $sqlHelper-> execute_dql($sql);

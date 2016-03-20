@@ -1,7 +1,3 @@
-# DogDuck Blog System
-[DogDuck Blog Preview](https://www.dogduck.lol).
-
-- This is the tree of DogDuck Blog System.
 <pre>
 .
 ├── about.php
@@ -26,12 +22,12 @@
 │   │   ├── updateCommentEditor.php
 │   │   └── updatePostEditor.php
 │   └── utils
-│       ├── blog2.sql
-│       └── blog.sql
-├── conf.xml
+├── config
+│   ├── config.ini
+│   └── conf.xml
 ├── contact.php
 ├── contents
-│   ├── readme.txt
+│   ├── README.MD
 │   └── themes
 │       ├── default
 │       │   ├── about.php
@@ -46,6 +42,7 @@
 │       │   │   ├── Pacifico-webfont.eot
 │       │   │   └── Pacifico-webfont.ttf
 │       │   ├── images
+│       │   │   ├── duck.ico
 │       │   │   ├── home_1.jpg
 │       │   │   ├── home_2.jpg
 │       │   │   ├── home_3.jpg
@@ -85,6 +82,7 @@
 │           │   ├── bg-3.jpg
 │           │   ├── bor_goriz.gif
 │           │   ├── bor_vertical.gif
+│           │   ├── duck.ico
 │           │   ├── footer_top_border.png
 │           │   ├── grad_bot_bot.jpg
 │           │   ├── grad_bot_top.jpg
@@ -171,11 +169,9 @@
 │   │   │   ├── updateCommentEditor.php
 │   │   │   └── updatePostEditor.php
 │   │   └── utils
-│   │       ├── blog2.sql
-│   │       └── blog.sql
 │   └── README.MD
 ├── sidebar.php
-├── themesSwither.php
+├── themesSwitcher.php
 └── utils
     ├── admin
     │   ├── adminCrud.php
@@ -195,4 +191,4 @@
     ├── README.MD
     └── switchThemes.php
 </pre>
-38 directories, 152 files
+39 directories, 151 files

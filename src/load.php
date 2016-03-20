@@ -63,7 +63,7 @@
         define("COMMRNT_CRUD_TOOL_PATH_SELF",UTILS_PATH_SELF.COMMRNT_CRUD_TOOL);
         define("POST_CRUD_TOOL_PATH_SELF",UTILS_PATH_SELF.POST_CRUD_TOOL);
         
-        
+        define("CONFIG_PATH",ROOT_PATH."/config/");
         
         
 
