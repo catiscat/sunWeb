@@ -3,12 +3,17 @@
 # 联系方式
 - Email  [duckHere@tutamail.com](mailto:duckHere@tutamail.com)
 
+# 项目 
+- 开源项目[github](https://github.com/catiscat/sunWeb)，[demo](https://www.dogduck.lol)
+
 # 个人信息
 - 性别，女。
-- 个人自学PHP。
-- 这是学习之余自己做的一个开源项目[github](https://github.com/catiscat/sunWeb)，[demo](https://www.dogduck.lol)
-- 英语已过托福。
+
+# 技艺
+- 自学PHP 。
+- MySQL数据库开发、配置、维护、性能优化。
 - 一直在linux环境下开发学习。
+- 英语已过托福。
 - 有扎实的统计学基础。
 
 
